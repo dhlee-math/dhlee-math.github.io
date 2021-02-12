@@ -1,6 +1,0 @@
-notes/MorseTheory/MorseTheory.aux
-notes/MorseTheory/MorseTheory.log
-notes/MorseTheory/MorseTheory.out
-notes/MorseTheory/MorseTheory.synctex.gz
-notes/MorseTheory/MorseTheory.tex
-notes/MorseTheory/MorseTheory.toc
