@@ -1,0 +1,1203 @@
+\documentclass{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\usepackage[pdfencoding=auto]{hyperref}
+\usepackage[titletoc]{appendix}
+\usepackage{indentfirst}
+\usepackage{parselines} 
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{siunitx}
+\usepackage{titling}
+\usepackage{amssymb}
+\usepackage{nameref}
+\usepackage{lmodern}
+\usepackage{tensor}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{tikz-cd}
+
+\author{Dongho Lee}
+\title{A Brief Review on Morse Theory}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\CP}{\mathbb{CP}}
+
+\newcommand{\ep}{\varepsilon}
+\newcommand{\vp}{\varphi}
+\newcommand{\il}{\langle}
+\newcommand{\ir}{\rangle}
+\newcommand{\pp}{\partial}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\tcap}{\pitchfork}
+
+\newcommand{\Om}{\Omega}
+\newcommand{\LM}{\mathcal{L}M}
+\newcommand{\PM}{\mathcal{P}M}
+\newcommand{\g}{\gamma}
+
+\newcommand{\Crit}{\mathrm{Crit}}
+\newcommand{\grad}{\mathrm{grad}}
+\newcommand{\Hess}{\mathrm{Hess}}
+\newcommand{\Ind}{\mathrm{Ind}}
+\newcommand{\Fl}{\mathrm{Fl}}
+\newcommand{\codim}{\mathrm{codim}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\rank}{\mathrm{rank}}
+
+\begin{document}
+\maketitle
+
+	\begin{abstract}
+	Morse theory is a way to see the topology of given manifold by analyzing a function on the manifold.
+	In this note, we give brief overview on the Morse theory.
+	In section 1, we introduce the basic ideas of Morse theory.
+	In section 2, we introduce the construction of Morse homology.
+	In section 3, we give an example of infinite dimensional analogy of Morse function, which is the energy functional on the path space of manifold.
+	We hope that this note would help to read the note on Floer homology, which will be uploaded in the future.
+	
+	A nice reference for Morse theory is a beautiful book of John Milnor, \cite{m1}.
+	I also found that \cite{mat} was helpful.
+	There's also some stuffs concerning with Morse homology in the first few chapters of \cite{ad}.
+	\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{Morse Functions}
+\subsection{Motivating Example: Height Function on the Surfaces}
+In this note, every manifold and function is assumed to be smooth.
+If there's a subtlety, for example a manifold with corners, we will usually ignore the problem since such problem can be somehow solved.
+
+Consider the sphere, torus and genus 2 surface embedded in $\R^3$ as in the Figure 1.
+Denote these by $S_0,S_1,S_2$.
+Define $h_i:S_i\to \R$ by $h(x,y,z)=z$, which could be seen as a \emph{height functions} on the surfaces.
+One can easily check that $h_0,h_1,h_2$ has 2, 4, 6 critical points each.
+For example, the function on a sphere has global minimum and maximum, which correspond to two critical points.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figure1.jpg}
+		\caption{Height Functions on Surfaces}
+\end{figure}
+
+Consider the sublevel set $h^{-1}(-\infty,c]:=S^c$. (We omit the subscript for now.)
+Then one can see that the topology of sublevel set does not change as $c$ passes through regular values, and it changes at critical values.
+For example, let's see the torus case.
+The critical values are 0, 1, 2 and 3.
+We see that, as illustrated in Figure 2,
+	\begin{itemize}
+	\item If $c<0$, $S^c$ is an empty set.
+	\item If $0< c<1$, $S^c$ is a disk.
+	\item If $1< c< 2$, $S^c$ is a cylinder.
+	\item If $2< c< 3$, $S^c$ is a torus with a puncture.
+	\item If $c>3$, $S^c$ is a torus.
+	\end{itemize}
+This looks like attaching cells to CW complex, which describes the topology of given manifold.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{figure2.jpg}
+		\caption{Sublevel sets of 2-torus}
+\end{figure}
+
+Let's see one more case with 4 critical points, so called a \emph{Morse heart}.
+This could be seen as a sphere, which is deformed a bit from its standard form.
+The critical values are 0, 1, 2 and 3.
+We see that, as illustrated in Figure 3,
+	\begin{itemize}
+	\item If $c<0$, $S^c$ is an empty set.
+	\item If $0< c<1$, $S^c$ is a disk.
+	\item If $1< c< 2$, $S^c$ is a cylinder.
+	\item If $2< c< 3$, $S^c$ is a sphere with a puncture (which is a disk).
+	\item If $c>3$, $S^c$ is a sphere.
+	\end{itemize}
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figure3.jpg}
+		\caption{Sublevel sets of Morse heart}
+\end{figure}
+	
+What made the difference between two cases?
+Denote the critical points corresponds to the critical value $i$ by $p_i$ and $q_i$ in torus and Morse heart.
+One can easily check that $p_0$ is local minimum, $p_1,p_2$ are \emph{saddle points}, and $p_3$ is local maximum.
+In contrast, in the Morse heart case, $q_0$ is local minimum, $q_1$ is saddle point, and $q_2,q_3$ are local maxima.
+This local behavior of height functions near critical points make difference between torus and sphere.
+
+Here's the idea: we can see the topology of $M$ by analyzing the behavior of some function $f$ on $M$ near its critical points.
+This is the starting point of the Morse theory.
+
+\subsection{Morse Functions}
+
+Let $f:M\to\R$.
+Recall that the \textbf{critical point} of $f$ is a point $p\in M$ such that $d_pf=0$.
+In local chart $(x_1,\cdots,x_n)$, we can write this condition as
+	$$\frac{\pp f}{\pp x_1}(p)=\cdots=\frac{\pp f}{\pp x_n}=0.$$
+We call $f(p)$ \textbf{critical value}.
+At critical point $p$, $d_p f$ does not contain valuable information of $f$.
+Reminiscing the Calculus II course, we would like to see the \emph{second derivatives} at the critical points to extract more information.
+
+Let $\Crit(f)$ be the set of critical points of $f$.
+For $p\in\Crit(f)$, define \textbf{Hessian} of $f$ at $p$ by $n\times n$-matrix
+	$$\Hess_p(f):=\left(\frac{\pp^2 f}{\pp x_i \pp x_j}(p)\right)$$
+in local chart.
+In particular, $\Hess_p(f)$ is symmetric and thus defines a symmetric bilinear form on $T_pM$.
+This matrix describes the local behavior of $f$ near the critical point.
+
+	\begin{remark}\rm
+	Of course, there's a coordinate-free description of Hessian.
+	We would not concern about this.
+	One can look \cite{m1} for the definition.
+	\end{remark}
+
+There are standard notions associated to symmetric bilinear form $A$ defined on a real vector space $V$:
+	\begin{itemize}
+	\item $A$ can be naturally identified to a map $\tilde{A}:V\to V^*$ by defining $\tilde{A}(v)(w)=A(v,w)$.
+	If $\ker\tilde{A}=0$, we say $A$ is \textbf{nondegenerate}.
+	Otherwise, we say $A$ is \textbf{degenerate}.
+	We usually write $\ker A=\ker\tilde{A}$.
+	\item $A$ is \textbf{positive definite} if $A(v,v)>0$ for any $0\neq v\in V$. Similarly, $A$ is \textbf{negative definite} if $A(v,v)<0$ for any $0\neq v\in V$.
+	\item \textbf{Index} of $A$ is an integer $\mathrm{Ind}(A):=\dim V_-$, where $V_-$ is maximal subspace of $V$ on which $A$ is negative definite.
+	\end{itemize}
+Let's apply these notions to the Hessian.
+We call $f:M\to\R$ \textbf{Morse function} if it's proper (the inverse image of compact set is compact) and $\Hess_p(f)$ is nondegenerate for any $p\in\Crit(f)$.
+For Morse function $f$, define \textbf{Morse index} of $p$ by
+	$$\Ind(p,f)=\Ind(p):=\Ind(\Hess_p(f)).$$
+One might check that these definitions do not depend on the choice of local chart which represents Hessian.
+
+Let's see what exactly the nondegeneracy assumption means.
+The nondegeneracy means, heuristically, the critical points are isolated.
+Assume that $v\in T_pM$ is degenerate direction of $f$ at $p$, so that $\Hess_p(v,w)=0$ for any $w\in T_p M$.
+For example, let's identify $T_pM$ with $\R^n$ and take $v=e_1$ which is standard basis of $\R^n$, and other basis by $e_j$.
+It means that $\pp^2_{1j}f(0)=0$ for any $j$, and one can expect that for small $\ep>0$, $\pp_jf(\pm\ep e_1)=0$, i.e. $\pm\ep e_1$ is also a critical point of $f$.
+The situation is illustrated in Figure 4.
+We want to avoid such situation, since in this case even $\Hess_p(f)$ cannot catch the behavior of $f$ near $p$, as the reason we used Hessian instead of $d_pf$.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{figure4.jpg}
+		\caption{Degenerate critical points}
+\end{figure}
+
+There is an existence theorem for Morse function, so we don't have to concern about the degeneracy of our functions for now.
+	\begin{theorem}\rm
+	On any manifold $M$, there exists a Morse function $f$.
+	Moreover, Morse functions are generic; the set of Morse functions is open dense subset in $C^\infty(M,\R)$ under appropriate topology.
+	\end{theorem}
+		\begin{proof}
+		See Section 6 of \cite{m1}, or Theorem 2.7 of \cite{m2}.
+		\end{proof}
+
+\subsection{Morse Lemma and Cell Decomposition}
+
+Here's a basic lemma which describes our observation in the previous sections clearly.
+	\begin{lemma}[Morse Lemma]\rm
+	Let $f:M\to\R$ be Morse, and $M^c:=f^{-1}(-\infty,c]$.
+	\begin{enumerate}
+	\item If there's no critical value between $a$ and $b$, $M^a$ and $M^b$ are diffeomorphic.
+	\item Let $p\in\Crit(f)$, $\Ind(p,f)=k$.
+	Moreover, assume that there's no critical point other than $p$ in the set $f^{-1}[c-\ep,c+\ep]$.
+	Then $M^{c+\ep}$ has homotopy type of $M^{c-\ep}$ with a $k$-cell attached.
+	\end{enumerate}
+	\end{lemma}
+		\begin{proof}[Sketch of Proof]
+		1. Let $a<b$.
+		Consider the \emph{gradient vector field} $\grad f$ defined by $f$ at the boundary of $M^a$, which is $f^{-1}(a)$.
+		Such vector field is defined by an equation
+			$$\il\grad f,Y\ir=df(Y)=Y(f)$$
+		where $\il-,-\ir$ is some Riemannian metric on $M$.
+		Since $f$ is increasing, $\grad f$ is outward at the boundary.
+		Also, $\grad f$ is nonvanishing on $f^{-1}[a,b]$, since $\grad f(p)=0$ iff $d_p f=0$.
+		The integral flow of $\grad f$ defines desired diffeomorphism.
+		In fact, this is a deformation retraction.
+		
+		2. Let $\Ind(p)=k$.
+		We can take chart near $p$, say $(x_1,\cdots,x_n)$, on which $f$ is represented by
+			$$f(x_1,\cdots,x_n)=c-x_1^2-\cdots-x_k^2+x_{k+1}^2+\cdots+x_n^2.$$
+		This means, if we consider $f$ as a height function, there are $k$ directions which go downward and $(n-k)$ directions which go upward near $p$.
+		Figure 5 is the illustration of such picture in 2-dimensional case.
+		
+		We can ignore the upward directions, since they do not touch the manifold $M^{c-\ep}$ and thus can be homotoped out.
+		So we only need to consider the downward direction, which are attached to $M^{c-\ep}$, and has dimension $k$.
+		Intuitively, the chart described above is a $k$-cell attached to $M^{c-\ep}$.
+		For detailed proof, see Theorem 3.2 of \cite{m1}.
+		\end{proof}
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figure5.jpg}
+		\caption{Critical points of index 0,1,2 in dimension 2}
+\end{figure}
+
+This is simple but powerful result, which is at the heart of Morse theory.
+Note that even if there are many critical points with same critical value, the cell-attaching argument of the above lemma is still valid since the process is local and our critical points are assumed to be discrete.
+Here's a direct consequence of above results.
+	\begin{corollary}\rm
+	Every smooth manifold is homotopy equivalent to some CW complex.
+	\end{corollary}
+
+Here's a familiar example which could be computed explicitly.
+	\begin{example}[Morse Function of Complex Projective Space]\rm
+	Let $M=\CP^n$, a $n$-dimensional complex projective space.
+	Our convention is $\CP^n=S^{2n+1}/\CC^*$ where $S^{2n+1}\subset\CC^{n+1}$, so we can use all coordinates normalized.
+		$$\CP^n=\left\{[z_0,\cdots,z_n]:\sum |z_i|^2=1\right\}.$$
+	Now define Morse function $f$ on $\CP^n$ by
+		$$f([z_0,\cdots,z_n])=\sum i|z_i|^2.$$
+	This is well-defined, since the other choices of $[z_0,\cdots,z_n]$ are $[cz_0,\cdots,cz_n]$ where $c\in S^1\subset\CC$.
+	Use the standard coordinate chart
+		$$\begin{aligned}
+		U_j=\{[z]\in\CP^n:z_j\neq0\}&\simeq \CC^n=\{(w_0,\cdots,0,\cdots,w_n)\}\subset\CC^{n+1},\\
+			[z_0,\cdots,z_n]&\mapsto \left(\frac{z_0}{z_j},\cdots,\frac{\hat{z}_j}{z_j},\cdots,\frac{z_n}{z_j}\right)
+			\end{aligned}$$
+	Here $\hat{z}$ means the coordinate is zero.
+	In this chart, we can find $|z_j|^2$ since $1+\sum_{i\neq j}|w_i|^2=(\sum|z_i|^2)/|z_j|^2=1/|z_j|^2$, i.e. $|z_j|^2=1/(1+\sum_{i\neq j}|w_i|^2)$.
+	Now our $f$ has the form
+		$$\begin{aligned}
+		f(w_0,\cdots,w_n)&=\sum i|z_i|^2=\left(j+\sum_{i\neq j} i|w_i|^2\right)|z_j|^2\\
+			&=\frac{j+\sum_{i\neq j} i|w_i|^2}{1+\sum_{i\neq j}|w_i|^2}.
+			\end{aligned}$$
+	Using $\pp/\pp w_k$, we can find that
+		$$\begin{aligned}
+		\frac{\pp f}{\pp w_k}&=\frac{k\bar{w}_k(1+\sum|w_i|^2)-(j+\sum i|w_i|^2)\bar{w}_k}{(1+\sum|w_i|^2)^2}\\
+			&=\frac{\bar{w}_k((k-j)+\sum(k-i)|w_i|^2)}{(1+\sum|w_i|^2)^2}
+			\end{aligned}$$
+	and similar for $\pp f/\pp \bar{w}_k$.
+	Now it's straightforward that the origin is unique critical point of $f$ in $U_j$.
+	
+	By taking Hessian of the function and put the origin in it, it turns out that every term is zero except
+		$$\frac{\pp^2 f}{\pp w_k\pp \bar{w}_k}=k-j.$$
+	It means that, the Hessian is negative definite on the subspace of $T_0U_j$ generated by $\pp/\pp w_k,\pp/\pp \bar{w}_k$ if $k<j$.
+	Thus we find that $\Ind(0,f)=2j$ where $0\in U_j$.
+	
+	We have coordinate charts $U_0,\cdots,U_n$ for $\CP^n$.
+	Denote the corresponding points of $\CP^n$ to the origin of $U_j$ by $p_0,\cdots,p_n$.
+	Such $p_j$'s are only critical points of $f$, and $\Ind(p_j)=2j$.
+	Now we can see that there are one $2j$-cell for each $j=0,\cdots,n$, which corresponds to the well-known CW structure of $\CP^n$; one cell in each even dimension.
+	\end{example}
+
+\subsection{Morse Inequalities}
+
+We introduce a direct consequence of our analysis on the Morse functions.
+First, it's a well-known fact that we can make our Morse function \textbf{self-indexing} by perturbing a bit, so that for each $p\in\Crit(f)$, $f(p)=\Ind(p,f)$.
+See Lemma 2.8. of \cite{m2} for some discussion.
+If we take self-indexing Morse function, it's convenient to write out its cell structure.
+For example, let $k\in\Z_{\geq0}$ and consider self-indexing Morse function $f:M\to\R$.
+Again, denote $M^c=f^{-1}(-\infty,c]$.
+Then our Lemma 1.3. tells us that $M^{k+1/2}$ is homotopy equivalent to $M^{k-1/2}$ with $k$-cells attached, and the number of $k$-cells is equal to the number of critical points of index $k$.
+If we denote
+	$$C_k=C_k(f,M):=\#\{p\in\Crit(f):\Ind(p,f)=k\},$$
+then we have following.
+	$$H_k(M^{k+1/2},M^{k-1/2})\simeq H_k(\cup_{C_k} e^k,\cup_{C_k}\dot{e}^k;\Z)\simeq\Z^{\oplus C_k}.$$
+The first isomorphism is induced by excision of homology.
+
+$M^{k+1/2}$ is $k$-skeleton of $M$, and thus $H_k(M^{k+1/2},M^{k-1/2})$ are the chain groups of cellular homology of $M$, and we know that it is isomorphic to the singular homology.
+Let $b_k(M):=\mathrm{rank}H_k(M)$ be the \textbf{$k$-th Betti number of $M$}.
+Then $\chi(M):=\sum(-1)^kb_k(M)$ is \textbf{Euler characteristic of $M$}.
+From the above, we have following.
+	\begin{proposition}[Weak Morse Inequality]\rm
+	$$b_k(M)\leq C_k(f,M),\,\,\,\,\,\sum (-1)^kC_k(f,M)=\chi(M).$$
+	\end{proposition}
+Notice that the number $C_k$ depends on the choice of a Morse function $f$.
+It means that the topology of $M$ gives the lower bound of the number of critical points of $f$, \emph{assumed that $f$ is a Morse function}.
+(If $f$ is not Morse, this bound might not hold.)
+
+For stronger result, we need some algebraic notions.
+We call function $S$ assigns a pair of topological spaces $(X,Y)$ (that is, $Y\subset X$) to $\Z$ is \textbf{subadditive} if for $Z\subset Y\subset X$,
+	$$S(X,Z)\leq S(X,Y)+S(Y,Z).$$
+If the equality holds, we say $S$ is \textbf{additive}.
+For example, our Betti number $b_k(X,Y)=\mathrm{rank}H_k(X,Y)$ is subadditive and $\chi(X,Y)=\sum(-1)^kb_k(X,Y)$ is additive.
+One can easily check by induction that if a function $S$ is subadditive and $X_0\subset\cdots\subset X_n$, then $S(X_n,X_0)\leq\sum S(X_i,X_{i-1})$.
+
+	\begin{lemma}\rm
+	Define $S_k$ by following, then $S_k$ is subadditive.
+		$$S_k(X,Y)=\sum(-1)^ib_{k-i}(X,Y)=b_k(X,Y)-b_{k-1}(X,Y)+\cdots\pm b_0(X,Y).$$
+	\end{lemma}
+		\begin{proof}
+		Consider the long exact sequence of triple $(X,Y,Z)$,
+			$$\begin{tikzcd}
+			\cdots\ar[r]&	H_{k+1}(X,Z)\ar[r]&	H_{k+1}(X,Y)\ar[r,"\pp"]&	H_k(Y,Z)\ar[r]&\cdots\ar[r]&0.
+			\end{tikzcd}$$
+		By exactness, we have
+			$$
+			\rank\pp=b_k(Y,Z)-b_k(X,Z)+b_k(X,Y)-b_{k-1}(Y,Z)+\cdots\pm b_0(X,Y)\geq0.
+			$$
+		Collecting terms by pair, we have desired result.
+		\end{proof}
+
+Now we apply this lemma to get the Morse inequality.
+	\begin{theorem}[Morse Inequality]\rm
+	For any $k$, we have
+		$$b_k(M)-b_{k-1}(M)+\cdots\pm b_0(M)\leq C_k(f)-C_{k-1}(f)+\cdots\pm C_0(f).$$
+	\end{theorem}
+		\begin{proof}
+		From $S_k$ we've defined above, we have
+			$$S_k(M)\leq\sum_{i=1}^kS_k(M^{i+1/2},M^{i-1/2})=C_k-C_{k-1}+\cdots\pm C_0.$$
+		The result follows.
+		\end{proof}
+From the above inequality, we can easily deduce the following.
+	\begin{corollary}\rm
+	Let $f:M\to\R$ be a Morse function.
+	\begin{enumerate}
+	\item If $C_k=0$, then $b_k=0$.
+	\item If $C_{k+1}=C_{k-1}=0$, then $C_k=b_k$.
+	\end{enumerate}
+	\end{corollary}
+
+Finally, we note the most trivial inequality which can be deduced directly from the fact that $\Crit(f)$ corresponds to the $k$-cells in $M$.
+	\begin{theorem}\rm
+	$\Crit(f)\geq\sum\rank H_k(M)$.
+	\end{theorem}
+This is rather easy to see, but it generalizes to the famous conjecture of Arnold.
+	
+	\begin{conjecture}[Arnold, now is a theorem]\rm
+	Let $M$ be a compact symplectic manifold and $H:M\times\R\to\R$ be a time-dependent Hamiltonian, whose period 1 orbits are all nondegenerate.
+	Denote $\mathcal{O}(H)$ for such orbits, then
+		$$\#\mathcal{O}(H)\geq\sum\rank H_k(M).$$
+	\end{conjecture}
+Let's just ignore the complicated notions in the statement for now.
+The Hamiltonian orbits, which is a periodic trajectory of some vector field $X_H$ generated by $H$, can be viewed as a critical point of \emph{action functional} defined on the loop space of $M$.
+If $H$ is \emph{$C^2$-small} Hamiltonian, then we can show that there is no time-dependent periodic orbit of $X_H$.
+Time-independent orbit of $X_H$ corresponds to the critical point of $H$, so it means that $\mathcal{O}(H)=\Crit(H)$.
+Then the problem degenerates into the last inequality.
+However, we cannot solve the problem if $H$ is large for now, even if we understand every notion in the statement clearly.
+This is the starting point of \emph{Floer theory}.
+
+
+\newpage
+\section{Morse Homology}
+In this section, we introduce the construction of Morse complex with $\Z/2\Z$-coefficient, and define the Morse homology.
+The theory might be rather easy to understand, but the underlying idea is very important and useful.
+The main idea is following.
+	\begin{enumerate}
+	\item Generate the chain groups with critical points of $f$.
+	\item Assign Morse index for each chain, so that $CM_*$ becomes a graded module.
+	\item Define $\pp$ by counting \emph{Morse trajectories} connecting two critical points.
+	\item Show that $\pp^2=0$, and get homology.
+	\end{enumerate}
+The Morse homology can be seen as finite dimensional prototype for many complicated homology theory, for example \emph{Floer homology}.
+The main reference for this section is Section 2,3 of \cite{ad}.
+
+
+\subsection{Stable and Unstable Manifolds}
+From now, we assume that $M$ is closed.
+Let $f:M\to\R$ be a Morse function and $\Fl^t_{-\grad f}(p)=\vp^t(p)$ be the negative gradient flowline.
+(This convention of sign is traditional, I guess.)
+We define \textbf{stable manifolds} and \textbf{unstable manifolds} as follows.
+Let $p\in\Crit(f)$.
+	$$\begin{aligned}
+	W^s(p)&=\left\{q\in M:\lim_{t\to\infty}\vp^t(q)=p\right\},\\
+	W^u(p)&=\left\{q\in M:\lim_{t\to-\infty}\vp^t(q)=p\right\}.
+	\end{aligned}$$
+If $q\in W^s(p)$, then the flowline through $q$ tends to go into $p$, while if $q\in W^u(p)$, the flowline tends to escape from $p$.
+This explains the names, stable and unstable.
+It's natural to expect that for any $q$, $\vp^t(q)$ tends to a critical point, at least when $M$ is closed.
+See Proposition 2.1.6 of \cite{ad} for detailed proof.
+Figure 6 illustrates the stable and unstable manifolds of Morse heart.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figure6.jpg}
+		\caption{(Intersections of) Stable and unstable manifolds of Morse heart}
+\end{figure}
+
+	\begin{remark}\rm
+	If $M$ is not closed, there are two cases come in mind such that $\vp^t(q)$ does not converge.
+	First, consider the height function on a half-infinite cylinder with end homeomorphic to a hemisphere.
+	Then $\vp^t(q)$ can escape to infinity.
+	Secondly, consider the manifold with boundary, for example a torus with a disk cut out.
+	Then $\vp^t(q)$ cannot be extended to $t>T$, for some large $T$.
+	So it's better to assume that $M$ is closed.
+	\end{remark}
+	
+In fact, these are the \emph{cells} which we attached.
+	\begin{proposition}\rm
+	$W^u(p)$, $W^s(p)$ are submanifolds of $M$ diffeomorphic to open disks.
+	Moreover, we have
+		$$\dim W^u(p)=\codim W^s(p)=\Ind(p).$$
+	\end{proposition}
+		\begin{proof}[Sketch of Proof]
+		Take the chart near $p$ which we've taken in the proof of Lemma 1.3, so that
+			$$f(x_1,\cdots,x_n)=c-x_1^2-\cdots-x_k^2+x_{k+1}^2+\cdots+x_n^2.$$
+		Then we can see that if $q=(x_1,\cdots,x_k,0,\cdots,0)$, then the \emph{negative} gradient flowline will tend to $p$ as $t\to-\infty$.
+		Conversely, if $q=(0,\cdots,0,x_{k+1},\cdots,x_n)$, then the negative gradient flowline will tend to $p$ as $t\to\infty$.
+		See Proposition 2.1.5 of \cite{ad} for details.
+		\end{proof}
+
+\subsection{Space of Trajectories $\M(p_+,p_-)$}
+
+We're interested in the intersections of stable and unstable manifolds.
+Setwise, we have
+	$$W^u(p_+)\cap W^s(p_-)=\left\{p\in M:\lim_{t\to\pm\infty}\vp^s(p)=p_{\pm}\right\}.$$
+As in the Morse heart figure, we can see this as an image of trajectories \emph{connecting} $p_+$ and $p_-$.
+Recall the properties of $\grad f$. That is,
+	\begin{enumerate}
+	\item $\grad f(p)=0$ iff $p\in\Crit(f)$.
+	\item $f$ decreases along the flowline of $-\grad f$, i.e. for $\Fl^t_{-\grad f}=\vp^t$,
+		$$\frac{d}{dt}(f\circ\vp^t(p))=-||\grad f(\vp^t(p))||^2<0.$$
+	\end{enumerate}
+Here, $\Fl^t_X(p)$ is the integral curve of $X$ starting at $p$, i.e. it solves a differential equation
+	$$\frac{d\Fl^t_X}{dt}=X(\Fl^t_X(p)),\,\,\Fl^0_X(p)=p.$$
+The negative gradient flowlines are enough for previous results, but they are not from now.
+We want the intersection $W^u(p_+)\cap W^s(p_-)$ to be a smooth manifold, and it's sufficient to assume that $W^u(p_+)$ and $W^s(p_-)$ intersect transversally.
+But might not be the case for the gradient flowlines.
+
+To avoid this problem, we define \textbf{Smale condition} on a vector field.
+A vector field $X$ satiesfies Smale condition for $f$ if
+	\begin{itemize}
+	\item $X$ is \textbf{pseudo-gradient}, i.e. $X$ satisfies two properties of negative gradient vector field stated above and $X=-\grad f$ near the critical points.
+	\item Define $W^u_X$ and $W^s_X$ by replacing $\vp^t$ to $\Fl^t_X$.
+	Then $W^u_X(p_+)\tcap W^s_X(p_-)$ for any $p_\pm\in\Crit(f)$.
+	\end{itemize}
+We have an existence theorem for Smale vector field.
+	\begin{theorem}[Smale]\rm
+	For any Morse function $f$, there exists a Smale vector field $X$ of $f$ which is $C^1$-close to $-\grad f$.
+	\end{theorem}
+		\begin{proof}
+		See Theorem 2.2.5 of \cite{ad}.
+		\end{proof}
+By definition, we have following observation, which would be critical to define the differential of Morse complex.
+	\begin{proposition}\rm
+	If $X$ is Smale, $W^u_X(p_+)\cap W^s_X(p_-)$ is a smooth submanifold of $M$ of dimension $\Ind(p_+)-\Ind(p_-)$.
+	\end{proposition}
+		\begin{proof}
+		If $N_1,N_2$ are transversely intersecting submanifolds of $M$, we have a standard formula
+			$$\codim N_1\cap N_2=\codim N_1+\codim N_2.$$
+		Thus we have
+			$$\codim W^u_X(p_+)\cap W^s_X(p_-)=\codim W^u_X(p_+)+\codim W^s_X(p_-).$$
+		Since $\dim W^u_X(p_+)=\Ind(p_+,f)$ and $\codim W^s_X(p_-)=\Ind(p_-,f)$, we get the dimension formula.
+		\end{proof}
+
+Now assume that $X$ is Smale, and consider $W^u_X(p_+)\cap W^s_X(p_-)$.
+We have natural $\R$-action on this space, defined by
+	$$t\cdot q=\vp^t(q).$$
+One can easily check that this is free action (unless $p_+=p_-$), and therefore the quotient space of intersection by $\R$-action is also a manifold.
+We define the \textbf{moduli space of trajectories} by
+	$$\M(p_+,p_-)=W^u_X(p_+)\cap W^s_X(p_-)/\R.$$
+If $[p]=[q]$ in $\M(p_+,p_-)$, it means that $p,q$ lie on the same trajectory.
+Thus we can understand $\M(p_+,p_-)$ as a space of \emph{trajectories}, instead of a quotient of submanifold of $M$.
+
+	\begin{corollary}\rm
+	For $p_\pm\in\Crit(f)$, we have
+	\begin{itemize}
+	\item $\dim\M(p_+,p_-)=\Ind(p_+)-\Ind(p_-)-1$.
+	\item In particular, there's no trajectory from $p_+$ to $p_-$ if $\Ind(p_+)<\Ind(p_-)$.
+	It means that the Morse index decreases along the Morse trajectory.
+	\item If $\Ind(p_+)=\Ind(p_-)$, $\M(p_+,p_-)=\emptyset$ unless $p_+=p_-$.
+	In this case, $\M(p,p)=\{p\}$ where $p$ is the constant trajectory.
+	\end{itemize}
+	\end{corollary}
+
+	\begin{remark}\rm
+	In particular, we can see that the negative gradient of height function on $\T^2$ which we've given at the start of note is \emph{not} Smale, since there is a flowline between different critical points of index 1!
+	\end{remark}
+
+
+
+\subsection{Compactness of $\M(p_+,p_-)$}
+
+Since $\M(p_+,p_-)$ is a quotient of submanifold of $M$, there exists a natural topology equipped on $\M(p_+,p_-)$.
+Intuitively, this could be seen as a topology on the space of trajectories, which is a space of functions and rather hard to deal with.
+We'll not go into this topology deeply.
+Instead, we will discuss the compactification of $\M(p_+,p_-)$ intuitively.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{figure7.jpg}
+		\caption{Sequence of Morse trajectories converging to a broken trajectory}
+\end{figure}
+
+Let's see that Figure 7.
+This figure describes a behavior of a sequence of trajectories $(\gamma_n)$ connecting $p_2$ and $p_0$.
+Let's denote $\gamma=\lim_n\gamma_n$ for now.
+There is a sequence of real numbers, say $(t_n)$, such that $\lim_n\gamma_n(t_n)=p_1$.
+So one might, and should expect that $p_1$ is in the image of $\gamma$.
+But it cannot happen; once $\gamma$ touches $p_1$, then it would eternally stay at $p_1$.
+Thus one can see, at least visually, that the limit $\gamma$ is \emph{not} in $\M(p_2,p_0)$.
+
+To solve this problem, we introduce the notion of \textbf{broken trajectory}.
+Let $\gamma'\in\M(p_2,p_1)$, $\gamma''\in\M(p_1,p_0)$ be the trajectories in each space, marked in the figure.
+We call a pair $(\gamma',\gamma'')\in\M(p_2,p_1)\times\M(p_1,p_0)$ a broken trajectory, and consider this as a limit of sequence $(\gamma_n)$.
+
+In general, let $(\gamma_n)$ be a sequence in $\M(p_+,p_-)$.
+Even if $\gamma_n$ converge to the broken trajectory, we have a rule that index decreases along the Morse trajectory.
+Our candidate for the compactification of $\M(p_+,p_-)$ is following:
+	$$\overline{\M}(p,q)=\bigcup_{\Ind(p_i)>\Ind(p_{i+1})}\M(p_+,p_1)\times\cdots\times\M(p_l,p_-).$$
+Here, the union goes through all pairs of critical points $(p_1,\cdots,p_l)$ (with $l$ not fixed) such that $\Ind(p_+)>\Ind(p_1)>\cdots>\Ind(p_l)>\Ind(p_-)$.
+Of course, the empty pair gives original $\M(p_+,p_-)$.
+We say $(\gamma_n)$ in $\M(p_+,p_-)$ converges to $(\gamma^{(0)},\cdots,\gamma^{(r)})$ if there exists a real sequence $(t_n^{(i)})$ such that $\gamma_n(t+t_n^{(i)})$ converges to $\gamma^{(i)}(t)$ for each $i$.
+We have following results on the compactness of $\M(p_+,p_-)$.
+	\begin{theorem}\rm
+	Let $p_+,p_-\in\Crit(f)$.
+		\begin{enumerate}
+		\item $\overline{\M}(p_+,p_-)$ is compact.
+		\item If $\Ind(p_+)-\Ind(p_-)=1$, $\M(p_+,p_-)$ is compact 0-manifold, i.e. a finite set.
+		\item If $\Ind(p_+)-\Ind(p_-)=2$, $\M(p_+,p_-)$ is compact 1-manifold with boundary, i.e. a disjoint union of circles and closed intervals.
+		In particular, we have
+			$$\pp\overline{\M}(p_+,p_-)=\bigcup_{\Ind(p)=\Ind(p_+)-1}\M(p_+,p)\times\M(p,p_-).$$
+		\end{enumerate}
+	\end{theorem}
+For the proof, see Section 3.2 of \cite{ad}.
+
+
+\subsection{The Morse Complex $(CM_*(f),\pp_X)$}
+We are now ready to define the \textbf{Morse complex}.
+Let $CM_*(f)$ be $\Z/2\Z$-module generated by $\Crit(f)$.
+Assign each $p\in\Crit(f)$ an index $\Ind(p)$ as degree, so that $CM_*(f)$ becomes a graded $\Z/2\Z$-module.
+
+	\begin{note}\rm
+	We might assign orientation for each critical points and make $CM_*$ into $\Z$-module.
+	See Section 3.3 of \cite{ad} for the discussion.
+	\end{note}
+
+Let $m_X(p_+,p_-)=\#\M(p_+,p_-)$ if $\Ind(p_+)-\Ind(p_-)=1$.
+Since $\M(p_+,p_-)$ is a finite set in this case, we can count the number of elements.
+Define differential for each $p_+\in\Crit(f)$ as follows, and extend to whole module.
+	$$\pp_X(p_+)=\sum_{\Ind(p_-)=\Ind(p_+)-1}m_X(p_+,p_-)p_-.$$
+We're assuming that $M$ is closed, so there exists only finitely many critical points.
+Hence the sum in the definition is finite, so well-defined.
+Also, by definition, we see that $\pp_X$ is degree -1 map, i.e.
+	$$\pp_X:CM_*(f)\to CM_{*-1}(f).$$
+
+	\begin{theorem}\rm
+	$\pp_X^2=0$, i.e. $(CM_*(f),\pp_X)$ is a chain complex.
+	\end{theorem}
+		\begin{proof}
+		By definition, we have
+			$$\begin{aligned}
+			\pp_X^2(p)&=\pp_X\left(\sum_{\Ind(q)=\Ind(p)-1}m_X(p,q)q\right)\\
+				&=\sum_{\Ind(q)=\Ind(p)-1}\left(\sum_{\Ind(r)=\Ind(p)-1}m_X(p,q)m_X(q,r)r\right)
+				\end{aligned}$$
+		$m_X(p,q)m_X(q,r)$ is cardinality of $\M(p,q)\times\M(q,r)$.
+		For fixed $r$, from the result follows from 3. of Theorem 2.5.
+		we have that
+			$$\bigcup_q\M(p,q)\times\M(q,r)=\pp\M(p,r).$$
+		Moreover, $\M(p,r)$ is compact 1-manifold with boundary, so its boundary is even points.
+		It means that $\sum_qm_X(p,q)m_X(q,r)=0$ modulo 2.
+		Hence we get the result.
+		\end{proof}
+
+Hence we can define \textbf{Morse homology} by
+	$$HM_*(M;f,X)=\ker\pp_X/\mathrm{im}\pp_X.$$
+
+	\begin{note}\rm
+	In fact, $HM_*(M;f,X)$ is isomorphic to the singular homology of $M$.
+	The idea comes from Section 1 of this note.
+	A critical point of index $k$ correspond to $k$-cell, and the trajectory corresponds to the attaching map of $k$-cell to $(k-1)$-cells.
+	So it could be identified with cellular homology, which is isomorphic to the singular homology.
+	See Section 4.9 of \cite{ad} for the discussion.
+	\end{note}
+	
+	\begin{example}\rm
+	Let's see that Morse heart picture Figure 6 again.
+	We have $\Ind(p_3)=\Ind(p_2)=2$, $\Ind(p_1)=1$ and $\Ind(p_0)=0$.
+	Thus $CM_2=\Z/2\Z(p_3,p_2)$, $CM_1=\Z/2\Z(p_1)$ and $CM_0=\Z/2\Z(p_0)$.
+	Let's see the flowlines between the critical points with index difference 1.
+	We see that there is 2 from $p_1$ to $p_0$ and 1 from $p_3,p_2$ to $p_1$ each.
+	And there is no other one.
+	It means that,	 our chain complex is
+		$$\begin{tikzcd}
+		\Z/2\Z\oplus\Z/2\Z\ar[r,"(-)+(-)"]&\Z/2\Z\ar[r,"2(-)"]&\Z/2\Z
+		\end{tikzcd}$$
+	One can easily see that $HM_2(M)=\Z/2\Z$, $HM_1(M)=0$, $HM_0(M)=\Z/2\Z$.
+	\end{example}
+
+\subsection{Independence of $HM_*$}
+In this subsection, we will see that $HM_*$ is independent of the choice of a Morse function $f$ and the choice of Smale vector field $X$.
+The idea is originally from Floer, and detailed proof is in Section 3.4 of \cite{ad}.
+
+Let's call the pair $(f,X)$ of a Morse function $f$ and a Smale vector field $X$ a \emph{Morse pair} (which is not standard notion).
+Let $(f_0,X_0)$ and $(f_1,X_1)$ be Morse pairs.
+
+	\begin{theorem}\rm
+	$HM_*(f_0,X_0)$ and $HM_*(f_1,X_1)$ are isomorphic.
+	\end{theorem}
+
+For this, we have several steps.
+
+	\begin{enumerate}
+	\item Choose a function $F:M\times[0,1]\to\R$ such that $F(-,t)=f_0$ for $0\leq t<\ep$, and $F(-,1)=f_1$ for $1-\ep<t\leq 1$.
+	It's known that such $F$ could be chosen as a Morse function on $M\times[0,1]$.
+	We call this \textbf{homotopy} from $f_0$ to $f_1$.
+	\item Define a chain map with such $F$,
+		$$\Phi^F:(CM_*(f_0),X_0)\to(CM_*(f_1),X_1)$$
+	so that $\Phi^F$ induces a map on homology level.
+	\item For $\tilde{f}:M\times[0,1]\to\R$ such that $\tilde{f}(x,t)=f(x)$ for any $t$, $\Phi^{\tilde{f}}=\Id_{CM_*(f)}$.
+	\item For homotopy $G$ from $f_1$ to $f_2$ and $H$ from $f_0$ to $f_2$, we have
+		$$(\Phi^G\circ\Phi^F)_*=\Phi^H_*$$
+	Here, $\Phi^F_*$ is induced map on homology.
+	\end{enumerate}
+If these are shown, then the result easily follows.
+As $F^{-1}$ defined by $F^{-1}(-,t)=F(-,1-t)$ is homotopy from $f_1$ to $f_0$, and $\tilde{f}$ is homotopy from $f_0$ to $f_1$, we have from 3 and 4 that
+	$$\Phi^{F^{-1}}_*\circ\Phi^{F}_*=\Phi^{\tilde{f_0}}_*=\Id$$
+and similar result in the opposite direction.
+It means that $\Phi^F_*$ is isomorphism on homology, which gives us desired result.
+
+\begin{proof}[Sketch of Proof]
+(See Section 3.4. of \cite{ad}.)
+First, we can add some function $g:\R\to\R$ which has $0$ as local maximum and $1$ as local minimum to the extended $F:M\times[-1,2]\to\R$, so that for $F=F+g$,
+	$$\Crit(F)=\Crit(f_0)\times\{0\}\cup\Crit(f_1)\times\{1\}.$$
+Here, $g$ controls the ill-bahavior of $F$ between 0 and 1, which cannot be predicted.
+We build a Morse complex with $M\times[-1,2]$ and $F$.
+We can see that $\Ind((p,0),F)=\Ind(p,f_0)+1$ and $\Ind((p,1),F)=\Ind(p,f_1)$.
+It means that 
+	$$CM_{k+1}(F)=CM_k(f_0)\oplus CM_{k+1}(f_1).$$
+Choose nice $X$ on $M\times[-1,2]$ so that $(F,X)$ becomes a Morse pair.
+Our Morse differential becomes
+	$$\pp_X:CM_k(f_0)\oplus CM_{k+1}(f_1)\to CM_{k-1}(f_0)\oplus CM_k(f_1).$$
+In matrix form, we have
+	$$\pp_X=\left(\begin{array}{cc}
+		\pp_{X_0}&	0\\
+		\Phi^F&	\pp_{X_1}
+		\end{array}\right)$$
+The (1,2)-term is zero because of index difference, and $\Phi^F$ is given by
+	$$\begin{aligned}
+	\Phi^F:CM_k(f_0)&\to CM_k(f_1)\\
+		p&\mapsto \sum_{q\in CM_k(f_1)}m_X(p,q)q
+		\end{aligned}$$
+where $m_X(p,q)=\#\bar{\M}(p,q)$ is number of trajectories in $M\times[-1,2]$ connecting $p$ and $q$.
+Since $\pp_X^2=0$, we have
+	$$\Phi^F\circ\pp_{X_0}+\pp_{X_1}\circ\Phi^F=0,$$
+i.e. $\Phi^F$ is a chain map.
+With this definition, one can easily show that $\Phi^{\tilde{f}}=\Id$.
+
+Similarly, we can make $K:M\times[-1,2]\times[-1,2]\to\R$ which connects $F,G$ and $H$, and
+	$$\begin{aligned}
+	\Crit(K)&=\Crit(f_0)\times\{(0,0)\}\cup\Crit(f_1)\times\{(1,0)\}\\
+			&\cup\Crit(f_2)\times\{(0,1)\}\cup\Crit(f_2)\times\{(1,1)\}
+			\end{aligned}$$
+where the indices are given by
+	$$\begin{aligned}
+	\Ind((p,0,0),K)&=\Ind(p,f_0)+2,\\
+	\Ind((p,1,0),K)&=\Ind(p,f_1)+1,\\
+	\Ind((p,0,1),K)&=\Ind(p,f_2)+1,\\
+	\Ind((p,1,1),K)&=\Ind(p,f_2).
+	\end{aligned}$$
+It means $CM_{k+1}(K)=CM_{k-1}(f_0)\oplus CM_k(f_1)\oplus CM_k(f_2)\oplus CM_{k+1}(f_2)$, and with appropriate choice of $X$ we have
+	$$\pp_X=\left(\begin{array}{cccc}
+		\pp_{X_0}&0&0&0\\
+		\Phi^F&\pp_{X_1}&0&0\\
+		\Phi^H&0&\pp_{X_2}&0\\
+		S&\Phi^G&\Id&\pp_{X_2}
+		\end{array}\right)$$
+Again, by $\pp_X^2=0$, we have that
+	$$\Phi^G\circ\Phi^F+\Phi^H+S\circ\pp_{X_0}+\pp_{X_2}\circ S=0.$$
+Thus, the map $S$ is a chain homotopy between $\Phi^G\circ\Phi^F$ and $\Phi^H$.
+\end{proof}
+Considering $F$ as a Morse function on $M\times[0,1]$ is the main point of the proof.
+With this point of view, the Morse differential gives us chain map with desired properties.
+This idea apply almost similarly with some difference in technical details in the parallel statement for Floer homology.
+
+
+\newpage
+\section{The Energy Functional on Path Spaces}
+
+In this section, we introduce the infinite dimensional analogy of Morse theory.
+The manifold $M$ will be replaced by its path space $\PM$ or loop space $\Om M$, and the Morse function would be given by \emph{energy functional}.
+Even though there are many technical difficulties, the idea of Morse theory still can be applied.
+The main reference for this section is Part III of \cite{m1}.\\
+\,\,\\
+\textbf{Remark.}
+Honestly, I realized that this section is nothing more than a summary of Part III of \cite{m1} after the writing is done.
+Please understand me, since John Milnor is the best writer who I know in mathematics.
+
+\subsection{Differentiation on the Path Spaces}
+
+Let $p,q\in M$.
+Define the \textbf{path space} of $M$ connecting $p,q$ by
+	$$\PM(p,q)=\PM:=\left\{\gamma:[0,1]\to M\,|\,\gamma(0)=p,\gamma(1)=q,\gamma\text{ is piecewise smooth}\right\}$$
+The \textbf{loop space} based on $p$ is $\Om M(p)=\Om M:=\PM(p,p)$.
+One might mind defining such space with \emph{piecewise} smooth curves, but we have enough reason to do so.
+We can give smooth structure on $\PM$, but we'll not go into it.
+Instead, we just see how to \emph{differentiate} the functions on $\PM$.
+
+First, let $f:M\to\R$.
+Recall that, on smooth manifolds, we defined \emph{directional derivative} at $p\in M$ by taking a path $\alpha:(-\ep,\ep)\to M$ such that $\alpha(0)=p$, $\dot{\alpha}(0)=v$ and define
+	$$d_pf(v)=\left.\frac{d}{dt}\right|_{0}f\circ\alpha(t).$$
+Here, $v$ is tangent vector and it could be defined as an equivalence class (germ) of paths at $p$.
+
+The same thing works in infinite dimension.
+Let $\alpha:(-\ep,\ep)\to\PM$ be a path such that $\alpha(0)=\g$, $d\alpha/ds(0)=X$.
+Here, $\alpha$ could also be seen as a function
+	$$\begin{aligned}
+	\alpha:(-\ep,\ep)\times[0,1]&\to M\\
+			(s,t)&\mapsto \alpha(s)(t)
+			\end{aligned}$$
+where $\alpha(0,t)=\g(t)$ and $\alpha(s,0)=p$, $\alpha(s,1)=q$ for any $s$.
+We call such $\alpha$ \textbf{variation} of $\g$.
+Our tangent vector $X=X_t$ is vector field along $\g$ which vanishes at the endpoints, since we have that
+	$$\left.\frac{d}{ds}\right|_{0}\alpha(s,t)\in T_{\g(t)}M.$$
+Hence, we might define $T_\g\PM$ as a space of piecewise smooth vector fields along $\g$.
+Figure 8 explains that why this definition makes sense.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figure8.jpg}
+		\caption{Analogy of tangent spaces of $M$ and $\PM$}
+\end{figure}
+
+Now let $F:\PM\to\R$ be a functional.
+(Functional is nothing but a function on the infinite dimensional space.)
+Then we define the differential by
+	$$d_pF(X)=\left.\frac{d}{ds}\right|_{0}F\circ\alpha(0,s).$$
+As before, we call $\g$ is \textbf{critical path} of $F$ if $d_pF(X)=0$ for any $X\in T_\g\PM$.
+Of course, we cannot say $d_pF(X)$ is defined for every $F$, but the functional we will use is differentiable.
+
+\subsection{Critical Points of Energy Functional $E$ : Geodesics}
+
+From now, we assume that $M$ is a closed $n$-manifold.
+Equip a Riemannian metric $\il-,-\ir$ on $M$.
+Then we can define \textbf{energy functional} for $\g\in\PM$
+	$$E(\g)=\frac{1}{2}\int_0^1\il\dot{\g},\dot{\g}\ir dt.$$
+We can easily check that $E:\PM\to\R$, $E(\g)\geq0$ and $E(\g)=0$ iff $\g$ is a constant path.
+The critical points of $E$ would be interesting for us, as we'll see.
+The factor 1/2 is traditional; it came from the notion of \emph{kinetic energy} in the physics.
+It also makes our formulas look better, except the next one.
+
+Define \textbf{length functional} $L:\PM\to\R$ by
+	$$L(\g)=\int_0^1\il\dot{\g},\dot{\g}\ir^{1/2}dt.$$
+By Schwarz inequality, we have
+	$$L(\g)^2\leq \int_0^1dt\cdot\int_0^1\il\dot{\g},\dot{\g}\ir dt=2E(\g)$$
+and the equality holds iff $\il\dot{\g},\dot{\g}\ir$ is constant, i.e. $\g$ has constant speed.
+
+We say $\g$ is a \textbf{geodesic} if it is smooth and has constant speed.
+We can show that if $\g$ is a geodesic, then it's locally length-minimizing; for small $\ep>0$, we have $L(\g|_{[0,\ep]})=d(\g(0),\g(\ep))$.
+If $\g$ is globally length-minimizing, we call $\g$ \textbf{minimizing geodesic}.
+Now assume that $\g'$ is a minimizing geodesic from $p$ to $q$.
+Then we have
+	$$2E(\g')=L(\g')^2\leq L(\g)^2\leq 2E(\g).$$
+We can easily see that $L(\g')=L(\g)$ iff $\g$ is also a (re-parametrized) minimizing geodesic and $L(\g)^2=2E(\g)$ iff $\g$ has a constant speed.
+Thus we have following.
+	\begin{lemma}\rm
+	The minimizing geodesic $\g$ from $p$ to $q$ is a minimum point of $E$ on $\PM(p,q)$.
+	The corresponding minimum value is $d(p,q)^2/2$.
+	\end{lemma}
+
+We can expect that the minimizing geodesics are actually a critical path of $E$, and it is actually true.
+In fact, not only minimizing geodesics but also any geodesics are the critical paths of $E$.
+	\begin{theorem}[First Variation Formula]\rm
+	Let $X\in T_\g\PM$, and define for non-smooth point $t$ of $\g$, $\Delta_t\dot{\g}=\dot{\g}(t+)-\dot{\g}(t-)$.
+	Then,
+		$$d_\g E(X)=-\sum_t\il X_t,\Delta_t\dot{\g}\ir-\int_0^1\il X_t,\ddot{\g}(t)\ir dt.$$
+	\end{theorem}
+		One can (and might have been) find similar statement in elementary differential geometry books.
+		\begin{proof}
+		Let $\alpha$ be a variation related to $X$. Then,
+			$$\begin{aligned}
+			\frac{dE(\alpha(s,t))}{ds}
+				&=\frac{d}{ds}\left(\frac{1}{2}\int_0^1\left\il\frac{\pp\alpha}{\pp t},\frac{\pp\alpha}{\pp t}\right\ir dt\right)\\
+				&=\int_0^1\left\il \frac{\pp}{\pp s}\frac{\pp\alpha}{\pp t},\frac{\pp\alpha}{\pp t}\right\ir dt\\
+				&=\int_0^1\left\il \frac{\pp}{\pp t}\frac{\pp\alpha}{\pp s},\frac{\pp\alpha}{\pp t}\right\ir dt\\
+				&=\int_0^1\frac{\pp}{\pp t}\left\il \frac{\pp\alpha}{\pp s},\frac{\pp\alpha}{\pp t}\right\ir dt
+				- \int_0^1\left\il \frac{\pp\alpha}{\pp s},\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt\\
+				&=\sum_{i}\left\il\frac{\pp \alpha}{\pp s},\frac{\pp \alpha}{\pp t}\right\ir^{t_i-}_{t_{i+1}+}
+			-\int^{1}_{0}\left\il \frac{\pp\alpha}{\pp s},\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir\\
+				&=-\sum_i\left\il\frac{\pp\alpha}{\pp s},\Delta_{t_i}\frac{\pp\alpha}{\pp t}\right\ir-\int_0^1\left\il\frac{\pp\alpha}{\pp u},\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt.
+				\end{aligned}$$
+		where $t_1,\cdots,t_k$ be the non-smooth points of $\g$.
+		Put $s=0$ to get the formula in the statement.
+		\end{proof}
+This formula characterizes the critical points of $E$ completely. Recall that $\g$ is critical path of $E$ iff $d_\g E(X)=0$ for any $X$.
+If $\g$ is a critical path, one must have $\Delta_t\dot{\g}=0$ for any $t$.
+It means that $\dot{\g}$ has no discontinuity, hence $\g$ is smooth.
+Also, one must have $\ddot{\g}=0$, i.e. $\g$ has constant speed.
+In short, we have following.
+	\begin{corollary}\rm
+	$\Crit(E)$ is a set of geodesics.
+	\end{corollary}
+
+	\begin{note}\rm
+	Such method is often called \emph{calculus of variation}.
+It's very useful, for example one can deduce the celebrated \emph{Euler-Lagrange equation}
+	$$\frac{d}{dt}\frac{\pp \mathcal{L}}{\pp \dot{x}}=\frac{\pp \mathcal{L}}{\pp x}$$
+exactly in the same way.
+	\end{note}
+
+	\begin{remark}\rm
+	In the proof, we didn't use the exact terminology of differentiation on manifolds.
+	That is, we need to use covariant derivative (which is usually denoted by $D/ds$, etc.) to differentiate the things on manifolds.
+	What we wrote down is rather a local form.
+	I hope this would be enough to understand the idea.
+	\end{remark}
+
+
+
+\subsection{Hessian of $E$ : Second Variation Formula}
+Since we've found the critical points of $E$, we have to see the Hessian of $E$ at the geodesics $\g$ to apply our Morse theory on $(\PM,E)$.
+As before, we can define the second derivative of $E$ on $\PM$ by using \emph{two-dimensional variation}.
+Let $X,Y\in T_\g\PM$, i.e. vector fields along $\g$, and
+$\alpha:(-\ep,\ep)\times(-\ep,\ep)\times[0,1]\to\PM$ be a function such that
+	$$\alpha(0,0,t)=\g(t),\,\,\frac{\pp\alpha}{\pp s_1}(0,0,t)=X_t,\,\,\frac{\pp\alpha}{\pp s_2}(0,0,t)=Y_t,\,\,$$
+and preseves the endpoints, i.e. $\alpha(s_1,s_2,0)=p$, $\alpha(s_1,s_2,1)=q$ for any $(s_1,s_2)\in(-\ep,\ep)\times(-\ep,\ep)$.
+Then we can define the \textbf{Hessian} of $E$ at $\g$ by a matrix
+	$$\Hess_\g(E)(X,Y)=\frac{\pp^2(E\circ\alpha)}{\pp s_1\pp s_2}(0,0).$$
+As before, we also have nice formula for $\Hess_\g(E)$.
+
+	\begin{theorem}[Second Variation Formula]\rm
+	For $X,Y\in T_\g\PM$, we have
+		$$\Hess_\g(E)(X,Y)=-\sum_t\left\il Y_t,\Delta_t\frac{dX_t}{dt}\right\ir
+			-\int_0^1\left\il Y_t,\frac{d^2 X_t}{dt^2}+R(\dot{\g}(t),X_t)\dot{\g}(t)\right\ir dt.$$
+	Here, $R(-,-)$ is Riemann curvature tensor.
+	\end{theorem}
+		\begin{proof}
+		Let $\alpha$ be defined as above.
+		Then the first variation formula gives us
+			$$\frac{\pp (E\circ\alpha)}{\pp s_2}
+				=-\sum_t\left\il \frac{\pp\alpha}{\pp s_2},\Delta_t\frac{\pp\alpha}{\pp t}\right\ir
+				-\int_0^1\left\il\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt.$$
+		Taking $\pp/\pp s_1$, we get
+			$$\begin{aligned}
+			\frac{\pp^2 (E\circ\alpha)}{\pp s_1\pp s_2}=
+			&-\sum_t\left\il \frac{\pp}{\pp s_1}\frac{\pp\alpha}{\pp s_2},\Delta_t\frac{\pp\alpha}{\pp t}\right\ir
+			-\sum_t\left\il \frac{\pp}{\pp s_1}\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp s_1}\Delta_t\frac{\pp\alpha}{\pp t}\right\ir\\
+			&-\int_0^1\left\il\frac{\pp}{\pp s_1}\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt
+			-\int_0^1\left\il\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp s_1}\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt.
+			\end{aligned}$$
+		Let's evaluate the terms at $(s_1,s_2)=(0,0)$.
+		We're looking at the geodesic $\g$, so that $\pp\alpha/\pp t$ and $\pp^2\alpha/\pp t^2$ are zero.
+		Hence the first term and the third term vanishes.
+		For the second term, we can interchange the order of partial derivative for function $\alpha$ so after evaluation we have
+			$$\left.-\sum_t\left\il \frac{\pp}{\pp s_1}\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp s_1}\Delta_t\frac{\pp\alpha}{\pp t}\right\ir\right|_{(0,0)}
+			=-\sum_t\left\il Y_t,\Delta_t\frac{dX_t}{d t}\right\ir.$$
+		For the fourth term, we first have evaluation
+			$$\left.-\int_0^1\left\il\frac{\pp\alpha}{\pp s_2},\frac{\pp}{\pp s_1}\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp t}\right\ir dt\right|_{(0,0)}
+			=-\int_0^1\left\il Y_t,\frac{\pp}{\pp s_1}\frac{\pp}{\pp t}\dot{\g}\right\ir dt
+			$$
+		Note that
+			$$\frac{\pp}{\pp s_1}\dot{\g}=\frac{\pp}{\pp s_1}\frac{\pp\alpha}{\pp t}
+			=\frac{\pp}{\pp t}\frac{\pp\alpha}{\pp s_1}=\frac{\pp X_t}{\pp t}.$$
+		For the second derivatives of vector fields, the order of differentiation matters; we have curvature-involving formula
+			$$\frac{\pp}{\pp s_1}\frac{\pp}{\pp t}\dot{\g}-\frac{\pp}{\pp t}\frac{\pp}{\pp s_1}\dot{\g}=R\left(\frac{\pp\alpha}{\pp t},\frac{\pp\alpha}{\pp s_1}\right)\dot{\g}=R(\dot{\g},X)\dot{\g}.$$
+		(See Remark 3.4. of prior subsection.
+		We recommend to check with precise differential geometry.
+		\cite{sp} would help a lot.)
+		Sum up these equations, we get the desired terms.
+		\end{proof}
+	
+\subsection{Kernel of $\Hess_\g(E)$ : Jacobi Fields and Conjuate Points}
+As the first variation formula reveals the critical points of $E$, the second variation formula reveals the properties of Hessian of $E$.
+Note that $\Hess_\g(E)$ is symmetric, which is straightforward by definition using variation.
+As before, we define the \textbf{index} $\Ind(\g)$ by the maximal negative definite dimension of $\Hess_\g(E)$, and say that $\g$ is \textbf{nondegenerate} if $\Hess_\g(E)$ is nondegenerate, or equivalently, $\ker\Hess_\g(E)=0$.
+
+Unlike in the Morse case, we cannot assume that $E$ is nondegenerate; we fixed specific $E$.
+The appropriate choice of metric can be used to avoid this problem, but we should throw away the symmetries of our space.
+Instead, we directly analyze $\ker\Hess_\g(E)$ first since itself contains a rich geometry.
+
+We call a vector field $J$ along $\g$ \textbf{Jacobi field} if
+	$$\frac{d^2J}{dt^2}+R(\dot{\g},J)\dot{\g}=0.$$
+We call this equation \textbf{Jacobi equation}.
+We do not assume $J$ to be vanish at $\g(0)$ and $\g(1)$ in general, just for the convenience later.
+(This is not very important point.)
+If we assume that $J(0)=0=J(1)$, then $J\in T_\g\PM$.
+
+Also, note that the Jacobi equation is second order ODE, and thus the solution $J$ is always smooth.
+	\begin{proposition}\rm
+	$J\in T_\g\PM$ is in $\ker\Hess_\g(E)$ iff it's a Jacobi field.
+	\end{proposition}
+		\begin{proof}
+		The second variation formula explains that if $J$ is a Jacobi field, then $\Hess_\g(E)(J,Y)=0$ for any $Y$.
+		The converse is similar.
+		Let $\Hess_\g(E)(J,Y)=0$.
+		Take appropriate $Y$ to show that $J$ satisfies Jacobi equation locally, and then take another $Y$ to show that $J$ cannot have discontinuity.
+		\end{proof}
+As our observation on the degenerate critical points in the finite dimensional case, we might expect that if we move our critical path $\g$ along Jacobi field $J$ a bit, then we again have geodesics $\Fl^t_{J}(\g)$ for small $t$.
+For this, we define the \textbf{variation of geodesics} by a variation $\alpha$ such that
+	$$\alpha(0,t)=\g(t),\,\,\alpha(s,-)\text{ is a geodesic.}$$
+	\begin{proposition}\rm
+	If $\alpha$ is variation of geodesics, $J=\pp\alpha/\pp s$ is a Jacobi field.
+	Conversely, any Jacobi field can be obtained by such variations.
+	If we assume that $J(0)=J(1)$, then $J$ can be obtained by a variation $\alpha$ satisfying $\alpha(s,0)=p$ and $\alpha(s,1)=q$.
+	\end{proposition}
+		\begin{proof}
+		The proof of Lemma 3.10. of this note provides an idea.
+		For the full proof, see Lemma 14.3. and Lemma 14.4. of \cite{m1}.
+		\end{proof}
+Figure 9 illustrates the Jacobi field on $S^2$ with standard metric.
+Let $p,q$ be the north pole and south pole of $S^2$.
+Then it's elementary to see that every great half-circle is geodesic which connects $p$ and $q$.
+For example, $\g_1$ and $\g_2$ in the picture are geodesics.
+Then there exists a Jacobi field $J$ connecting two geodesics, which could be obtained by taking derivative of appropriate variation.
+This example could be extended to $S^n$ for any $n\in\Z_{\geq2}$.
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{figure9.jpg}
+		\caption{Jacobi field $J$ on $S^2$, connecting $\g_1$ and $\g_2$}
+\end{figure}
+
+Now let's put this property of Jacobi fields to describe the dimension of $\ker\Hess_\g(E)$.
+As mentioned, the Jacobi equation is second order ODE and the solution is determined by $J(0)$ and $dJ/dt(0)$.
+Moreover, $J\in\ker\Hess_\g(E)$ means that $J(0)=0$.
+Hence the degree of freedom is at most $n$, and it follows that the dimension of Jacobi field is less or equal then $n$.
+In particular, it is finite dimensional.
+
+We say $p,q\in M$ are \textbf{conjugate} along $\g$ if there exists a nonzero Jacobi field $J\in T_\g\PM(p,q)$.
+Define the \textbf{multiplicity} $\nu_{p,q}$ of $p,q$ by the dimension of such Jacobi fields, then we can see that $\nu_{p,q}$ equals to the dimension of $\ker\Hess_\g(E)$ for any geodesic $\g$ connects $p,q$.
+For example, consider the north pole $p$ and south pole $q$ of $S^n$ again.
+One can easily check that $p,q$ are conjugate with $\nu_{p,q}=n-1$.
+
+
+\subsection{Index of $\Hess_\g(E)$ : Broken Jacobi Fields}
+Now we have to describe $\Ind(\g)$, which is maximal negative definite dimension of $\Hess_\g(E)$.
+Let's begin with basic observation.
+	\begin{lemma}\rm
+	Let $\g\in\Crit(E)$ be \emph{minimizing} geodesic connecting $p$ and $q$.
+	Then $\Hess_\g(E)$ is positive semi-definite, so $\Ind(\g)=0$.
+	\end{lemma}
+Such $\g$ corresponds to the local minimum point in finite dimensional case.
+Note that we still have the dimension of kernel left i.e. it's positive \emph{semi}-definite.
+	\begin{proof}
+	Let $\alpha:(-\ep,\ep)\to\PM$ be the variation of $\g$.
+	Then as we've seen in Lemma 3.1., we have $E(\alpha(s))\geq E(\g)=E(\alpha(0))$ for any $s$.
+	It follows that
+		$$\left.\frac{d^2(E\circ\alpha)}{ds^2}\right|_{0}\geq0,$$
+	which is elementary result from the calculus.
+	Thus, considering the definition of $\Hess_\g(E)(X,Y)$ with $X=Y$, we see that $\Hess_\g(E)(X,X)\geq0$ for any $X$.
+	\end{proof}
+At first glance, the index of general geodesic $\g$ does not seem to be easy to describe, even to show that it is finite.
+But it turns out that there is a elegant result for this, thanks to Morse.
+We will devote the rest of this subsection on the proof of following theorem.
+	\begin{theorem}[Morse]\rm
+	For any $\g\in\Crit(E)$,
+		$$\Ind(\g)=\#\left\{\g(t):\g(t)\text{ is conjugate to }\g(0)\right\}.$$
+	The conjugate points $\g(t)$ are counted with multiplicity.
+	In particular, $\Ind(\g)$ is always finite.
+	\end{theorem}
+Note that, under the completeness assumption for $M$, for any $p\in M$ there exists a contractible neighborhood $U$ of $p$, so that any two points in $U$ can be connected by a unique minimizing geodesic.
+It means that, any two \emph{close} points has a unique minimizing geodesic between them.
+Moreover, we have following.
+	\begin{lemma}\rm
+	Let $U$ be a small neighborhood, $p,q\in U$ and $\g:[0,\delta]\to U$ be the unique minimizing geodesic connecting $p$ and $q$.
+	Then a Jacobi field $J$ along $\g$ is completely characterized by its boundary condition $J(0)$ and $J(\delta)$.
+	\end{lemma}
+		\begin{proof}
+		Let $J(0)\in T_{\g(0)}M$ and $J(\delta)\in T_{\g(\delta)}M$ be given by curves $c_0$ and $c_\delta$, defined on some small interval $(-\ep,\ep)$.
+		Define a geodesic variation $\alpha:(-\ep,\ep)\to M$ by $\alpha(s)$ to be the unique minimizing geodesic from $c_0(s)$ to $c_\delta(s)$.
+		Then we can see that $\alpha$ gives a Jacobi field with boundary conditions $J(0)$ and $J(\delta)$.
+		
+		Notice that there exists $2n$ degree of freedom to choose $J(0)$ and $J(\delta)$, which equals to the dimension of $T_{\g(0)}M\times T_{\g(\delta)}M$.
+		However, we've seen that the space of solutions of Jacobi equation is at less or equal then $2n$, where the number $2n$ was from the choice of $J(0)$ and $dJ/dt(0)$.
+		The previous argument shows that in this case the solution of Jacobi equation \emph{is equal to} $2n$, and it's isomorphic to $T_{\g(0)}M\times T_{\g(\delta)}M$ under the map $J\mapsto (J(0),J(\delta))$.
+		\end{proof}
+		
+		
+
+Let's fix a geodesic $\g\in \PM(p,q)$, and $0=t_0<t_1<\cdots<t_k=1$ be the partition of $[0,1]$ so that $\g[t_i,t_{i+1}]$ lies in such neighborhood.
+Define a subspace of \textbf{broken Jacobi fields} in $T_\g\PM$,
+	$$T(t_0,\cdots,t_k)=T:=\left\{X\in T_\g\PM:X|_{[t_i,t_{i+1}]}\text{ is a Jacobi field along }\g|_{[t_i,t_{i+1}]}.\right\}.$$
+(Recall that we've defined $T_\g\PM$ to be the \emph{broken} vector fields along $\g$.)
+Since the dimension of a space of Jacobi field is always finite dimensional, $T(t_0,\cdots,t_k)$ is finite dimensional.
+In particular, Lemma 3.10. provides us an isomorphism
+	$$T(t_0,\cdots,t_k)\simeq T_{\g(t_1)}M\oplus\cdots\oplus T_{\g(t_{k-1})}M.$$
+Define another subspace $S$ by following.
+	$$S(t_0,\cdots,t_k)=S:=\left\{X\in T_\g\PM:X(t_i)=0\text{ for any }i\right\}.$$
+We can easily see that $T\cap S=0$, since the Jacobi field on small interval is determined by its value on endpoints and if $J\in T\cap S$, we can and must take $J=0$ to get the boundary condition $J(t_i)=0$.
+	\begin{lemma}\rm
+	We have orthogonal decomposition
+		$$T_\g\PM=T(t_0,\cdots,t_k)\oplus S(t_0,\cdots,t_k).$$
+	The orthogonality means, under bilinear form $\Hess_\g(E)$.
+	Moreover, $S$ is positive definite subspace for $\Hess_\g(E)$.
+	\end{lemma}
+		\begin{proof}
+		Let's see the decomposition first.
+		Let $X\in T_\g\PM$, and $X_T$ be the broken Jacobi field in $T$ such that $X_T(t_i)=X(t_i)$ for each $i$.
+		There exists unique such $X_T\in T$, and it's clear by definition that $X_S:=X-X_T\in S$.
+		As we've seen, $T\cap S=0$.
+		Hence this gives a direct sum decomposition.
+		
+		Now let's see the orthogonality.
+		Let $X\in T$ and $Y\in S$ and put this into the second variation formula,
+			$$\Hess_\g(E)(X,Y)=-\sum_t\left\il Y_t,\Delta_t\frac{dX_t}{dt}\right\ir
+			-\int_0^1\left\il Y_t,\frac{d^2 X_t}{dt^2}+R(\dot{\g}(t),X_t)\dot{\g}(t)\right\ir dt.$$
+		Since $X$ satisfies Jacobi equation, $\ddot{X}+R(\dot{\g},X)\dot{\g}=0$.
+		Hence the second term vanishes.
+		The discontinuity of $X$ which occurs in the first term are $t_0,\cdots,t_k$, but we've chosen $Y\in S$ so $Y(t_i)=0$ for any $i$.
+		Hence the first term also vanishes, and we see that $T,S$ are orthogonal under $\Hess_\g(E)$.
+		
+		For the positive-definiteness, let $\alpha$ be the variation associated to $X\in S$
+		Then we must have $\alpha(t_i)=\g(t_i)$ for each $i$, since $W(t_i)=0$.
+		Since $\g$ provides a minimizing geodesic in each segments $[t_i,t_{i+1}]$, as in Lemma 3.8., we can see that $\Hess_\g(E)(X,X)\geq0$.
+		If $X\in S$ and $\Hess_\g(E)(X,X)=0$, one can easily check (even algebraically) $X$ lies in the kernel of $\Hess_\g(E)$.
+		That is, $X$ is a Jacobi field.
+		But it's impossible unless $X=0$.
+		\end{proof}
+		
+Since $\Hess_\g(E)$ is positive definite on $S$, we might restrict $\Hess_\g(E)$ to the \emph{finite dimensional space} $T(t_0,\cdots,t_k)$ to find its index, and even the dimension of its kernel.
+
+Now we go into the proof of main theorem.
+For $0\leq \tau\leq 1$, denote $\g_\tau=\g|_{[0,\tau]}$, $H_\tau=\Hess_{\g_{\tau}}(E_\tau)$ where
+	$$E_\tau(\g_\tau)=\frac{1}{2}\int_0^\tau \il\dot{\g},\dot{\g}\ir dt$$
+and $\Ind(\tau)$ to be the index of $H_\tau$.
+Then $\Ind(1)=\Ind(\g)$, and we'll analyze the properties of $\Ind(\tau)$.
+The graph of $\Ind(\tau)$, which could be deduced from the following lemma, is illustrated in Figure 10.
+
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figure10.jpg}
+		\caption{The graph of $\Ind(\tau)$ in simple case}
+\end{figure}
+
+	\begin{lemma}\rm
+	\begin{enumerate}
+	\item $\Ind(\tau)$ is monotone increasing function on $\tau$.
+	\item $\Ind(\tau)=0$ for small $\tau>0$.
+	\item For small $\ep>0$, $\Ind(\tau-\ep)=\Ind(\tau)$.
+	\item Let $\nu=\dim\ker H_\tau>0$, i.e. $\g(\tau)$ is conjuate point of $\g(0)$ of multiplicity $\nu$.
+	Then for small $\ep>0$, $\Ind(\tau+\ep)=\Ind(\tau)+\nu$.
+	\end{enumerate}
+	\end{lemma}
+
+
+		\begin{proof}
+		\begin{enumerate}
+		\item Let $\tau<\tau'$ and $H_\tau(X_\tau,X_\tau)<0$.
+		Then we can extend $X_\tau$ to $[0,\tau']$ by defining $X_{\tau'}$ to be equal to $X_\tau$ on $[0,\tau]$ and equal to 0 on $[\tau,\tau']$.
+		(Since $X_\tau$ vanishes at the endpoint, this definition works well.)
+		Then it's clear that $X_{\tau'}$ gives negative definitive dimension for $H_{\tau'}$, i.e. $\Ind(\tau)\leq\Ind(\tau')$.
+		\item If $\tau$ is small enough so that $\g(0)$ and $\g(\tau)$ can be connected by minimizing geodesic, then by Lemma 3.8. $\Ind(\tau)=0$.
+		\item For fixed $\tau$, we can choose the partition $(t_0,\cdots,t_k)$ so that $t_i<\tau<t_{i+1}$.
+		By Lemma 3.11., we can compute $\Ind(\tau)$ by resticting the domain of $H_\tau$ to the subspace
+			$$T_i\simeq T_{\g(t_1)}M\oplus\cdots\oplus T_{\g(t_i)}M.$$
+		So $T_i$ does not depend on $\tau$ (locally), while $H_\tau$ depends on $\tau$ continuously.
+		Note that the negative definiteness is \emph{open condition}, i.e. if $H_\tau(X,X)<0$ for some $X$, then $H_{\tau'}(X,X)<0$ for $\tau'$ close to $\tau$, assumed that $H$ depends continuously on $\tau$.
+		Thus we have $\Ind(\tau-\ep)\geq\Ind(\tau)$ for small $\ep>0$.
+		However, by monotonicity, we have $\Ind(\tau-\ep)=\Ind(\tau)$.
+		\item Let's use that same notations as above.
+		With assumptions in the statement, $\dim\ker H_\tau=\nu$ and the dimension of negative definite subspace is $\Ind(\tau)$.
+		It means that $H_\tau$ is positive definite on the (orthogonal) complement of those spaces, which has dimension $ni-\nu-\Ind(\tau)$.
+		As mentioned, positive definiteness is also an open condition.
+		So we get one side of equality, $\Ind(\tau+\ep)\leq \Ind(\tau)+\nu$.
+		
+		For the converse, we need to show that $\ker H_\tau$ can be included to the negative definite subspace of $H_{\tau'}$.
+		Denote $\Ind(\tau)=\mu$ for a while, for convenience.
+		Take the basis of negative definite subspace of $H_\tau$, say $X_1,\cdots,X_\mu\in T_{\g_\tau}\PM$.
+		Likewise, take the basis of kernel of $H_\tau$, which are the Jacobi fields $J_1,\cdots,J_\nu\in T_{\g_\tau}\PM$.
+		In particular, $dJ_i/dt(\tau)\in T_{\g(\tau)}M$ are linearly independent, since they should define the independent solutions for ODE.
+		Take vector fields $Y_1,\cdots,Y_\nu\in T_{\g_{\tau+\ep}}\PM$ such that
+			$$\left\il\frac{dJ_i}{dt}(\tau),Y_j\right\ir=\delta_{ij}.$$
+		Extend $X_i,J_i$ to the interval $[0,\tau+\ep]$ by extension by zero.
+		We have, from the second variation formula,
+			$$\begin{aligned}
+			H_{\tau+\ep}(J_i,X_j)&=0,\\
+			H_{\tau+\ep}(J_i,Y_j)&=\delta_{ij}.
+			\end{aligned}$$
+		Consider the vector fields along $\g_{\tau+\ep}$,
+			$$X_1,\cdots,X_\mu,c^{-1}J_1-cY_1,\cdots,c^{-1}J_\nu-cY_\nu.$$
+		One can check that, on the subspace generated by these vector fields,
+			$$H_{\tau+\ep}=\left(\begin{array}{cc}
+				H_\tau|_{X}	&cA\\
+				cA^t&	-2\Id+c^2B
+				\end{array}\right)$$
+		where $H_\tau|_X$ is $H_\tau$ restricted to the subspace generated by $X_1,\cdots,X_\mu$, which is negative defnite, and $A,B$ are some fixed matrices.
+		For small $c$, we can easily deduce that this matrix is negative definite, i.e. the other side of equality, $\Ind(\tau+\ep)\geq\Ind(\tau)+\nu$.
+		\end{enumerate}
+		\end{proof}
+
+Combining these, the proof of Theorem 3.9. follows.
+We have an unexpected consequence from the theorem.
+	\begin{corollary}\rm
+	On a geodesic $\g:[0,1]\to M$, there exists only finitely many $t$ such that $\g(t)$ is conjugate to $\g(0)$ along $\g$.
+	\end{corollary}
+
+
+
+
+
+\subsection{Cell Structure of Loop Space $\Om S^n$}
+
+We've seen the ways to compute the index of geodesic $\g$ with respect to energy functional $E$.
+We expect that this result would reveal the topology of $\PM$.
+There is a theorem we wanted, which is analogous to the Morse lemma.
+	\begin{theorem}\rm
+	Let $M$ be complete Riemannian manifold and $p,q\in M$ be points which are not conjugate along any $\g$.
+	Then $\PM(p,q)$ has a homotopy type of a countable CW complex, which contains one $\Ind(\g)$-cell for each geodesic $\g$.
+	\end{theorem}
+The proof is analogous to the one of Morse lemma, except the point that we need finite dimensional approximation.
+See Section 16 and 17 of \cite{m1} for the discussion.
+
+Again, we see that the geodesics (critical points) and the topology of path spaces (manifolds) have a close relation.
+Even more, we might expect that the homology of path space can give lower bound of the number of geodesics.
+
+There is a simple example to apply this theorem.
+Consider the based loop space of $n$-sphere, $\Om S^n$.
+For fixed point $p$ say the north pole of $S^n$, we have a countable geodesics, say $\{\g_k:k=0,1,2,\cdots\}$ which goes around the great circle of $S^n$ $k$-times.
+The antipodal point $q$, which is the south pole, is conjugate to $p$ with multiplicity $(n-1)$, as we've seen in Section 3.4.
+In the geodesic $\g_k$, $q$ appears $k$-times, so that we have
+	$$\Ind(\g_k)=k(n-1).$$
+It follows that $\Om S^n$ has a cell structure with one cell in dimension $k(n-1)$ for each $k\in\Z_{\geq0}$.
+
+Note that $\pi_k(\Om S^n)\simeq\pi_{k+1}(S^n)$, which could be shown by using suspension.
+If $n=1$, the above result shows that $\Om S^1$ is a countable discrete set.
+We can see this from the fact that $\pi_0(\Om S^1)\simeq\pi_1(S^1)\simeq\Z$, and $\pi_k(S^1)=0$ in any other dimensions. 
+If $n>2$, we directly have the homology of $\Om S^n$, which is given by
+	$$H_*(\Om S^n;\Z)\simeq\left\{\begin{array}{cc}
+			\Z&\text{ if }*=k(n-1)\\
+			0&\text{ otherwise}
+			\end{array}\right.$$
+In particular, we have that $H_*(\Om S^3)\simeq H_*(\CP^\infty)$.
+So one might ask that whether $\CP^\infty$ is homotopy equivalent to $\Om S^3$ or not.
+The answer is false, since $\CP^\infty$ is Eilenberg-MacLane space $K(\Z,2)$ so that $\pi_2(\CP^\infty)\simeq\Z$ and for any other $k$, $\pi_k(\CP^\infty)=0$.
+But $\pi_k(\Om S^3)\simeq\pi_{k+1}(S^3)$ does not vanish at high dimensions.
+
+There is also a beautiful application of this theory on the \emph{symmetric spaces}, on which there are symmetries which preserve geodesics.
+For example, Lie groups are symmetric spaces.
+On such spaces, computing the index of geodesics becomes much easier than on the general spaces.
+One can prove the celebrated \emph{Bott's periodicity theorem} with this tool.
+The Part IV of \cite{m1} is devoted to this topic.
+
+Even though we get a nice result for now, there is a missing point; we can count the cells, but there is no information about the attaching maps.
+For example, we cannot say anything about the homology of $\Om S^2$ (except the point that it would have rank $\leq 1$ in each dimension) with previous results.
+The differential of Morse homology contains such information, so to get more precise information on the topology of a space, we need to construct \emph{Morse homology in infinite dimension}.
+
+Of course, we can use another nice function instead of $E$, which contains another information than $E$ that we're interested in.
+For example, \emph{Floer theory} uses a functional called \emph{Hamiltonian action functional} $\A_H$ instead of $E$, which has Hamiltonian orbits as its critical points.
+Then the Floer homology is analogy of Morse homology constructed with $\A_H$ on the loop space of a symplectic manifold $M$.
+There is a differential given by trajectories between the orbits, which corresponds to the Morse trajectories. 
+Our next topic will be the introduction to the Floer homology.
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem[AD]{ad} M.Audin, M.Damian: \emph{Morse Theory and Floer Homology}, Springer (2010)
+\bibitem[Mil1]{m1} J.Milnor: \emph{Morse Theory}, Princeton University Press (1963)
+\bibitem[Mil2]{m2} J.Milnor: \emph{Lectures on the H-Cobordism Theorem}, Princeton Legacy Library (1965)
+\bibitem[Mat]{mat} Y.Mastumoto: \emph{An Introduction to Morse Theory}, Iwanami Series in Modern Mathematics (2002)
+\bibitem[S]{sp} M. Spivak: \emph{A Comprehensive Introduction to Differential Geometry, Volume II}, Second Edition, Publish or Perish (1979)
+\end{thebibliography}
+
+
+\end{document}

@@ -1,0 +1,6 @@
+MorseTheory.aux
+MorseTheory.log
+MorseTheory.out
+MorseTheory.synctex.gz
+MorseTheory.tex
+MorseTheory.toc
