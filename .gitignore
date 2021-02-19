@@ -4,4 +4,5 @@
 *.gz
 *.tex
 *.toc
+*.dvi
 notes/MorseTheory/*.jpg
