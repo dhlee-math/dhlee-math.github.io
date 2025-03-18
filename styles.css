@@ -1,0 +1,57 @@
+/* 기본적으로 모든 요소에 여백 추가 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 페이지 배경색 */
+}
+
+/* 페이지의 내용에 적절한 좌우 여백 추가 */
+div {
+    margin: 0 auto;
+    padding: 0px 10px; /* 위 아래 여백은 줄이고, 좌우 여백은 조금 더 추가 */
+    max-width: 1000px; /* 너비를 1000px로 제한하여 너무 넓어지지 않게 함 */
+}
+
+/* h1 태그 스타일 */
+h1 {
+    text-align: center; /* 제목 가운데 정렬 */
+    margin-top: 30px; /* 제목 위 여백 추가 */
+}
+
+/* 링크 스타일 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* p 태그 스타일 */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* 전체 내용에 여백을 추가하여 텍스트가 화면의 양쪽에 붙지 않도록 하기 */
+body, div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 콘텐츠 영역이 너무 넓어지지 않도록 최대 너비 설정 */
+div {
+    max-width: 1200px;
+}
