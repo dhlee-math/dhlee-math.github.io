@@ -7,34 +7,45 @@ from urllib.parse import urljoin
 
 import feedparser  # pip install feedparser
 
-# 연구 관심 키워드(분야)
+
+# =========================
+# Settings
+# =========================
+
 KEYWORDS = [
     "symplectic",
     "contact",
     "dynamics",
     "three-body problem",
+    "three body problem",
     "hamiltonian",
+    # 네가 예시로 든 것처럼, MathJobs에서 자주 걸러내고 싶은 단어도 추가 가능
     "geometry",
-    "topology",
-    "dynamical systems",
 ]
 
-# "포닥/연구직" 류를 잡기 위한 직군 키워드(너무 많이 걸리면 이쪽을 강화)
-ROLE_KEYWORDS = [
-    "postdoc", "post-doctor", "postdoctoral",
-    "research fellow", "fellowship",
-    "research associate", "researcher", # 필요 없으면 지워
-]
-
-# ✅ Euraxess RSS
+# Euraxess RSS
 RSS_FEEDS = [
     ("Euraxess", "https://euraxess.ec.europa.eu/job-feed"),
 ]
 
-# ✅ MathJobs 목록 페이지 (HTML)
-MATHJOBS_LIST_URL = "https://www.mathjobs.org/jobs?joblist-0-0----d--"
+# MathJobs: "Postdoc" 리스트 (네가 준 링크로 제한)
+# 페이지네이션을 직접 여러 장 긁어서 합침.
 MATHJOBS_BASE = "https://www.mathjobs.org"
+MATHJOBS_POSTDOC_LIST_PAGES = [
+    "https://www.mathjobs.org/jobs?joblist-0-3---0-t--",
+    "https://www.mathjobs.org/jobs?joblist-0-3---40-dt--",
+    "https://www.mathjobs.org/jobs?joblist-0-3--40-40-dt--",
+    "https://www.mathjobs.org/jobs?joblist-0-3--80-40-dt--",
+    # 필요하면 더 추가:
+    # "https://www.mathjobs.org/jobs?joblist-0-3--120-40-dt--",
+]
 
+OUT_PATH = "jobs-board/jobs.json"
+
+
+# =========================
+# Helpers
+# =========================
 
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -44,17 +55,24 @@ def normalize(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
-def strip_tags(html: str) -> str:
-    return re.sub(r"<[^>]+>", "", html or "")
-
-
-def match_any_keywords(text: str, keywords) -> list[str]:
+def match_keywords(text: str):
     t = (text or "").lower()
-    hits = [k for k in keywords if k.lower() in t]
-    return hits
+    hits = []
+    for k in KEYWORDS:
+        if k.lower() in t:
+            hits.append(k)
+    # 중복 제거 (순서 유지)
+    seen = set()
+    uniq = []
+    for h in hits:
+        if h not in seen:
+            seen.add(h)
+            uniq.append(h)
+    return uniq
 
 
-def entry_date_iso(entry) -> str:
+def entry_date_iso(entry):
+    # feedparser: published_parsed / updated_parsed
     for key in ("published_parsed", "updated_parsed"):
         tp = getattr(entry, key, None)
         if tp:
@@ -63,10 +81,22 @@ def entry_date_iso(entry) -> str:
     return ""
 
 
-def fetch_rss_feed(feed_name, feed_url, max_items=80, require_keyword_hit=True):
+def http_get(url: str, timeout=20) -> str:
+    req = Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
+    )
+    return urlopen(req, timeout=timeout).read().decode("utf-8", errors="ignore")
+
+
+# =========================
+# RSS fetch
+# =========================
+
+def fetch_rss_feed(feed_name, feed_url, max_items=120, require_keyword_hit=True):
     """
     RSS를 items로 변환.
-    - require_keyword_hit=True 이면 KEYWORDS가 하나도 안 걸리면 스킵
+    require_keyword_hit=True 이면 KEYWORDS가 하나도 안 걸리면 스킵.
     """
     socket.setdefaulttimeout(20)
 
@@ -88,10 +118,8 @@ def fetch_rss_feed(feed_name, feed_url, max_items=80, require_keyword_hit=True):
             continue
         seen.add(link)
 
-        hits = match_any_keywords(title + " " + summary, KEYWORDS)
-
+        hits = match_keywords(title + " " + summary)
         if require_keyword_hit and not hits:
-            # Euraxess는 잡음이 많으니 보통 True 추천.
             continue
 
         items.append(
@@ -112,78 +140,123 @@ def fetch_rss_feed(feed_name, feed_url, max_items=80, require_keyword_hit=True):
     return items
 
 
-def fetch_mathjobs(max_items=25, require_field_keyword=True, require_role_keyword=True):
-    """
-    MathJobs 목록 페이지에서 (url, title) 추출 + 키워드 필터.
-    - require_field_keyword: KEYWORDS 기반 필터 적용 여부
-    - require_role_keyword: ROLE_KEYWORDS 기반 필터 적용 여부
-    """
-    try:
-        req = Request(
-            MATHJOBS_LIST_URL,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
-        )
-        html = urlopen(req, timeout=25).read().decode("utf-8", errors="ignore")
-    except Exception:
-        return []
+# =========================
+# MathJobs HTML fetch
+# =========================
 
-    # 링크 텍스트까지 같이 뽑기:
-    # /jobs/UNIVKS, /jobs/LUH_MAPHY 같은 코드형 링크가 공고 페이지로 직행하는 경우가 많음
-    pattern = re.compile(
-        r'<a[^>]+href="(?P<href>/jobs/(?:[A-Za-z0-9_]+|jobs/\d+))"[^>]*>(?P<title>.*?)</a>',
-        re.IGNORECASE | re.DOTALL,
-    )
+def strip_tags(html: str) -> str:
+    # 아주 가벼운 태그 제거
+    html = re.sub(r"<br\s*/?>", " ", html, flags=re.IGNORECASE)
+    return re.sub(r"<[^>]+>", "", html)
 
-    items = []
+
+def parse_deadline(text: str) -> str:
+    """
+    (deadline 2025/11/14 11:59PM) 같은 문자열에서 2025/11/14 부분만 뽑아 ISO로 바꾸진 않고 원문 유지.
+    """
+    m = re.search(r"deadline\s+(\d{4}/\d{2}/\d{2})", text, flags=re.IGNORECASE)
+    return m.group(1) if m else ""
+
+
+def fetch_mathjobs_postdocs(require_keyword_hit=True, per_page_limit=200):
+    """
+    MathJobs Postdoc 리스트 페이지(여러 장)를 긁어서,
+    기관명 + 포지션 타이틀 + Apply 링크(가능하면) 추출.
+    """
+    all_items = []
     seen = set()
 
-    for m in pattern.finditer(html):
-        href = m.group("href")
-        raw_title_html = m.group("title")
-
-        title = normalize(strip_tags(raw_title_html))
-        if not title:
+    for page_url in MATHJOBS_POSTDOC_LIST_PAGES:
+        try:
+            html = http_get(page_url, timeout=20)
+        except Exception:
+            # MathJobs는 종종 타임아웃/차단이 걸릴 수 있으니 죽지 않게
             continue
 
-        url = urljoin(MATHJOBS_BASE, href)
-        if url in seen:
-            continue
-        seen.add(url)
+        # (1) 기관명 헤더(파란 글씨) 후보: <h2>...</h2> 형태가 많음
+        # 페이지 구조가 바뀔 수 있으니 "느슨하게" 잡는다.
+        headers = []
+        for m in re.finditer(r"<h2[^>]*>(.*?)</h2>", html, flags=re.IGNORECASE | re.DOTALL):
+            inst = normalize(strip_tags(m.group(1)))
+            if inst:
+                headers.append((m.start(), inst))
 
-        # 필터링: 직군 키워드 / 분야 키워드
-        role_hits = match_any_keywords(title, ROLE_KEYWORDS)
-        field_hits = match_any_keywords(title, KEYWORDS)
+        # (2) 각 <li> ... </li>를 훑어서 공고 라인 추출
+        for m in re.finditer(r"<li[^>]*>(.*?)</li>", html, flags=re.IGNORECASE | re.DOTALL):
+            li_html = m.group(1)
+            li_text = normalize(strip_tags(li_html))
 
-        if require_role_keyword and not role_hits:
-            continue
-        if require_field_keyword and not field_hits:
-            continue
+            # postdoc 라인만 대충 거르기: [PD] / [POSTDOC] 같은 태그가 자주 있음
+            # (너무 빡세게 걸면 놓칠 수 있으니 완전히 필수로 하진 않음)
+            if not li_text:
+                continue
 
-        items.append(
-            {
-                "title": title,  # ✅ 이제 "MathJobs posting"이 아니라 실제 제목이 들어감
-                "institution": "",
-                "country": "",
-                "region": "Other",
-                "deadline": "",
-                "summary": "Imported from MathJobs listing.",
-                "source": "MathJobs",
-                "date_posted": "",
-                "tags": sorted(set(role_hits + field_hits)),
-                "url": url,
-            }
-        )
+            # Apply 링크 찾기 (있으면 그걸 url로)
+            apply = re.search(r'href="([^"]+/apply[^"]*)"', li_html, flags=re.IGNORECASE)
+            link = ""
+            if apply:
+                link = urljoin(MATHJOBS_BASE, apply.group(1))
+            else:
+                # apply 링크가 없으면, 기관 페이지라도 연결
+                inst_link = re.search(r'href="(/jobs/[A-Za-z0-9_]+)"', li_html, flags=re.IGNORECASE)
+                if inst_link:
+                    link = urljoin(MATHJOBS_BASE, inst_link.group(1))
 
-        if len(items) >= max_items:
-            break
+            if not link:
+                continue
 
-    return items
+            if link in seen:
+                continue
+            seen.add(link)
 
+            # 이 li가 속한 기관명 추정: 가장 가까운 이전 h2
+            inst = ""
+            if headers:
+                prev = [h for (pos, h) in headers if pos < m.start()]
+                if prev:
+                    inst = prev[-1]
+
+            deadline = parse_deadline(li_text)
+
+            # 제목: 보통 "[XXX] ..." 형태이므로 그대로 쓰되, "Apply" 같은 꼬리는 제거
+            title = li_text
+            title = re.sub(r"\bApply\b.*$", "", title, flags=re.IGNORECASE).strip()
+            title = title if title else "MathJobs posting"
+
+            # 키워드 필터 (제목+기관 기준)
+            hits = match_keywords((title + " " + inst))
+            if require_keyword_hit and not hits:
+                continue
+
+            all_items.append(
+                {
+                    "title": title,
+                    "institution": inst,
+                    "country": "",
+                    "region": "Other",
+                    "deadline": deadline,
+                    "summary": "Imported from MathJobs postdoc listing.",
+                    "source": "MathJobs",
+                    "date_posted": "",
+                    "tags": hits,
+                    "url": link,
+                }
+            )
+
+            if len(all_items) >= per_page_limit:
+                break
+
+    return all_items
+
+
+# =========================
+# Main
+# =========================
 
 def main():
     items = []
 
-    # (0) 파이프라인 테스트 카드 (원하면 나중에 삭제)
+    # (0) 파이프라인 테스트 카드 (원하면 나중에 지워도 됨)
     items.append(
         {
             "title": "Pipeline test: jobs-board is updating",
@@ -199,26 +272,32 @@ def main():
         }
     )
 
-    # (1) Euraxess RSS: 잡음이 많으면 require_keyword_hit=True 추천
+    # (1) Euraxess RSS
     for name, url in RSS_FEEDS:
         try:
-            items.extend(fetch_rss_feed(name, url, max_items=80, require_keyword_hit=True))
+            items.extend(fetch_rss_feed(name, url, require_keyword_hit=True))
         except Exception:
             pass
 
-    # (2) MathJobs: 너무 많이 나오면 max_items를 더 줄여봐 (예: 10~20)
-    items.extend(fetch_mathjobs(
-        max_items=20,
-        require_field_keyword=True,
-        require_role_keyword=True
-    ))
+    # (2) MathJobs Postdoc (HTML 여러 장)
+    try:
+        items.extend(fetch_mathjobs_postdocs(require_keyword_hit=True))
+    except Exception:
+        pass
 
-    data = {
-        "updated_at": now_iso(),
-        "items": items,
-    }
+    # (3) dedupe by url (최종 안전장치)
+    uniq = []
+    seen = set()
+    for it in items:
+        u = it.get("url", "")
+        if not u or u in seen:
+            continue
+        seen.add(u)
+        uniq.append(it)
 
-    with open("jobs-board/jobs.json", "w", encoding="utf-8") as f:
+    data = {"updated_at": now_iso(), "items": uniq}
+
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
