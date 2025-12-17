@@ -1,30 +1,110 @@
 import json
+import re
 from datetime import datetime, timezone
+from urllib.request import Request, urlopen
+from urllib.parse import urljoin
+
+# 너의 관심 키워드(나중에 필터링/태깅에 쓸 수 있음)
+KEYWORDS = [
+    "symplectic",
+    "contact",
+    "dynamics",
+    "three-body problem",
+    "hamiltonian",
+]
+
+# MathJobs: RSS가 아니라 HTML 목록 페이지
+MATHJOBS_LIST_URL = "https://www.mathjobs.org/jobs?joblist-0-0----d--"
+MATHJOBS_BASE = "https://www.mathjobs.org"
+
 
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-def main():
-    data = {
-        "updated_at": now_iso(),
-        "items": [
+
+def fetch_mathjobs(max_items=50):
+    """
+    MathJobs 목록 페이지에서 /jobs/jobs/<id> 링크들을 뽑아서 items로 만든다.
+    (처음엔 title+url만 확보. institution/deadline 등은 2단계에서 고도화)
+    """
+    req = Request(
+        MATHJOBS_LIST_URL,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
+    )
+    html = urlopen(req, timeout=30).read().decode("utf-8", errors="ignore")
+
+    pattern = re.compile(
+        r'<a[^>]+href="(?P<href>/jobs/jobs/\d+)"[^>]*>(?P<title>.*?)</a>',
+        re.IGNORECASE,
+    )
+
+    items = []
+    seen = set()
+
+    for m in pattern.finditer(html):
+        href = m.group("href")
+        title_raw = re.sub(r"<.*?>", "", m.group("title"))  # inner tags 제거
+        title = re.sub(r"\s+", " ", title_raw).strip()
+        if not title:
+            continue
+
+        url = urljoin(MATHJOBS_BASE, href)
+        if url in seen:
+            continue
+        seen.add(url)
+
+        items.append(
             {
-                "title": "Pipeline test: jobs-board is updating",
-                "institution": "dhlee-math.github.io",
+                "title": title,
+                "institution": "",
                 "country": "",
                 "region": "Other",
                 "deadline": "",
-                "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
-                "source": "local",
-                "date_posted": datetime.now().date().isoformat(),
-                "tags": ["symplectic","contact","dynamics","three-body problem","hamiltonian"],
-                "url": "https://dhlee-math.github.io/jobs-board/"
+                "summary": "Imported from MathJobs listing.",
+                "source": "MathJobs",
+                "date_posted": "",  # (나중에 파싱 가능)
+                "tags": KEYWORDS,   # 일단 너 키워드 붙여두기
+                "url": url,
             }
-        ]
+        )
+
+        if len(items) >= max_items:
+            break
+
+    return items
+
+
+def main():
+    items = []
+
+    # (1) 파이프라인 테스트 카드: 유지해도 되고, 나중에 지워도 됨
+    items.append(
+        {
+            "title": "Pipeline test: jobs-board is updating",
+            "institution": "dhlee-math.github.io",
+            "country": "",
+            "region": "Other",
+            "deadline": "",
+            "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
+            "source": "local",
+            "date_posted": datetime.now().date().isoformat(),
+            "tags": KEYWORDS,
+            "url": "https://dhlee-math.github.io/jobs-board/",
+        }
+    )
+
+    # (2) MathJobs에서 실제 공고 링크들 추가
+    items.extend(fetch_mathjobs())
+
+    data = {
+        "updated_at": now_iso(),
+        "items": items,
     }
 
-    with open("jobs_board/jobs.json", "w", encoding="utf-8") as f:
+    # ⭐ 여기 경로가 가장 중요: jobs-board (하이픈)
+    with open("jobs-board/jobs.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
     main()
