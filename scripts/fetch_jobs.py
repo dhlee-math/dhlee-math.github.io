@@ -21,6 +21,8 @@ KEYWORDS = [
     "hamiltonian",
     # 네가 예시로 든 것처럼, MathJobs에서 자주 걸러내고 싶은 단어도 추가 가능
     "geometry",
+    "topology",
+    "dynamical systems",
 ]
 
 # Euraxess RSS
