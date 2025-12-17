@@ -216,89 +216,79 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
 # MathJobs HTML fetch (info link only)
 # =========================
 
-def fetch_mathjobs_postdocs(require_keyword_hit=False, max_items=120):
-    """
-    MathJobs Postdoc 리스트 페이지를 여러 장 긁어서:
-    - 기관명(h2)
-    - 공고 라인(li)
-    - ✅ url은 Apply가 아니라 '정보 링크'(/jobs/UCIM or /jobs/jobs/1234 등)만 저장
-    """
-    all_items = []
+def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
+    items = []
     seen = set()
 
-    for page_url in MATHJOBS_POSTDOC_LIST_PAGES:
+    def is_bad_job_href(href: str) -> bool:
+        # Euraxess 내부에서 "공고 상세"가 아닌 것들
+        bad_prefixes = [
+            "/jobs/search",
+            "/jobs/login",
+            "/jobs/guide",
+            "/jobs/content",
+            "/jobs/api",
+        ]
+        if any(href.startswith(b) for b in bad_prefixes):
+            return True
+        # 너무 짧으면(예: /jobs/ 만) 제외
+        return href.rstrip("/") == "/jobs"
+
+    def looks_like_garbage(title: str) -> bool:
+        t = (title or "").lower()
+        bad_tokens = ["class=", "svg", "ecl-", "focusable", "icon-", "button", "function "]
+        return (len(title) < 6) or any(x in t for x in bad_tokens)
+
+    for page_url in EURAXESS_SEARCH_PAGES:
         try:
             html = http_get(page_url, timeout=20)
         except Exception:
             continue
 
-        # 기관명 헤더 <h2>...</h2>
-        headers = []
-        for m in re.finditer(r"<h2[^>]*>(.*?)</h2>", html, flags=re.IGNORECASE | re.DOTALL):
-            inst = normalize(strip_tags(m.group(1)))
-            if inst:
-                headers.append((m.start(), inst))
+        # ✅ 숫자든 slug든 /jobs/<something> 로 이어지는 anchor를 잡는다
+        anchor_pat = re.compile(
+            r'<a[^>]+href="(?P<href>/jobs/[^"#?]+)"[^>]*>(?P<text>.*?)</a>',
+            re.IGNORECASE | re.DOTALL,
+        )
 
-        # 각 공고 라인 <li>...</li>
-        for m in re.finditer(r"<li[^>]*>(.*?)</li>", html, flags=re.IGNORECASE | re.DOTALL):
-            li_html = m.group(1)
-            li_text = normalize(strip_tags(li_html))
-            if not li_text:
+        for m in anchor_pat.finditer(html):
+            href = m.group("href").strip()
+            if is_bad_job_href(href):
                 continue
 
-            # ✅ Apply 링크는 무시. 대신 "정보 링크"만 찾는다.
-            # 예: /jobs/UCIM, /jobs/LUH_MAPHY, /jobs/jobs/12345
-            info_link = re.search(
-                r'href="(?P<href>/jobs/(?:jobs/\d+|[A-Za-z0-9_]+))"',
-                li_html,
-                flags=re.IGNORECASE,
-            )
-            if not info_link:
-                continue
-
-            url = urljoin(MATHJOBS_BASE, info_link.group("href"))
+            url = urljoin(EURAXESS_BASE, href)
             if url in seen:
                 continue
             seen.add(url)
 
-            # 이 li가 속한 기관명 추정: 가장 가까운 이전 h2
-            inst = ""
-            if headers:
-                prev = [h for (pos, h) in headers if pos < m.start()]
-                if prev:
-                    inst = prev[-1]
+            title = normalize(strip_tags(m.group("text")))
+            if looks_like_garbage(title):
+                continue
 
-            deadline = parse_deadline(li_text)
-
-            # 제목: [PD] Postdoc ... (deadline ...) 같은 줄에서 deadline 이후 제거
-            title = li_text
-            title = re.sub(r"\(deadline.*?\)", "", title, flags=re.IGNORECASE).strip()
-            title = re.sub(r"\bApply\b.*$", "", title, flags=re.IGNORECASE).strip()
-            title = title if title else "MathJobs posting"
-
-            hits = match_keywords(title + " " + inst)
+            hits = match_keywords(title)
             if require_keyword_hit and not hits:
                 continue
 
-            all_items.append(
+            items.append(
                 {
                     "title": title,
-                    "institution": inst,
+                    "institution": "",
                     "country": "",
-                    "region": "Other",
-                    "deadline": deadline,
-                    "summary": "Imported from MathJobs postdoc listing.",
-                    "source": "MathJobs",
+                    "region": "Europe",
+                    "deadline": "",
+                    "summary": "Imported from Euraxess search.",
+                    "source": "Euraxess(search)",
                     "date_posted": "",
                     "tags": hits,
                     "url": url,
                 }
             )
 
-            if len(all_items) >= max_items:
-                return all_items
+            if len(items) >= max_items:
+                return items
 
-    return all_items
+    return items
+
 
 
 # =========================
