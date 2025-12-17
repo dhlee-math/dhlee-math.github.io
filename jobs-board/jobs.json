@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-17T10:13:08+00:00",
+  "updated_at": "2025-12-17T10:20:21+00:00",
   "items": [
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -24,40 +24,124 @@
       "url": "https://dhlee-math.github.io/jobs-board/"
     },
     {
-      "title": "function yousure(msg){return confirm(msg?msg:\"Are you sure to delete it?\");} if(parseInt(getCookie('txtOnly'))){document.write(\"img,audio,video{display:none;}\");} Skip to main content &zwnj; View Jobs",
+      "title": "Senior Assistant",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/list"
+      "url": "https://euraxess.ec.europa.eu/jobs/396259"
     },
     {
-      "title": "Events",
+      "title": "STUDENT FELLOWSHIP (f/m) in the Project",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/events"
+      "url": "https://euraxess.ec.europa.eu/jobs/396257"
     },
     {
-      "title": "Registered Employers",
+      "title": "Clinical Practitioner (Nursing and Midwifery)",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/employers"
+      "url": "https://euraxess.ec.europa.eu/jobs/396191"
+    },
+    {
+      "title": "Post-doctoral Fellow in School of Biomedical Sciences",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396192"
+    },
+    {
+      "title": "Lecturer in Statistical Data Science",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396193"
+    },
+    {
+      "title": "Reader / Professor in Chinese Studies",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396194"
+    },
+    {
+      "title": "Post-doctoral Fellow in Ultracold Atom-Ion Hybrid Experiments in the Department of Physics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396195"
+    },
+    {
+      "title": "Assistant Professor of History Education",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396196"
+    },
+    {
+      "title": "Post Doctoral Fellow - Dr. Claire Standley&#039;s Lab",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396197"
+    },
+    {
+      "title": "Post Doctoral Fellows",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396198"
     }
   ]
 }
