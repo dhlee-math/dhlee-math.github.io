@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jobs Board (Personal)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; line-height: 1.45; }
+    header { margin-bottom: 16px; }
+    h1 { font-size: 20px; margin: 0 0 6px; }
+    .muted { color: #666; font-size: 13px; }
+    .error { color: #b00020; white-space: pre-wrap; }
+    ul { padding-left: 18px; }
+    li { margin: 10px 0; }
+    .title { font-weight: 600; }
+    .meta { color: #555; font-size: 13px; }
+    a { color: inherit; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jobs Board (personal)</h1>
+    <div class="muted">
+      Data source: <code>jobs.json</code> in this folder.
+    </div>
+    <div id="status" class="muted" style="margin-top:8px;">Loading…</div>
+  </header>
+
+  <main>
+    <div id="error" class="error"></div>
+    <ul id="list"></ul>
+  </main>
+
+  <script>
+    async function loadJobs() {
+      const statusEl = document.getElementById("status");
+      const errorEl = document.getElementById("error");
+      const listEl = document.getElementById("list");
+
+      // reset
+      errorEl.textContent = "";
+      listEl.innerHTML = "";
+
+      try {
+        // IMPORTANT: jobs.json is in the same folder as this index.html
+        const res = await fetch("./jobs.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`Failed to fetch jobs.json (HTTP ${res.status})`);
+
+        const data = await res.json();
+        statusEl.textContent = `Updated at: ${data.updated_at || "unknown"} • Items: ${(data.items || []).length}`;
+
+        const items = data.items || [];
+        if (items.length === 0) {
+          listEl.innerHTML = "<li class='muted'>No items yet.</li>";
+          return;
+        }
+
+        for (const item of items) {
+          const li = document.createElement("li");
+
+          const title = document.createElement("div");
+          title.className = "title";
+
+          const a = document.createElement("a");
+          a.href = item.url || "#";
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = item.title || "(no title)";
+
+          title.appendChild(a);
+
+          const meta = document.createElement("div");
+          meta.className = "meta";
+          const inst = item.institution || "";
+          const date = item.date_posted || "";
+          const region = item.region || "";
+          meta.textContent = [inst, region, date].filter(Boolean).join(" • ");
+
+          const summary = document.createElement("div");
+          summary.className = "muted";
+          summary.textContent = item.summary || "";
+
+          li.appendChild(title);
+          li.appendChild(meta);
+          if (item.summary) li.appendChild(summary);
+
+          listEl.appendChild(li);
+        }
+      } catch (err) {
+        statusEl.textContent = "Failed to load.";
+        errorEl.textContent = String(err);
+      }
+    }
+
+    loadJobs();
+  </script>
+</body>
+</html>
