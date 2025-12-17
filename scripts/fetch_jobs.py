@@ -136,14 +136,24 @@ def parse_deadline(text: str) -> str:
 # =========================
 
 def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
-    """
-    Euraxess 검색 결과 페이지(HTML)에서 카드/링크를 최대한 느슨하게 추출.
-    구조가 바뀔 수 있으므로:
-    - "jobs/" 또는 "/jobs/" 포함 링크를 수집
-    - 제목은 anchor 텍스트/주변 텍스트에서 최대한 뽑음
-    """
     items = []
     seen = set()
+
+    # /jobs/search 같은 비-공고 링크 제거용
+    def is_bad_job_href(href: str) -> bool:
+        bad = [
+            "/jobs/search",
+            "/jobs/login",
+            "/jobs/guide",
+            "/jobs/",
+        ]
+        return any(href.startswith(b) for b in bad)
+
+    # title 품질 체크 (메뉴/아이콘 찌꺼기 방지)
+    def looks_like_garbage(title: str) -> bool:
+        t = (title or "").lower()
+        bad_tokens = ["class=", "svg", "ecl-", "focusable", "icon-", "button"]
+        return (len(title) < 5) or any(x in t for x in bad_tokens)
 
     for page_url in EURAXESS_SEARCH_PAGES:
         try:
@@ -151,41 +161,43 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
         except Exception:
             continue
 
-        # Euraxess job detail 링크는 대개 /jobs/xxxxx 형태
-        # 너무 빡세게 잡지 말고, jobs/를 포함한 internal link를 뽑자.
-        for m in re.finditer(r'href="(?P<href>/jobs/[^"]+)"', html, flags=re.IGNORECASE):
-            href = m.group("href")
-            url = urljoin(EURAXESS_BASE, href)
+        # ✅ "전체 <a ...>...</a>"를 잡아 anchor text만 title로 사용
+        # Euraxess 공고 URL은 보통 /jobs/123456 형태가 많아서 우선 숫자형을 1순위로
+        anchor_pat = re.compile(
+            r'<a[^>]+href="(?P<href>/jobs/\d+[^"]*)"[^>]*>(?P<text>.*?)</a>',
+            re.IGNORECASE | re.DOTALL,
+        )
 
+        for m in anchor_pat.finditer(html):
+            href = m.group("href")
+            if is_bad_job_href(href):
+                continue
+
+            url = urljoin(EURAXESS_BASE, href)
             if url in seen:
                 continue
             seen.add(url)
 
-            # href 주변 일부를 잘라 제목/요약 추정(완전 정확하진 않아도 “없음”보다 낫다)
-            start = max(0, m.start() - 200)
-            end = min(len(html), m.end() + 400)
-            chunk = html[start:end]
-            chunk_text = normalize(strip_tags(chunk))
+            raw_text = m.group("text")
+            title = normalize(strip_tags(raw_text))
 
-            # title 추정: chunk_text에서 너무 긴 걸 피하려고 앞부분만 사용
-            # (나중에 원하면 detail 페이지를 한 번 더 불러와서 고도화 가능)
-            title = ""
-            # "Apply" 같은 단어가 섞이기 전까지 한 줄 비슷하게
-            if chunk_text:
-                title = chunk_text[:120]
+            # 가끔 anchor text가 비거나 이상하면 버리기
+            if looks_like_garbage(title):
+                continue
 
-            hits = match_keywords(title + " " + chunk_text)
+            # 키워드 필터 옵션(기본 False 유지 가능)
+            hits = match_keywords(title)
             if require_keyword_hit and not hits:
                 continue
 
             items.append(
                 {
-                    "title": title or "Euraxess posting",
+                    "title": title,
                     "institution": "",
                     "country": "",
                     "region": "Europe",
                     "deadline": "",
-                    "summary": chunk_text[:500] if chunk_text else "Imported from Euraxess search.",
+                    "summary": "Imported from Euraxess search.",
                     "source": "Euraxess(search)",
                     "date_posted": "",
                     "tags": hits,
@@ -197,6 +209,7 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
                 return items
 
     return items
+
 
 
 # =========================
