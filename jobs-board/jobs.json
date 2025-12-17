@@ -1,95 +1,23 @@
-import json
-from datetime import datetime, timezone
-
-# RSS/Atom 파서 (GitHub Actions에서 설치할 예정)
-import feedparser
-
-
-KEYWORDS = ["symplectic", "contact", "dynamics", "three-body problem", "hamiltonian"]
-
-# 1) 여기 RSS 피드 URL만 하나 넣으면 됨 (일단 예시 placeholder)
-RSS_FEEDS = [
-    # ("Euraxess (example)", "https://YOUR-RSS-FEED-URL-HERE"),
-]
-
-
-def today_utc_iso():
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-
-
-def to_date_yyyy_mm_dd(entry):
-    # feedparser는 published_parsed / updated_parsed 같은 struct_time을 줄 수 있음
-    t = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
-    if not t:
-        return ""
-    # struct_time -> YYYY-MM-DD
-    return f"{t.tm_year:04d}-{t.tm_mon:02d}-{t.tm_mday:02d}"
-
-
-def clean_summary(entry):
-    # summary/detail이 너무 길면 잘라서 UI 부담 줄이기
-    s = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
-    s = " ".join(s.split())
-    if len(s) > 240:
-        s = s[:240].rstrip() + "…"
-    return s
-
-
-def fetch_from_rss(name, url):
-    d = feedparser.parse(url)
-    items = []
-
-    for e in d.entries[:50]:  # 너무 많으면 페이지가 무거워지니 상한
-        title = getattr(e, "title", "").strip() or "(no title)"
-        link = getattr(e, "link", "").strip()
-
-        items.append({
-            "title": title,
-            "institution": "",   # RSS만으로는 깔끔히 못 뽑는 경우가 많아 일단 공란
-            "country": "",
-            "region": name,      # 우선은 feed 이름을 region 자리에 박아두자 (나중에 개선)
-            "deadline": "",
-            "summary": clean_summary(e),
-            "source": "rss",
-            "date_posted": to_date_yyyy_mm_dd(e),
-            "tags": KEYWORDS,    # 지금은 네 키워드를 “관심 태그”로 넣어둠 (나중에 자동 태깅 가능)
-            "url": link or url,
-        })
-
-    return items
-
-
-def main():
-    # 기존 더미 아이템(성공 확인용)은 이제 빼도 됨
-    items = []
-
-    for name, url in RSS_FEEDS:
-        try:
-            items.extend(fetch_from_rss(name, url))
-        except Exception as ex:
-            # 실패해도 전체 파이프라인이 죽지 않게(=빈 목록이라도 생성)
-            items.append({
-                "title": f"[ERROR] Failed to fetch RSS: {name}",
-                "institution": "dhlee-math.github.io",
-                "country": "",
-                "region": "Other",
-                "deadline": "",
-                "summary": str(ex),
-                "source": "local",
-                "date_posted": "",
-                "tags": KEYWORDS,
-                "url": "",
-            })
-
-    data = {
-        "updated_at": today_utc_iso(),
-        "items": items,
+{
+  "updated_at": "2025-12-17T07:47:44+00:00",
+  "items": [
+    {
+      "title": "Pipeline test: jobs-board is updating",
+      "institution": "dhlee-math.github.io",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
+      "source": "local",
+      "date_posted": "2025-12-17",
+      "tags": [
+        "symplectic",
+        "contact",
+        "dynamics",
+        "three-body problem",
+        "hamiltonian"
+      ],
+      "url": "https://dhlee-math.github.io/jobs-board/"
     }
-
-    # ★ 중요: 폴더명 jobs-board
-    with open("jobs-board/jobs.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
-
-if __name__ == "__main__":
-    main()
+  ]
+}
