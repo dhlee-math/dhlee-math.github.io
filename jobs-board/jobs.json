@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-17T08:27:03+00:00",
+  "updated_at": "2025-12-17T09:04:45+00:00",
   "items": [
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -15,6 +15,7 @@
         "contact",
         "dynamics",
         "three-body problem",
+        "three body problem",
         "hamiltonian",
         "geometry",
         "topology",
@@ -35,6 +36,118 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/392111"
+    },
+    {
+      "title": "[PD] Postdoc in noncommutative geometry&nbsp;(Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/3659/27692/apply"
+    },
+    {
+      "title": "[ALGGEOM26] Research Assistant (Postdoc, m/f/d) in Algebraic Geometry&nbsp;(deadline 2025/12/07 11:59PM, Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "2025/12/07",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/LUH_MAPHY/27311/apply"
+    },
+    {
+      "title": "[ARITHGEOM26] 4 Postdoctoral Researchers in Arithmetic Geometry&nbsp;(deadline 2025/12/07 11:59PM, Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "2025/12/07",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/LUH_MAPHY/27523/apply"
+    },
+    {
+      "title": "[FS2026RAWEI] Mathematical Biology or Computational Topology Research Associate&nbsp;(Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://www.mathjobs.org/jobs/MSU/26886/apply"
+    },
+    {
+      "title": "[POSTDOCUCIM] Postdoc SIMONS-UNAM geometry program at Cuernavaca&nbsp;(Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/UCIM/27353/apply"
+    },
+    {
+      "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory&nbsp;(deadline 2025/11/18 12:00AM, Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "2025/11/18",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/2569/27515/apply"
+    },
+    {
+      "title": "[POSTDOCTORALGEOMETRY] Postdoctoral researcher in Geometry&nbsp;(Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://uniluxembourg.recruitmentplatform.com/apply.html?jobId=QMUFK026203F3VBQB7V7VV4S8-159844&amp;langCode=en_GB&amp;sourceBoard=Social%2520Recruiting&amp;sType=Social%2520Recruiting"
+    },
+    {
+      "title": "[POSTDOCPICCIRILLO] Postdoctoral Instructor - 3 & 4 Dimensional Topology 2026&nbsp;(Postdoctoral) &nbsp;",
+      "institution": "Job Listings &nbsp; [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] &raquo; [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] &raquo;",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://apply.interfolio.com/176010"
     }
   ]
 }
