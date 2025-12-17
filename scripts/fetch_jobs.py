@@ -324,7 +324,7 @@ def main():
     items.extend(eur)
 
     # (2) MathJobs (postdoc list pages)
-    mj = fetch_mathjobs_postdocs(
+    mj = fetch_euraxess_math_postdoc(
         require_keyword_hit=REQUIRE_KEYWORD_HIT,
         max_items=MAX_MATHJOBS_ITEMS,
     )
