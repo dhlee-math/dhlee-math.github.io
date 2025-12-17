@@ -23,19 +23,15 @@ def now_iso():
 
 
 def fetch_mathjobs(max_items=50):
-    """
-    MathJobs 목록 페이지에서 /jobs/jobs/<id> 링크들을 뽑아서 items로 만든다.
-    (처음엔 title+url만 확보. institution/deadline 등은 2단계에서 고도화)
-    """
     req = Request(
         MATHJOBS_LIST_URL,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
+        headers={"User-Agent": "Mozilla/5.0"},
     )
     html = urlopen(req, timeout=30).read().decode("utf-8", errors="ignore")
 
     pattern = re.compile(
-        r'<a[^>]+href="(?P<href>/jobs/jobs/\d+)"[^>]*>(?P<title>.*?)</a>',
-        re.IGNORECASE,
+    r'href="(?P<href>/jobs/[A-Z0-9_]+)"',
+    re.IGNORECASE,
     )
 
     items = []
@@ -43,35 +39,29 @@ def fetch_mathjobs(max_items=50):
 
     for m in pattern.finditer(html):
         href = m.group("href")
-        title_raw = re.sub(r"<.*?>", "", m.group("title"))  # inner tags 제거
-        title = re.sub(r"\s+", " ", title_raw).strip()
-        if not title:
-            continue
-
         url = urljoin(MATHJOBS_BASE, href)
         if url in seen:
             continue
         seen.add(url)
 
-        items.append(
-            {
-                "title": title,
-                "institution": "",
-                "country": "",
-                "region": "Other",
-                "deadline": "",
-                "summary": "Imported from MathJobs listing.",
-                "source": "MathJobs",
-                "date_posted": "",  # (나중에 파싱 가능)
-                "tags": KEYWORDS,   # 일단 너 키워드 붙여두기
-                "url": url,
-            }
-        )
+        items.append({
+            "title": "MathJobs posting",
+            "institution": "",
+            "country": "",
+            "region": "Other",
+            "deadline": "",
+            "summary": "Imported from MathJobs (link only).",
+            "source": "MathJobs",
+            "date_posted": "",
+            "tags": KEYWORDS,
+            "url": url,
+        })
 
         if len(items) >= max_items:
             break
 
     return items
+
 
 
 def main():
