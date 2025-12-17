@@ -20,9 +20,12 @@ RSS_FEEDS = [
     ("Euraxess", "https://euraxess.ec.europa.eu/job-feed"),
 ]
 
-# (옵션) MathJobs HTML 목록도 계속 쓸 거면 유지
+# ✅ MathJobs HTML 목록
 MATHJOBS_LIST_URL = "https://www.mathjobs.org/jobs?joblist-0-0----d--"
 MATHJOBS_BASE = "https://www.mathjobs.org"
+
+# ✅ output path (폴더명 고정)
+OUT_JSON_PATH = "jobs-board/jobs.json"
 
 
 def now_iso():
@@ -49,12 +52,22 @@ def entry_date_iso(entry):
     return ""
 
 
+def load_existing_items(path=OUT_JSON_PATH):
+    """기존 jobs.json을 읽어서 items를 반환. 없거나 깨져있으면 []"""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        return old.get("items", [])
+    except Exception:
+        return []
+
+
 def fetch_rss_feed(feed_name, feed_url, max_items=80, require_keyword_hit=True):
     """
     RSS를 items로 변환.
     - require_keyword_hit=True 이면 KEYWORDS가 하나도 안 걸리면 스킵(잡음 줄이기)
     """
-    socket.setdefaulttimeout(20)  # 네트워크 타임아웃 (Actions에서 멈춤 방지)
+    socket.setdefaulttimeout(20)  # Actions에서 멈춤 방지
 
     d = feedparser.parse(feed_url)
     if getattr(d, "bozo", 0):
@@ -100,12 +113,14 @@ def fetch_rss_feed(feed_name, feed_url, max_items=80, require_keyword_hit=True):
 def fetch_mathjobs(max_items=50):
     """
     MathJobs 목록 페이지에서 링크를 뽑는 간단 파서.
-    (MathJobs는 종종 타임아웃/차단이 걸릴 수 있어서 try/except로 죽지 않게)
+    - MathJobs는 종종 타임아웃/차단이 걸릴 수 있으므로 실패 시 []
     """
     try:
         req = Request(
             MATHJOBS_LIST_URL,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; personal jobs board; +https://dhlee-math.github.io/)"
+            },
         )
         html = urlopen(req, timeout=20).read().decode("utf-8", errors="ignore")
     except Exception:
@@ -141,6 +156,7 @@ def fetch_mathjobs(max_items=50):
                 "url": url,
             }
         )
+
         if len(items) >= max_items:
             break
 
@@ -148,9 +164,13 @@ def fetch_mathjobs(max_items=50):
 
 
 def main():
+    # ✅ 기존 items 로드 (MathJobs fallback 용)
+    old_items = load_existing_items()
+    old_mathjobs = [x for x in old_items if x.get("source") == "MathJobs"]
+
     items = []
 
-    # (0) 파이프라인 테스트 카드: 원하면 지워도 됨
+    # (0) 파이프라인 테스트 카드 (원하면 나중에 지워도 됨)
     items.append(
         {
             "title": "Pipeline test: jobs-board is updating",
@@ -166,24 +186,31 @@ def main():
         }
     )
 
-    # (1) Euraxess RSS 추가
+    # (1) Euraxess RSS
     for name, url in RSS_FEEDS:
         try:
-            items.extend(fetch_rss_feed(name, url))
+            items.extend(fetch_rss_feed(name, url, require_keyword_hit=True))
         except Exception:
-            # RSS 하나가 죽어도 전체 워크플로우는 안 죽게
             pass
 
-    # (2) (옵션) MathJobs도 계속 시도하고 싶으면 켜두기
-    # items.extend(fetch_mathjobs())
+    # (2) MathJobs: 실패하면 기존 MathJobs 항목 유지
+    try:
+        new_mj = fetch_mathjobs()
+    except Exception:
+        new_mj = []
+
+    if new_mj:
+        items.extend(new_mj)
+    else:
+        items.extend(old_mathjobs)
 
     data = {
         "updated_at": now_iso(),
         "items": items,
     }
 
-    # ✅ 네 폴더명이 jobs-board 라고 했으니 이걸로 고정
-    with open("jobs-board/jobs.json", "w", encoding="utf-8") as f:
+    # ✅ 폴더명 jobs-board로 고정
+    with open(OUT_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
