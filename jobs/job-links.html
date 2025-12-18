@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Links</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* 네 styles.css를 최대한 존중하면서, 이 페이지에만 살짝 보정 */
+    .container { max-width: 1000px; margin: 0 auto; }
+    .meta { color: #666; font-size: 0.95rem; text-align: center; margin-top: -10px; }
+    .section { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+    .section h2 { margin: 0 0 10px; font-size: 1.15rem; }
+    .section p { margin: 0 0 10px; color: #444; }
+    ul.links { margin: 0; padding-left: 18px; }
+    ul.links li { margin: 8px 0; }
+    .tag { display: inline-block; font-size: 0.85rem; color: #666; margin-left: 6px; }
+    .tag::before { content: "· "; color: #aaa; }
+    .small { font-size: 0.95rem; color: #666; }
+    .updated { font-size: 0.9rem; color: #777; }
+    details.section { background:#fff; border:1px solid #ddd; border-radius:8px; padding:0; margin:16px 0; }
+    details.section details {
+        margin-top: 10px;
+        margin-left: 12px;
+        border-left: 3px solid #eee;
+        padding-left: 12px;
+        }
+
+        details.section details > summary {
+        font-size: 1rem;
+        font-weight: 600;
+        }
+    details.section > summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-weight: 700;
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    details.section > summary::-webkit-details-marker { display:none; }
+
+    details.section > summary .hint { font-weight: 400; color:#666; font-size:0.95rem; }
+    details.section[open] > summary { border-bottom: 1px solid #eee; }
+
+    details.section .content { padding: 12px 16px 14px; }
+    details.section .content p { margin-top: 0; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Job Links</h1>
+    <p class="meta">Job Links for Symplectic Geometors</p>
+    <p class="updated" style="text-align:center;">
+      Last updated: <span id="lastUpdated"></span>
+    </p>
+
+    <details class="section" open>
+      <summary>Generic Job Boards</summary>
+      <div class="content">
+        <ul class="links">
+        <li>
+          <a href="https://www.mathjobs.org/jobs?joblist-----40-d" target="_blank" rel="noopener">MathJobs.Org</a>
+          <span class="tag">Generic</span>
+        </li>
+                        <li>
+          <a href="https://www.kms.or.kr/board/list.html?code=job" target="_blank" rel="noopener">KMS (Korean Mathematical Society)</a>
+          <span class="tag">Korea</span>
+        </li>
+                <li>
+          <a href="https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_field%3A298&f%5B1%5D=job_research_field%3A307&f%5B2%5D=job_research_field%3A312&f%5B3%5D=offer_type%3Ajob_offer&f%5B4%5D=positions%3Apostdoc_positions" target="_blank" rel="noopener">Euraxess</a>
+          <span class="tag">EU</span>
+        </li>
+           <li>
+          <a href="https://academicpositions.com/find-jobs?page=1&positions[0]=post-doc&fields[0]=mathematics&fields[1]=geometry-and-topology" target="_blank" rel="noopener">Academic Positions</a>
+          <span class="tag">EU, NA</span>
+        </li>
+                <li>
+          <a href="https://jrecin.jst.go.jp/seek/SeekJorSearch?_jobkind=1&_area=1&_prefecture=1&_bgCode=1&_smCode=1&smCode=11010&smCode=11020&smCode=12010&smCode=12020&smCode=12030&keyword_and=&searchBtn=&fn=0" target="_blank" rel="noopener">JREC-IN Portal</a>
+          <span class="tag">Japan</span>
+        </li>
+        <details open>
+      <summary>Minors</summary>
+      <ul class="links">
+                        <li>
+          <a href="https://mathhire.org/jobs/academia" target="_blank" rel="noopener">Mathhire.org</a>
+          <span class="tag">EU</span>
+        </li>
+                   <li>
+          <a href="https://www.jobs.ac.uk/search/?activeFacet=subDisciplineFacet&sortOrder=1&pageSize=25&startIndex=1&academicDisciplineFacet%5B0%5D=mathematics-and-statistics&subDisciplineFacet%5B0%5D=mathematics" target="_blank" rel="noopener">Jobs.ac.uk</a>
+          <span class="tag">UK focused</span>
+        </li>
+                          <li>
+          <a href="https://www.academics.de/" target="_blank" rel="noopener">academics.de</a>
+          <span class="tag">Germany focused</span>
+        </li>
+                <li>
+          <a href="https://www.higheredjobs.com/" target="_blank" rel="noopener">HigherEdJobs</a>
+          <span class="tag">US focused</span>
+        </li>
+        </details>
+
+    </div>
+    </details>
+
+    <details class="section" open>
+      <summary>Korea</summary>
+    <div class="content">
+
+    
+
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+        <li>
+          <a href="https://rim.math.snu.ac.kr/" target="_blank">RIMS (Research Institute of Mathematics)</a>
+          <span class="tag">Seoul, SNU</span>
+        </li>
+        <li>
+          <a href="https://qsms.math.snu.ac.kr/" target="_blank">QSMS (Center for Quantum Structures in Modules and Spaces)</a>
+          <span class="tag">Seoul, SNU</span>
+        </li>
+        <li>
+          <a href="https://www.kias.re.kr/kias/main/main.do" target="_blank">KIAS (Korea Institute for Advanced Study)</a>
+          <span class="tag">Seoul</span>
+        </li>
+        <li>
+          <a href="https://cgp.ibs.re.kr/" target="_blank" rel="noopener">IBS CGP (Institute for Basic Science - Center for Geometry and Physics)</a>
+          <span class="tag">Pohang, POSTECH</span>
+        </li>
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+            <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+
+      </ul>
+    </div>
+    </details>
+
+       <details class="section" open>
+      <summary>Japan</summary>
+    <div class="content">
+
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+        <li>
+          <a href="https://www.kurims.kyoto-u.ac.jp/en/" target="_blank">RIMS</a>
+          <span class="tag">Kyoto University</span>
+        </li>
+                <li>
+          <a href="https://www.ipmu.jp/" target="_blank">IMPU</a>
+          <span class="tag">Chiba, University of Tokyo</span>
+        </li>
+                <li>
+          <a href="https://www.wpi-aimr.tohoku.ac.jp/" target="_blank">AIMR</a>
+          <span class="tag">Sendai, Tohoku University</span>
+        </li>
+                <li>
+          <a href="https://www.ims.u-tokyo.ac.jp/" target="_blank">IMS</a>
+          <span class="tag">Tokyo</span>
+        </li>
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+                <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="https://www.jsps.go.jp/english/e-pd/" target="_blank">JSPS Postdoctoral Fellowship</a>
+          <span class="tag">...</span>
+        </li>
+                <li>
+          <a href="https://www.jsps.go.jp/english/e-inv/" target="_blank">JSPS Invitational Fellowship</a>
+          <span class="tag">...</span>
+        </li>
+      </ul>
+    </details>
+
+
+      </ul>
+    </div>
+    </details>
+
+
+           <details class="section" open>
+      <summary>EU</summary>
+    <div class="content">
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+        <li>
+          <a href="https://erc.europa.eu/" target="_blank">ERC (European Research Council)</a>
+          <span class="tag">Europe</span>
+        </li>
+                <li>
+          <a href="https://www.cirm-math.com/" target="_blank">CIRM (Centre International de Rencontres Mathématiques)</a>
+          <span class="tag">France, Marseille</span>
+        </li>
+                        <li>
+          <a href="https://www.mpim-bonn.mpg.de/" target="_blank">MPIM (Max Planck Institute for Mathematics)</a>
+          <span class="tag">Germany, Bonn</span>
+        </li>
+                <li>
+          <a href="https://www.mis.mpg.de/" target="_blank">MPI MiS (Max Planck Institute for Mathematics in the Sciences)</a>
+          <span class="tag">Germany, Leipzig</span>
+        </li>
+                <li>
+          <a href="https://www.ihes.fr/" target="_blank">IHES (Institut des Hautes Études Scientifiques)</a>
+          <span class="tag">France</span>
+        </li>
+                <li>
+          <a href="https://www.ihp.fr/" target="_blank">IHP (Institut Henri Poincaré)</a>
+          <span class="tag">France, Paris</span>
+        </li>
+                <li>
+          <a href="https://www.hcm.uni-bonn.de/" target="_blank">HCM (Hausdorff Center for Mathematics)</a>
+          <span class="tag">Germany, Bonn</span>
+        </li>
+                <li>
+          <a href="https://www.epfl.ch/research/domains/bernoulli/" target="_blank">EPFL (Bernoulli Center)</a>
+          <span class="tag">Switzerland</span>
+        </li>
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+                <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+
+
+      </ul>
+    </div>
+    </details>
+
+
+
+
+           <details class="section" open>
+      <summary>NA</summary>
+    <div class="content">
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+        <li>
+          <a href="https://www.ias.edu/" target="_blank">IAS (Institute for Advanced Study)</a>
+          <span class="tag">Princeton</span>
+        </li>
+                <li>
+          <a href="https://www.slmath.org/" target="_blank">MSRI (Mathematical Sciences Research Institute)</a>
+          <span class="tag">Berkeley</span>
+        </li>
+                <li>
+          <a href="https://aimath.org/" target="_blank">AIM (American Institute of Mathematics)</a>
+          <span class="tag">Pasadena</span>
+        </li>
+                <li>
+          <a href="https://icerm.brown.edu/" target="_blank">ICERM</a>
+          <span class="tag">Providence</span>
+        </li>
+                <li>
+          <a href="https://www.fields.utoronto.ca/" target="_blank">Fields Institute</a>
+          <span class="tag">Toronto</span>
+        </li>
+                <li>
+          <a href="https://www.birs.ca/" target="_blank">BIRS (Banff International Research Station)</a>
+          <span class="tag">Canada</span>
+                  </li>
+                <li>
+          <a href="https://www.lanl.gov/careers/" target="_blank">LANL (Los Alamos National Laboratory)</a>
+          <span class="tag">...</span>
+                  </li>
+                <li>
+          <a href="https://jobs.lbl.gov/" target="_blank">LBNL (Lawrence Berkeley National Laboratory)</a>
+          <span class="tag">Canada</span>
+        </li>
+
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+                <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+
+
+      </ul>
+    </div>
+    </details>
+
+
+
+
+           <details class="section" open>
+      <summary>Asia</summary>
+    <div class="content">
+
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+                <li>
+          <a href="https://www.mcm.ac.cn/" target="_blank" rel="noopener">MCM (Morningside Center of Mathematics)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+                <li>
+          <a href="https://www.mcm.ac.cn/" target="_blank" rel="noopener">MCM (Morningside Center of Mathematics)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+
+        <li>
+          <a href="http://www.amss.ac.cn/" target="_blank">AMSS (Academy of Mathematics and Systems Science)</a>
+          <span class="tag">China</span>
+        </li>
+                <li>
+          <a href="https://ymsc.tsinghua.edu.cn/" target="_blank" rel="noopener">YMSC (Yau Mathematical Sciences Center)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+
+                <li>
+          <a href="https://bicmr.pku.edu.cn/" target="_blank" rel="noopener">BICMR (Beijing International Center for Mathematical Research)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+           <li>
+          <a href="https://kitpc.ac.cn/" target="_blank" rel="noopener">KITPC (Kavli Institute for Theoretical Physics China)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+           <li>
+          <a href="https://scms.fudan.edu.cn/" target="_blank" rel="noopener">SCMS (Shanghai Center for Mathematical Sciences)</a>
+          <span class="tag">China, Beijing</span>
+        </li>
+
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+                <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+
+
+      </ul>
+    </div>
+    </details>
+
+
+
+           <details class="section" open>
+      <summary>Others</summary>
+    <div class="content">
+
+       <details open>
+      <summary>Institutes</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+        <details open>
+      <summary>Universities</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+                <details open>
+      <summary>Fellowships</summary>
+      <ul class="links">
+        <li>
+          <a href="LINK" target="_blank">NAME</a>
+          <span class="tag">LOCATION, CAPTION</span>
+        </li>
+      </ul>
+    </details>
+
+
+      </ul>
+    </div>
+    </details>
+
+
+    <footer>
+      © <span id="year"></span> • Job Links
+    </footer>
+  </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById("year").textContent = d.getFullYear();
+    document.getElementById("lastUpdated").textContent = d.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
