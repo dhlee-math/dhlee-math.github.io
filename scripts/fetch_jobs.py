@@ -12,6 +12,12 @@ from urllib.request import Request, urlopen
 
 OUT_PATH = Path("jobs-board/jobs.json")
 
+PRIORITY_KEYWORDS = {
+    1: ["symplectic", "hamiltonian"],
+    2: ["geometry", "topology", "dynamics", "celestial mechanics"],
+    3: ["all fields", "fellowship"],
+}
+
 KEYWORDS = [
     "symplectic",
     "contact",
@@ -118,11 +124,24 @@ def dedupe_by_url(items):
         uniq.append(it)
     return uniq
 
+def keyword_priority(text: str) -> tuple[int, list[str]]:
+    """
+    return (priority, hits)
+    priority: 1(best) / 2 / 3 / 99(none)
+    hits: 매칭된 키워드 리스트 (우선순위 순서 유지)
+    """
+    t = (text or "").lower()
+    for p in (1, 2, 3):
+        hits = [k for k in PRIORITY_KEYWORDS[p] if k in t]
+        if hits:
+            return p, hits
+    return 99, []
+
+KEEP_UP_TO_PRIORITY = 3
 
 def parse_deadline(text: str) -> str:
     m = re.search(r"deadline\s+(\d{4}/\d{2}/\d{2})", text, flags=re.IGNORECASE)
     return m.group(1) if m else ""
-
 
 def euraxess_is_math_job(detail_html: str) -> bool:
     # detail page에 Mathematics/Mathematical sciences 등이 들어가면 통과
@@ -180,9 +199,20 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
             title = normalize(strip_tags(m.group("text")))
             if looks_like_garbage(title):
                 continue
+            # 먼저 상세 페이지 fetch
+            try:
+                detail_html = http_get(url, timeout=20)
+            except Exception:
+                continue
+            if not euraxess_is_math_job(detail_html):
+                continue
 
-            hits = match_keywords(title)
-            if require_keyword_hit and not hits:
+            p, hits = keyword_priority(title + " " + strip_tags(detail_html))
+            if p == 99:
+            # 키워드 하나도 안 걸리면 버릴지 말지는 옵션
+            # 지금 네 요구는 "걸러내기"니까 일단 버리는 쪽으로:
+                continue
+            if p > KEEP_UP_TO_PRIORITY:
                 continue
 
             # ✅ 상세페이지에서 수학인지 확인 (History education 등 제거)
@@ -205,6 +235,7 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
                     "date_posted": "",
                     "tags": hits,
                     "url": url,
+                    "priority": p,
                 }
             )
 
@@ -288,9 +319,12 @@ def fetch_mathjobs_postdocs(require_keyword_hit=False, max_items=120):
             title = re.sub(r"\bApply\b.*$", "", title, flags=re.IGNORECASE).strip()
             title = title if title else "MathJobs posting"
 
-            hits = match_keywords(title + " " + inst)
-            if require_keyword_hit and not hits:
+            p, hits = keyword_priority(title + " " + inst)
+            if p == 99:
                 continue
+            if p > KEEP_UP_TO_PRIORITY:
+                continue
+
 
             all_items.append(
                 {
@@ -304,6 +338,7 @@ def fetch_mathjobs_postdocs(require_keyword_hit=False, max_items=120):
                     "date_posted": "",
                     "tags": hits,
                     "url": url,
+                    "priority": p,
                 }
             )
 
@@ -349,6 +384,12 @@ def main():
     items.extend(mj)
 
     items = dedupe_by_url(items)
+
+    def safe_priority(it):
+        return int(it.get("priority", 99) or 99)
+
+    items.sort(key=lambda it: (safe_priority(it), (it.get("deadline") or "9999/99/99"), it.get("title","")))
+
 
     real_items = [it for it in items if it.get("source") not in ("local",)]
     if len(real_items) == 0:
