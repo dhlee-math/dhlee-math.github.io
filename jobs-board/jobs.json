@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-17T10:20:21+00:00",
+  "updated_at": "2025-12-18T02:56:27+00:00",
   "items": [
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -9,7 +9,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-17",
+      "date_posted": "2025-12-18",
       "tags": [
         "symplectic",
         "contact",
@@ -24,7 +24,7 @@
       "url": "https://dhlee-math.github.io/jobs-board/"
     },
     {
-      "title": "Senior Assistant",
+      "title": "RESEARCH FELLOWSHIP (m/f) - Ref. IBMC_BI_ImmunoHub_1712_2025",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -33,10 +33,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396259"
+      "url": "https://euraxess.ec.europa.eu/jobs/396426"
     },
     {
-      "title": "STUDENT FELLOWSHIP (f/m) in the Project",
+      "title": "Announcement of a call for research grant Reference: 2025_101_BI_SIGNAL",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -45,10 +45,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396257"
+      "url": "https://euraxess.ec.europa.eu/jobs/396425"
     },
     {
-      "title": "Clinical Practitioner (Nursing and Midwifery)",
+      "title": "Call for Research Grant Assignment | 1155094 | IIMEX",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -57,10 +57,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396191"
+      "url": "https://euraxess.ec.europa.eu/jobs/396423"
     },
     {
-      "title": "Post-doctoral Fellow in School of Biomedical Sciences",
+      "title": "Research fellowship",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -69,10 +69,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396192"
+      "url": "https://euraxess.ec.europa.eu/jobs/396421"
     },
     {
-      "title": "Lecturer in Statistical Data Science",
+      "title": "PhD student project ValorBIO - Valorising agrifood for sustainable packaging solutions - LGP2",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -81,10 +81,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396193"
+      "url": "https://euraxess.ec.europa.eu/jobs/396419"
     },
     {
-      "title": "Reader / Professor in Chinese Studies",
+      "title": "Research Fellowship for a MSc degree holder - Waste2NFs_01; 1 vacancy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -93,10 +93,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396194"
+      "url": "https://euraxess.ec.europa.eu/jobs/396422"
     },
     {
-      "title": "Post-doctoral Fellow in Ultracold Atom-Ion Hybrid Experiments in the Department of Physics",
+      "title": "PhD position in Statistical Machine Learning for Self-Driving Microscopy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -105,10 +105,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396195"
+      "url": "https://euraxess.ec.europa.eu/jobs/396418"
     },
     {
-      "title": "Assistant Professor of History Education",
+      "title": "PhD position in Advanced Strategies for Smart Biomanufacturing in Biofoundries",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -117,10 +117,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396196"
+      "url": "https://euraxess.ec.europa.eu/jobs/396420"
     },
     {
-      "title": "Post Doctoral Fellow - Dr. Claire Standley&#039;s Lab",
+      "title": "Postdoctoral Research Associate - International Research Training Group 2560 &quot;Baltic Peripeties&quot;",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -129,10 +129,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396197"
+      "url": "https://euraxess.ec.europa.eu/jobs/396417"
     },
     {
-      "title": "Post Doctoral Fellows",
+      "title": "PhD Research Position (FPI) - Project: ‘MultiLearn’ (Language Learning &amp; Multimodality) at GRECIL Research Group (4 years)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -141,7 +141,7 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://euraxess.ec.europa.eu/jobs/396198"
+      "url": "https://euraxess.ec.europa.eu/jobs/396427"
     }
   ]
 }
