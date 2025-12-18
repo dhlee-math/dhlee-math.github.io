@@ -62,6 +62,14 @@ socket.setdefaulttimeout(20)
 # Helpers
 # =========================
 
+EURAXESS_POSTDOC_TOKENS = [
+    "postdoc", "post-doc", "post doctoral", "postdoctoral",
+    "post-doctoral", "post doctorate"
+]
+EURAXESS_PHD_TOKENS = [
+    "phd", "doctoral candidate", "ph.d", "doctoral student", "phd student"
+]
+
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -146,10 +154,27 @@ def parse_deadline(text: str) -> str:
     m = re.search(r"deadline\s+(\d{4}/\d{2}/\d{2})", text, flags=re.IGNORECASE)
     return m.group(1) if m else ""
 
-def euraxess_is_math_job(detail_html: str) -> bool:
-    # detail page에 Mathematics/Mathematical sciences 등이 들어가면 통과
+def euraxess_is_math_postdoc(detail_html: str) -> bool:
     text = (" " + strip_tags(detail_html) + " ").lower()
-    return "mathemat" in text
+
+    is_math = ("mathemat" in text)
+    if not is_math:
+        return False
+
+    is_postdoc = any(tok in text for tok in EURAXESS_POSTDOC_TOKENS)
+    is_phd = any(tok in text for tok in EURAXESS_PHD_TOKENS)
+
+    # ✅ 포닥이 명시되면 통과
+    if is_postdoc:
+        return True
+
+    # ✅ 포닥이 없고, PhD만 명시되면 탈락
+    if is_phd:
+        return False
+
+    # 애매하면(표기가 없으면) 일단 탈락시키는 게 안전
+    return False
+
 
 
 # =========================
@@ -207,7 +232,7 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
                 detail_html = http_get(url, timeout=20)
             except Exception:
                 continue
-            if not euraxess_is_math_job(detail_html):
+            if not euraxess_is_math_postdoc(detail_html):
                 continue
 
             p, hits = keyword_priority(title + " " + strip_tags(detail_html))
