@@ -24,14 +24,11 @@ KEYWORDS = [
     "dynamical systems",
 ]
 
-# ✅ “키워드가 하나도 안 걸리면 버릴래?” (권장: False)
 REQUIRE_KEYWORD_HIT = False
 
-# ✅ 소스별 최대 수집 개수(너무 많아지는 거 방지)
 MAX_EURAXESS_ITEMS = 80
 MAX_MATHJOBS_ITEMS = 120
 
-# ✅ Euraxess: 네가 준 “수학 + postdoc” 검색 페이지들 (page=0,1,2)
 EURAXESS_SEARCH_PAGES = [
     "https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_field%3A298&f%5B1%5D=positions%3Apostdoc_positions",
     "https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_field%3A298&f%5B1%5D=positions%3Apostdoc_positions&page=1",
@@ -39,7 +36,6 @@ EURAXESS_SEARCH_PAGES = [
 ]
 EURAXESS_BASE = "https://euraxess.ec.europa.eu"
 
-# ✅ MathJobs: Postdoc 리스트 페이지들 (네가 준 포맷)
 MATHJOBS_BASE = "https://www.mathjobs.org"
 MATHJOBS_POSTDOC_LIST_PAGES = [
     "https://www.mathjobs.org/jobs?joblist-0-3---0-t--",
@@ -53,9 +49,7 @@ MATHJOBS_POSTDOC_LIST_PAGES = [
     "https://www.mathjobs.org/jobs?joblist-0-3--280-40-dt--",
 ]
 
-# 네트워크 타임아웃 (Actions에서 멈추는 것 방지)
 socket.setdefaulttimeout(20)
-
 
 # =========================
 # Helpers
@@ -80,7 +74,7 @@ def match_keywords(text: str):
     for k in KEYWORDS:
         if k.lower() in t:
             hits.append(k)
-    # 중복 제거(순서 유지)
+    # dedupe stable
     seen = set()
     uniq = []
     for h in hits:
@@ -93,13 +87,15 @@ def match_keywords(text: str):
 def http_get(url: str, timeout=20) -> str:
     req = Request(
         url,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; personal jobs board)"},
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; personal jobs board)",
+            "Accept-Language": "en-US,en;q=0.9",
+        },
     )
     return urlopen(req, timeout=timeout).read().decode("utf-8", errors="ignore")
 
 
 def safe_load_existing_items():
-    """파싱이 망했을 때 덮어쓰지 않기 위해 기존 파일을 읽어둔다."""
     try:
         if OUT_PATH.exists():
             data = json.loads(OUT_PATH.read_text(encoding="utf-8"))
@@ -124,96 +120,18 @@ def dedupe_by_url(items):
 
 
 def parse_deadline(text: str) -> str:
-    """
-    (deadline 2025/11/14 11:59PM) 같은 문자열에서 2025/11/14만 뽑기.
-    """
     m = re.search(r"deadline\s+(\d{4}/\d{2}/\d{2})", text, flags=re.IGNORECASE)
     return m.group(1) if m else ""
 
 
-# =========================
-# Euraxess HTML fetch
-# =========================
-
-def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
-    items = []
-    seen = set()
-
-    # /jobs/search 같은 비-공고 링크 제거용
-    def is_bad_job_href(href: str) -> bool:
-        bad = [
-            "/jobs/search",
-            "/jobs/login",
-            "/jobs/guide",
-            "/jobs/",
-        ]
-        return any(href.startswith(b) for b in bad)
-
-    # title 품질 체크 (메뉴/아이콘 찌꺼기 방지)
-    def looks_like_garbage(title: str) -> bool:
-        t = (title or "").lower()
-        bad_tokens = ["class=", "svg", "ecl-", "focusable", "icon-", "button"]
-        return (len(title) < 5) or any(x in t for x in bad_tokens)
-
-    for page_url in EURAXESS_SEARCH_PAGES:
-        try:
-            html = http_get(page_url, timeout=20)
-        except Exception:
-            continue
-
-        # ✅ "전체 <a ...>...</a>"를 잡아 anchor text만 title로 사용
-        # Euraxess 공고 URL은 보통 /jobs/123456 형태가 많아서 우선 숫자형을 1순위로
-        anchor_pat = re.compile(
-            r'<a[^>]+href="(?P<href>/jobs/\d+[^"]*)"[^>]*>(?P<text>.*?)</a>',
-            re.IGNORECASE | re.DOTALL,
-        )
-
-        for m in anchor_pat.finditer(html):
-            href = m.group("href")
-            if is_bad_job_href(href):
-                continue
-
-            url = urljoin(EURAXESS_BASE, href)
-            if url in seen:
-                continue
-            seen.add(url)
-
-            raw_text = m.group("text")
-            title = normalize(strip_tags(raw_text))
-
-            # 가끔 anchor text가 비거나 이상하면 버리기
-            if looks_like_garbage(title):
-                continue
-
-            # 키워드 필터 옵션(기본 False 유지 가능)
-            hits = match_keywords(title)
-            if require_keyword_hit and not hits:
-                continue
-
-            items.append(
-                {
-                    "title": title,
-                    "institution": "",
-                    "country": "",
-                    "region": "Europe",
-                    "deadline": "",
-                    "summary": "Imported from Euraxess search.",
-                    "source": "Euraxess(search)",
-                    "date_posted": "",
-                    "tags": hits,
-                    "url": url,
-                }
-            )
-
-            if len(items) >= max_items:
-                return items
-
-    return items
-
+def euraxess_is_math_job(detail_html: str) -> bool:
+    # detail page에 Mathematics/Mathematical sciences 등이 들어가면 통과
+    text = (" " + strip_tags(detail_html) + " ").lower()
+    return "mathemat" in text
 
 
 # =========================
-# MathJobs HTML fetch (info link only)
+# Euraxess fetch
 # =========================
 
 def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
@@ -221,7 +139,6 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
     seen = set()
 
     def is_bad_job_href(href: str) -> bool:
-        # Euraxess 내부에서 "공고 상세"가 아닌 것들
         bad_prefixes = [
             "/jobs/search",
             "/jobs/login",
@@ -231,7 +148,6 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
         ]
         if any(href.startswith(b) for b in bad_prefixes):
             return True
-        # 너무 짧으면(예: /jobs/ 만) 제외
         return href.rstrip("/") == "/jobs"
 
     def looks_like_garbage(title: str) -> bool:
@@ -245,7 +161,7 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
         except Exception:
             continue
 
-        # ✅ 숫자든 slug든 /jobs/<something> 로 이어지는 anchor를 잡는다
+        # slug/숫자 모두 허용
         anchor_pat = re.compile(
             r'<a[^>]+href="(?P<href>/jobs/[^"#?]+)"[^>]*>(?P<text>.*?)</a>',
             re.IGNORECASE | re.DOTALL,
@@ -269,6 +185,14 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
             if require_keyword_hit and not hits:
                 continue
 
+            # ✅ 상세페이지에서 수학인지 확인 (History education 등 제거)
+            try:
+                detail_html = http_get(url, timeout=20)
+            except Exception:
+                continue
+            if not euraxess_is_math_job(detail_html):
+                continue
+
             items.append(
                 {
                     "title": title,
@@ -290,6 +214,104 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
     return items
 
 
+# =========================
+# MathJobs fetch
+# =========================
+
+def fetch_mathjobs_postdocs(require_keyword_hit=False, max_items=120):
+    """
+    - joblist 페이지에서 <h2> (기관) + 그 아래 <li> (공고 라인) 파싱
+    - 메뉴/푸터 <li> 제거
+    - Apply 링크 제외, /jobs/... 정보 링크만 저장
+    """
+    all_items = []
+    seen = set()
+
+    menu_tokens = [
+        "registered employers",
+        "events",
+        "skip to main content",
+        "view jobs",
+        "minority registry",
+        "job wanted",
+        "delete it",
+        "privacy",
+    ]
+
+    for page_url in MATHJOBS_POSTDOC_LIST_PAGES:
+        try:
+            html = http_get(page_url, timeout=20)
+        except Exception:
+            continue
+
+        # 기관명 헤더 <h2>...</h2>
+        headers = []
+        for hm in re.finditer(r"<h2[^>]*>(.*?)</h2>", html, flags=re.IGNORECASE | re.DOTALL):
+            inst = normalize(strip_tags(hm.group(1)))
+            if inst:
+                headers.append((hm.start(), inst))
+
+        # 공고 라인 <li>...</li>
+        for m in re.finditer(r"<li[^>]*>(.*?)</li>", html, flags=re.IGNORECASE | re.DOTALL):
+            li_html = m.group(1)
+            li_text = normalize(strip_tags(li_html))
+            if not li_text or len(li_text) < 25:
+                continue
+
+            t = li_text.lower()
+            if any(tok in t for tok in menu_tokens):
+                continue
+
+            # 정보 링크(Apply 말고)만
+            info_link = re.search(r'href="(?P<href>/jobs/[^"]+)"', li_html, flags=re.IGNORECASE)
+            if not info_link:
+                continue
+            href = info_link.group("href")
+            if "apply" in href.lower():
+                continue
+
+            url = urljoin(MATHJOBS_BASE, href)
+            if url in seen:
+                continue
+            seen.add(url)
+
+            # 이 li가 속한 기관명 추정: 가장 가까운 이전 h2
+            inst = ""
+            if headers:
+                prev = [h for (pos, h) in headers if pos < m.start()]
+                if prev:
+                    inst = prev[-1]
+
+            deadline = parse_deadline(li_text)
+
+            title = re.sub(r"\(deadline.*?\)", "", li_text, flags=re.IGNORECASE).strip()
+            title = re.sub(r"\bApply\b.*$", "", title, flags=re.IGNORECASE).strip()
+            title = title if title else "MathJobs posting"
+
+            hits = match_keywords(title + " " + inst)
+            if require_keyword_hit and not hits:
+                continue
+
+            all_items.append(
+                {
+                    "title": title,
+                    "institution": inst,
+                    "country": "",
+                    "region": "Other",
+                    "deadline": deadline,
+                    "summary": "Imported from MathJobs postdoc listing.",
+                    "source": "MathJobs",
+                    "date_posted": "",
+                    "tags": hits,
+                    "url": url,
+                }
+            )
+
+            if len(all_items) >= max_items:
+                return all_items
+
+    return all_items
+
 
 # =========================
 # Main
@@ -297,10 +319,8 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
 
 def main():
     existing_items = safe_load_existing_items()
-
     items = []
 
-    # (0) 파이프라인 테스트 카드 (원하면 나중에 지워도 됨)
     items.append(
         {
             "title": "Pipeline test: jobs-board is updating",
@@ -316,27 +336,22 @@ def main():
         }
     )
 
-    # (1) Euraxess (search pages)
     eur = fetch_euraxess_math_postdoc(
         require_keyword_hit=REQUIRE_KEYWORD_HIT,
         max_items=MAX_EURAXESS_ITEMS,
     )
     items.extend(eur)
 
-    # (2) MathJobs (postdoc list pages)
-    mj = fetch_euraxess_math_postdoc(
+    mj = fetch_mathjobs_postdocs(
         require_keyword_hit=REQUIRE_KEYWORD_HIT,
         max_items=MAX_MATHJOBS_ITEMS,
     )
     items.extend(mj)
 
-    # (3) 최종 dedupe
     items = dedupe_by_url(items)
 
-    # ✅ “아무것도 못 뽑으면 기존 파일을 유지” (테스트 카드만 남는 참사 방지)
     real_items = [it for it in items if it.get("source") not in ("local",)]
     if len(real_items) == 0:
-        # 기존에 뭐가 있었으면 그걸 유지하되, updated_at만 갱신하지 말자(혼란 방지)
         if existing_items:
             data = {"updated_at": now_iso(), "items": dedupe_by_url(existing_items)}
             OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
