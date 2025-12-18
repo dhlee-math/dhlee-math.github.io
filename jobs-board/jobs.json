@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-17T10:13:08+00:00",
+  "updated_at": "2025-12-18T02:56:27+00:00",
   "items": [
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -9,7 +9,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-17",
+      "date_posted": "2025-12-18",
       "tags": [
         "symplectic",
         "contact",
@@ -24,40 +24,124 @@
       "url": "https://dhlee-math.github.io/jobs-board/"
     },
     {
-      "title": "function yousure(msg){return confirm(msg?msg:\"Are you sure to delete it?\");} if(parseInt(getCookie('txtOnly'))){document.write(\"img,audio,video{display:none;}\");} Skip to main content &zwnj; View Jobs",
+      "title": "RESEARCH FELLOWSHIP (m/f) - Ref. IBMC_BI_ImmunoHub_1712_2025",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/list"
+      "url": "https://euraxess.ec.europa.eu/jobs/396426"
     },
     {
-      "title": "Events",
+      "title": "Announcement of a call for research grant Reference: 2025_101_BI_SIGNAL",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/events"
+      "url": "https://euraxess.ec.europa.eu/jobs/396425"
     },
     {
-      "title": "Registered Employers",
+      "title": "Call for Research Grant Assignment | 1155094 | IIMEX",
       "institution": "",
       "country": "",
-      "region": "Other",
+      "region": "Europe",
       "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [],
-      "url": "https://www.mathjobs.org/jobs/employers"
+      "url": "https://euraxess.ec.europa.eu/jobs/396423"
+    },
+    {
+      "title": "Research fellowship",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396421"
+    },
+    {
+      "title": "PhD student project ValorBIO - Valorising agrifood for sustainable packaging solutions - LGP2",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396419"
+    },
+    {
+      "title": "Research Fellowship for a MSc degree holder - Waste2NFs_01; 1 vacancy",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396422"
+    },
+    {
+      "title": "PhD position in Statistical Machine Learning for Self-Driving Microscopy",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396418"
+    },
+    {
+      "title": "PhD position in Advanced Strategies for Smart Biomanufacturing in Biofoundries",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396420"
+    },
+    {
+      "title": "Postdoctoral Research Associate - International Research Training Group 2560 &quot;Baltic Peripeties&quot;",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396417"
+    },
+    {
+      "title": "PhD Research Position (FPI) - Project: ‘MultiLearn’ (Language Learning &amp; Multimodality) at GRECIL Research Group (4 years)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [],
+      "url": "https://euraxess.ec.europa.eu/jobs/396427"
     }
   ]
 }
