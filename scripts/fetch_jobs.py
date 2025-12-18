@@ -248,7 +248,7 @@ def fetch_euraxess_math_postdoc(require_keyword_hit=False, max_items=80):
                 detail_html = http_get(url, timeout=20)
             except Exception:
                 continue
-            if not euraxess_is_math_job(detail_html):
+            if not euraxess_is_math_postdoc(detail_html):
                 continue
 
             items.append(
