@@ -1,6 +1,7 @@
 import json
 import re
 import socket
+import html as html_lib
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -64,6 +65,8 @@ socket.setdefaulttimeout(20)
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
+def decode_entities(s: str) -> str:
+    return html_lib.unescape(s or "")
 
 def normalize(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip()
@@ -71,8 +74,8 @@ def normalize(s: str) -> str:
 
 def strip_tags(html: str) -> str:
     html = re.sub(r"<br\s*/?>", " ", html, flags=re.IGNORECASE)
-    return re.sub(r"<[^>]+>", "", html)
-
+    text = re.sub(r"<[^>]+>", "", html)
+    return decode_entities(text)
 
 def match_keywords(text: str):
     t = (text or "").lower()
@@ -286,6 +289,8 @@ def fetch_mathjobs_postdocs(require_keyword_hit=False, max_items=120):
         for m in re.finditer(r"<li[^>]*>(.*?)</li>", html, flags=re.IGNORECASE | re.DOTALL):
             li_html = m.group(1)
             li_text = normalize(strip_tags(li_html))
+            # MathJobs 페이지 UI 텍스트 잘라내기 (섞여들어오는 경우)
+            li_text = re.sub(r"\bJob Listings\b.*$", "", li_text, flags=re.IGNORECASE).strip()
             if not li_text or len(li_text) < 25:
                 continue
 
