@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-20T02:50:34+00:00",
+  "updated_at": "2025-12-21T03:04:47+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -59,6 +59,21 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27746",
+      "priority": 2
+    },
+    {
+      "title": "Post-Doctoral Research Visit F/M Interfacing Crop Models with Reinforcement Learning (F/H)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/397415",
       "priority": 2
     },
     {
@@ -610,7 +625,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-20",
+      "date_posted": "2025-12-21",
       "tags": [
         "symplectic",
         "contact",
