@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-22T03:07:27+00:00",
+  "updated_at": "2025-12-23T03:02:17+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -76,6 +76,21 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/392959",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/396269",
       "priority": 2
     },
     {
@@ -487,6 +502,36 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27697",
+      "priority": 2
+    },
+    {
+      "title": "[CBGPDG] Brazilian Centre for Geometry (CBG) | 5 Postdoctoral Research Positions in Geometry (Postdoctoral)",
+      "institution": "Job Listings [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] » if(1){var lks=[\"/jobs?joblist-0-3---0-t--urm\",\"/jobs?joblist-0-6---0-t\",\"/jobs?joblist-0----0-t--\",\"/jobs?joblist-0-3---0-ts--\",\"/jobs?joblist-0-3---0-ta--\",\"/jobs?joblist-0-3---0-tp--\",\"/jobs?joblist-0-3---0-te--\",\"/jobs?joblist-0-3---0-td--\",\"/jobs?joblist-0-3---0-tk--\",\"/jobs?joblist-0-3---0-tl--\",\"/jobs?joblist-0-3---0-tr--\",\"/jobs?joblist-0-3----rss--\",\"/jobs/public_job_boards\",\"\"];function cdnURLs(spanid,arr){if(navigator.webdriver||/headless|robot|crawl|ms\\.bot|harvest|spider/i.test(navigator.userAgent+navigator.appVersion))return;var anchors=getById(spanid).getElementsByTagName(\"a\");for(var i=0;i",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27917",
+      "priority": 2
+    },
+    {
+      "title": "[CBGPDME] Brazilian Center for Geometry (CBG) | 1 Postdoctoral Position in Mathematical Education (Postdoctoral)",
+      "institution": "Job Listings [URMs, BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] » if(1){var lks=[\"/jobs?joblist-0-3---0-t--urm\",\"/jobs?joblist-0-6---0-t\",\"/jobs?joblist-0----0-t--\",\"/jobs?joblist-0-3---0-ts--\",\"/jobs?joblist-0-3---0-ta--\",\"/jobs?joblist-0-3---0-tp--\",\"/jobs?joblist-0-3---0-te--\",\"/jobs?joblist-0-3---0-td--\",\"/jobs?joblist-0-3---0-tk--\",\"/jobs?joblist-0-3---0-tl--\",\"/jobs?joblist-0-3---0-tr--\",\"/jobs?joblist-0-3----rss--\",\"/jobs/public_job_boards\",\"\"];function cdnURLs(spanid,arr){if(navigator.webdriver||/headless|robot|crawl|ms\\.bot|harvest|spider/i.test(navigator.userAgent+navigator.appVersion))return;var anchors=getById(spanid).getElementsByTagName(\"a\");for(var i=0;i",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27918",
       "priority": 2
     },
     {
@@ -1023,7 +1068,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-22",
+      "date_posted": "2025-12-23",
       "tags": [
         "symplectic",
         "contact",
