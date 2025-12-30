@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-29T03:16:43+00:00",
+  "updated_at": "2025-12-30T03:03:22+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -91,6 +91,21 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/396269",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor in the research staff member group, position in project",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/348299",
       "priority": 2
     },
     {
@@ -350,22 +365,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/393628",
-      "priority": 2
-    },
-    {
-      "title": "Quantum Information Theory Group: Post-doctoral position in quantum information theory",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/390151",
       "priority": 2
     },
     {
@@ -1098,7 +1097,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-29",
+      "date_posted": "2025-12-30",
       "tags": [
         "symplectic",
         "contact",
