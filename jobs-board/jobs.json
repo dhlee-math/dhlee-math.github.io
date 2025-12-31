@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-30T03:03:22+00:00",
+  "updated_at": "2025-12-31T03:02:14+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -103,9 +103,25 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/348299",
+      "url": "https://euraxess.ec.europa.eu/jobs/398712",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor in the research staff member group, position in project",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/398706",
       "priority": 2
     },
     {
@@ -243,21 +259,6 @@
         "topology"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/393037",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc position in robotics foundation models for motor control",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/350944",
       "priority": 2
     },
     {
@@ -850,21 +851,6 @@
       "priority": 3
     },
     {
-      "title": "[TSSF] Kenyon College Teacher-Scholar Science Fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27589",
-      "priority": 3
-    },
-    {
       "title": "[2026PDF] 2026 Postdoctoral Fellowship (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -1097,7 +1083,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-30",
+      "date_posted": "2025-12-31",
       "tags": [
         "symplectic",
         "contact",
