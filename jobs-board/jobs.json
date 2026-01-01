@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-12-31T03:02:14+00:00",
+  "updated_at": "2026-01-01T03:17:23+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -125,6 +125,21 @@
       "priority": 2
     },
     {
+      "title": "Assistant Professor in the research staff member group, position in project",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/348299",
+      "priority": 2
+    },
+    {
       "title": "DIM QuanTiP: Competitive 1-year postdoctoral fellowships",
       "institution": "",
       "country": "",
@@ -216,6 +231,21 @@
       "priority": 2
     },
     {
+      "title": "Post-Doctoral position in Data Science for Agronomy",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/336119",
+      "priority": 2
+    },
+    {
       "title": "Post-doctoral research assistant in theoretical climatology",
       "institution": "",
       "country": "",
@@ -228,21 +258,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/370395",
-      "priority": 2
-    },
-    {
-      "title": "PostDoc (f/m/x) Position in Multivariate Algorithms and Quasi-Monte Carlo Methods",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/378926",
       "priority": 2
     },
     {
@@ -307,7 +322,7 @@
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher in Theoretical Modeling of Martensitic Microstructures",
+      "title": "Postdoctoral Researcher position in OPUS 25 project financed by the National Science Centre – 1 position",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -316,9 +331,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/390882",
+      "url": "https://euraxess.ec.europa.eu/jobs/398480",
       "priority": 2
     },
     {
@@ -366,22 +381,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/393628",
-      "priority": 2
-    },
-    {
-      "title": "Reduced-order modeling for crowd motion and granular media",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/392627",
       "priority": 2
     },
     {
@@ -442,21 +441,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/392926",
-      "priority": 2
-    },
-    {
-      "title": "University Assistant (Doctorate/Ph.D.)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/396294",
       "priority": 2
     },
     {
@@ -1083,7 +1067,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2025-12-31",
+      "date_posted": "2026-01-01",
       "tags": [
         "symplectic",
         "contact",
