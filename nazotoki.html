@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nazotoki Shops</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* 네 styles.css를 최대한 존중하면서, 이 페이지에만 살짝 보정 */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 14px; }
+    .meta { color: #666; font-size: 0.95rem; text-align: center; margin-top: -10px; }
+    .section { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+    .section h2 { margin: 0 0 10px; font-size: 1.15rem; }
+    .section p { margin: 0 0 10px; color: #444; }
+    ul.links { margin: 0; padding-left: 18px; }
+    ul.links li { margin: 10px 0; }
+    ul.links li a { font-weight: 600; }
+    .desc { display: block; margin-top: 4px; color: #555; font-size: 0.95rem; }
+    .updated { font-size: 0.9rem; color: #777; text-align: center; margin-top: 8px; }
+    footer { margin: 28px 0 18px; text-align: center; color: #777; font-size: 0.9rem; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header style="text-align:center; margin: 22px 0 10px;">
+      <h1 style="margin:0; font-size: 2rem;">한국인도 나조토키 하게 해 줘!</h1>
+      <div class="updated">Last updated: <span id="lastUpdated"></span></div>
+    </header>
+
+    <!-- 사용법(맨 위) -->
+    <section class="section">
+      <h2>How to use</h2>
+      <ul class="links">
+        <li><span class="desc">원하는 사이트를 클릭해서 이동합니다.</span></li>
+        <li><span class="desc">가입 시 현지 주소/전화번호가 필요하면 배송대행지에서 제공하는 것을 이용합니다.</span></li>
+      </ul>
+    </section>
+
+    <!-- 구매처 리스트: 이름 + 링크 + 설명만 -->
+    <section class="section">
+      <h2>Shops</h2>
+
+      <!-- ✅ 여기에 id를 반드시 달아야 JS가 정렬할 수 있음 -->
+      <ul class="links" id="shops-list">
+        <li>
+          <a href="https://xeoxy.shop/" target="_blank" rel="noopener">XEOXY</a>
+          <span class="desc"></span>
+        </li>
+
+        <li>
+          <a href="https://nazoad.stores.jp" target="_blank" rel="noopener">NazoAd (ナゾアド)</a>
+          <span class="desc"></span>
+        </li>
+
+        <li>
+          <a href="https://shop.tumbleweed.jp" target="_blank" rel="noopener">Tumbleweed</a>
+          <span class="desc"></span>
+        </li>
+
+        <li>
+          <a href="https://nazogeki.stores.jp/" target="_blank" rel="noopener">Nazo x Nazo</a>
+          <span class="desc"></span>
+        </li>
+
+        <li>
+          <a href="https://shop.riddler.co.jp/" target="_blank" rel="noopener">Riddler Studio</a>
+          <span class="desc"></span>
+        </li>
+
+        <li>
+          <a href="https://www.scrapgoods.jp" target="_blank" rel="noopener">SCRAP</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://tokitocafe.theshop.jp/" target="_blank" rel="noopener">tokitoki escape cafe</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://the-nazo-store.com/" target="_blank" rel="noopener">The Nazo Store</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://shop.daiyonkyokai.net/" target="_blank" rel="noopener">Dai4Kyokai</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://takaraport.jp/shop/default.aspx" target="_blank" rel="noopener">Takaraport</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://www.blackcats-cube.com/store/" target="_blank" rel="noopener">Black Cat Cube (クロネコキューブ)</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://www.clagla.jp/" target="_blank" rel="noopener">Clagla</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://yodakashop.com" target="_blank" rel="noopener">Yokata Shop</a>
+          <span class="desc"></span>
+        </li>
+                <li>
+          <a href="https://store.shopping.yahoo.co.jp/noescape/" target="_blank" rel="noopener">NoEscape</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://flapzero.official.ec/" target="_blank" rel="noopener">Nazotoki Zepets</a>
+          <span class="desc"></span>
+        </li>
+        
+        <li>
+          <a href="https://www.scrapmagazine.com/s/mysteryforyou/" target="_blank" rel="noopener">SCRAP - Mystery for You</a>
+          <span class="desc">월간 나조토키 구독 서비스</span>
+        </li>
+
+
+      </ul>
+
+    <h2>General Markets</h2>
+
+      <!-- ✅ 여기에 id를 반드시 달아야 JS가 정렬할 수 있음 -->
+      <ul class="links" id="markets-list">
+        <li>
+          <a href="https://search.rakuten.co.jp/search/mall/%E8%AC%8E%E8%A7%A3%E3%81%8D%E3%82%AD%E3%83%83%E3%83%88/101164/" target="_blank" rel="noopener">Rakuten</a>
+          <span class="desc">중고 나조토키 구매 가능</span>
+        </li>
+        <li>
+          <a href="https://share.google/V7loDf8Lc2NWMB5Zq" target="_blank" rel="noopener">0101</a>
+          <span class="desc">나조토키 판매하는 쇼핑몰</span>
+        </li>
+        </ul>
+
+    <h2>Web Nazo</h2>
+
+      <!-- ✅ 여기에 id를 반드시 달아야 JS가 정렬할 수 있음 -->
+      <ul class="links" id="web-list">
+        <li>
+          <a href="https://alqrt.com/" target="_blank" rel="noopener">ALQRT</a>
+          <span class="desc"></span>
+        </li>
+        <li>
+          <a href="https://sukuranburu.net/riddle" target="_blank" rel="noopener">Sakuranburu</a>
+          <span class="desc">버튜버 Guzria가 제작한 웹 나조</span>
+        </li>
+        <li>
+          <a href="https://sicksmonsters.wordpress.com/" target="_blank" rel="noopener">Sicks Monsters</a>
+          <span class="desc"></span>
+        </li>
+        </ul>
+    </section>
+
+
+
+    <footer>
+      © <span id="year"></span> • Nazotoki Shops
+    </footer>
+  </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 연도 / 업데이트 날짜
+    const d = new Date();
+    const yearEl = document.getElementById("year");
+    const updEl  = document.getElementById("lastUpdated");
+    if (yearEl) yearEl.textContent = d.getFullYear();
+    if (updEl)  updEl.textContent  = d.toISOString().slice(0,10);
+
+    // 🔁 어떤 리스트든 정렬해주는 공통 함수
+    function sortListABC(listId) {
+      const ul = document.getElementById(listId);
+      if (!ul) return;
+
+      const items = Array.from(ul.querySelectorAll(":scope > li"));
+      items.sort((a, b) => {
+        const A = (a.querySelector("a")?.textContent || "").trim();
+        const B = (b.querySelector("a")?.textContent || "").trim();
+        return A.localeCompare(B, ["ko", "ja", "en"], { sensitivity: "base" });
+      });
+
+      items.forEach(li => ul.appendChild(li));
+    }
+
+    // ✅ 여기서 "리스트 ID"를 넘겨서 호출
+    sortListABC("shops-list");
+    sortListABC("markets-list");
+    sortListABC("web-list");
+  });
+</script>
+
+</body>
+</html>
