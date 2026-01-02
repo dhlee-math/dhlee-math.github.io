@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-01T03:17:23+00:00",
+  "updated_at": "2026-01-02T03:05:26+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -59,6 +59,21 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27746",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOC] Postdoctoral Fellowship in Topology and Representation Theory",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2025/12/31",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27321",
       "priority": 2
     },
     {
@@ -639,21 +654,6 @@
       "priority": 2
     },
     {
-      "title": "[POSTDOC] Postdoctoral Fellowship in Topology and Representation Theory (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27321",
-      "priority": 2
-    },
-    {
       "title": "[RTGVAP2] NSF-RTG Postdoctoral Scholar (Geometry & Topology) (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -1045,21 +1045,6 @@
       "priority": 3
     },
     {
-      "title": "[VANLOO] Post-Doctoral Fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27755",
-      "priority": 3
-    },
-    {
       "title": "Pipeline test: jobs-board is updating",
       "institution": "dhlee-math.github.io",
       "country": "",
@@ -1067,7 +1052,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-01",
+      "date_posted": "2026-01-02",
       "tags": [
         "symplectic",
         "contact",
