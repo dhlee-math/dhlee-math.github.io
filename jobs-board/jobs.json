@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-02T03:05:26+00:00",
+  "updated_at": "2026-01-03T02:56:57+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -411,21 +411,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/393015",
-      "priority": 2
-    },
-    {
-      "title": "Senior Assistant",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/392188",
       "priority": 2
     },
     {
@@ -1052,7 +1037,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-02",
+      "date_posted": "2026-01-03",
       "tags": [
         "symplectic",
         "contact",
