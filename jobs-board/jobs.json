@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-11T03:17:55+00:00",
+  "updated_at": "2026-01-12T03:15:56+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -74,6 +74,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27321",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc: Micro–Macro Modelling of Circular Society Transitions",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/400279",
       "priority": 2
     },
     {
@@ -670,7 +685,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-11",
+      "date_posted": "2026-01-12",
       "tags": [
         "symplectic",
         "contact",
