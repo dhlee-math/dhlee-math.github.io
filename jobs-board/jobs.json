@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-14T03:14:46+00:00",
+  "updated_at": "2026-01-15T03:05:51+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -214,6 +214,37 @@
       "priority": 2
     },
     {
+      "title": "Open call for a postdoc position in the NCN Opus grant \"Quantum GTA I: Groups, Topology and Algebras\" (PI A. Skalski)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401189",
+      "priority": 2
+    },
+    {
+      "title": "Post doc position in experimental modeling of the root system architecture as an efficient transport network",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401206",
+      "priority": 2
+    },
+    {
       "title": "Post doctoral position in Numerical Analysis and Scientific Computing – ERC NEMESIS",
       "institution": "",
       "country": "",
@@ -227,6 +258,21 @@
         "topology"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/379330",
+      "priority": 2
+    },
+    {
+      "title": "Post-Doctoral Research Fellowships - (BL294/2025-IST-ID)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401175",
       "priority": 2
     },
     {
@@ -574,6 +620,21 @@
         "dynamics"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27934",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOC1] Postdoc in arithmetic and algebraic geometry (Postdoctoral)",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27981",
       "priority": 2
     },
     {
@@ -1065,7 +1126,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-14",
+      "date_posted": "2026-01-15",
       "tags": [
         "symplectic",
         "contact",
