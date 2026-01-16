@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-15T03:05:51+00:00",
+  "updated_at": "2026-01-16T03:06:05+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -74,23 +74,6 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27321",
-      "priority": 2
-    },
-    {
-      "title": "3 posts for Dioscuri Centre of Scientific Excellencein Random Walks in Geometry and Topology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/392959",
       "priority": 2
     },
     {
@@ -383,7 +366,7 @@
       "priority": 2
     },
     {
-      "title": "Selection procedure of the Faculty of Nuclear and Physical Engineering, CTU in Prague for a Postdoctoral Fellowship in Mathematics",
+      "title": "Postdoctoral researcher",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -392,24 +375,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/393015",
-      "priority": 2
-    },
-    {
-      "title": "Senior Researcher / Postdoctoral researcher – ANTICIPATE ERC Grant",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/394782",
+      "url": "https://euraxess.ec.europa.eu/jobs/401504",
       "priority": 2
     },
     {
@@ -590,21 +559,6 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27692",
-      "priority": 2
-    },
-    {
-      "title": "[PHTB1] Post-doc Positions in the Hodge Theory and Biration Geometry Group, Institute for Theoretical Sciences, Westlake University (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27935",
       "priority": 2
     },
     {
@@ -1126,7 +1080,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-15",
+      "date_posted": "2026-01-16",
       "tags": [
         "symplectic",
         "contact",
