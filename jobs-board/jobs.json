@@ -1,81 +1,6 @@
 {
-  "updated_at": "2026-01-17T03:00:25+00:00",
+  "updated_at": "2026-01-18T03:18:13+00:00",
   "items": [
-    {
-      "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/11/18",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27515",
-      "priority": 2
-    },
-    {
-      "title": "[ALGGEOM26] Research Assistant (Postdoc, m/f/d) in Algebraic Geometry",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/07",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27311",
-      "priority": 2
-    },
-    {
-      "title": "[ARITHGEOM26] 4 Postdoctoral Researchers in Arithmetic Geometry",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/07",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27523",
-      "priority": 2
-    },
-    {
-      "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/07",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27746",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOC] Postdoctoral Fellowship in Topology and Representation Theory",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/31",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27321",
-      "priority": 2
-    },
     {
       "title": "ASSISTANT WITH PhD (posdoctoral researcher position)",
       "institution": "",
@@ -137,6 +62,21 @@
       "priority": 2
     },
     {
+      "title": "Established Researcher in Open Science and Digital Cultural Heritage (FOCUS01)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401715",
+      "priority": 2
+    },
+    {
       "title": "FCUP - Three Research Grant | Pos-Doctoral - UID/00144/2025",
       "institution": "",
       "country": "",
@@ -149,6 +89,21 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/390773",
+      "priority": 2
+    },
+    {
+      "title": "MSCA PF 2026 - Advancing AI-Native Solutions for the Digital Twins of the Ocean",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401582",
       "priority": 2
     },
     {
@@ -182,21 +137,6 @@
       "priority": 2
     },
     {
-      "title": "Open call for a postdoc (2) position in the ERC StG 2025 grant",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/381578",
-      "priority": 2
-    },
-    {
       "title": "Open call for a postdoc position in the NCN Opus grant \"Quantum GTA I: Groups, Topology and Algebras\" (PI A. Skalski)",
       "institution": "",
       "country": "",
@@ -210,6 +150,21 @@
         "topology"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/401189",
+      "priority": 2
+    },
+    {
+      "title": "POSITION: (H019001) ASSISTANT WITH A DOCTORATE (m/f)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401514",
       "priority": 2
     },
     {
@@ -472,607 +427,6 @@
       "priority": 2
     },
     {
-      "title": "[AGPOSTDOC] Postdoctoral Fellowship in Algebraic Geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27697",
-      "priority": 2
-    },
-    {
-      "title": "[CBGPDG] Brazilian Centre for Geometry (CBG) | 5 Postdoctoral Research Positions in Geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27917",
-      "priority": 2
-    },
-    {
-      "title": "[CBGPDME] Brazilian Center for Geometry (CBG) | 1 Postdoctoral Position in Mathematical Education (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27918",
-      "priority": 2
-    },
-    {
-      "title": "[FS2026RAWEI] Mathematical Biology or Computational Topology Research Associate (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/26886",
-      "priority": 2
-    },
-    {
-      "title": "[LDTPOSTDOC] Postdoctoral Fellowship in Low-dimensional Topology (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27686",
-      "priority": 2
-    },
-    {
-      "title": "[PD] Postdoc in noncommutative geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27692",
-      "priority": 2
-    },
-    {
-      "title": "[PMFD1] Post-doc Positions in the Mathematical Fluid Dynamics Group, Institute for Theoretical Sciences, Westlake University (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "dynamics"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27934",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOC1] Postdoc in arithmetic and algebraic geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27981",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOCPICCIRILLO] Postdoctoral Instructor - 3 & 4 Dimensional Topology 2026 (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27419",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOCTORALGEOMETRY] Postdoctoral researcher in Geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27845",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOCUCIM] Postdoc SIMONS-UNAM geometry program at Cuernavaca (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27353",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOC] Postdoctoral position in microlocal analysis, dynamical systems and differential geometry (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27959",
-      "priority": 2
-    },
-    {
-      "title": "[RTGVAP2] NSF-RTG Postdoctoral Scholar (Geometry & Topology) (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27082",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOC] Sverker Lerheden fellowships for postdoctoral studies",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/11/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27276",
-      "priority": 3
-    },
-    {
-      "title": "[PDF2025] AARMS Postdoctoral Fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/11/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27422",
-      "priority": 3
-    },
-    {
-      "title": "[MATHTPD] Caltech Prize Teaching Fellowships in Mathematics",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/26922",
-      "priority": 3
-    },
-    {
-      "title": "[PD] Postdoctoral Fellowship in Quantitative Biology",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27538",
-      "priority": 3
-    },
-    {
-      "title": "[PD] Postdoctoral fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/26953",
-      "priority": 3
-    },
-    {
-      "title": "[POSTDOCS] Postdoctoral Fellowships in Mathematics",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27128",
-      "priority": 3
-    },
-    {
-      "title": "[BPDF] Britton Post-Doctoral Fellowship 2026",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27610",
-      "priority": 3
-    },
-    {
-      "title": "[PDFTEACH] Postdoctoral Fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27539",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Postdoctoral Fellowship in Graph Theory",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27648",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Postdoctoral fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/12/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27028",
-      "priority": 3
-    },
-    {
-      "title": "[PDF1] Post-Doctoral Fellowship",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/01/05",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27615",
-      "priority": 3
-    },
-    {
-      "title": "[PDFSC] Post-Doctoral Fellowship in Statistcal Clustering",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/01/05",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27613",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Post-Doctoral Fellowship 2026",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/01/05",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27612",
-      "priority": 3
-    },
-    {
-      "title": "[POSTDOC] Mathematics Postdoctoral Fellowships - 2026",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/01/06",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27758",
-      "priority": 3
-    },
-    {
-      "title": "[2026PDF] 2026 Postdoctoral Fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27258",
-      "priority": 3
-    },
-    {
-      "title": "[FPDFOPTIMALTRANSPORT] Fields Postdoctoral Fellowship - Optimal Transport in Natural Sciences and Statistics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27787",
-      "priority": 3
-    },
-    {
-      "title": "[PDF1] SciML Postdoctoral Fellowship – Numerical Weather Prediction (Canadian Arctic) (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27974",
-      "priority": 3
-    },
-    {
-      "title": "[PDFAI] Postdoctoral Fellowship - Mathematics for AI Safety (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27890",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Founder's Postdoctoral Fellowship in Statistics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27601",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Postdoctoral Fellowship in Applied Mathematics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27832",
-      "priority": 3
-    },
-    {
-      "title": "[POST1] Post-doctoral Fellowships in Combinatorics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27542",
-      "priority": 3
-    },
-    {
-      "title": "[POST] Postdoctoral fellowships in Probability Theory, Statistical Mechanics and related Analysis topics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27541",
-      "priority": 3
-    },
-    {
-      "title": "[PPFP25] University of California PRESIDENT’S POSTDOCTORAL FELLOWSHIP PROGRAM (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/26929",
-      "priority": 3
-    },
-    {
-      "title": "[PRF7] Postdoctoral research fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27117",
-      "priority": 3
-    },
-    {
-      "title": "[PRF] POSTDOCTORAL RESEARCH FELLOWSHIPS (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27950",
-      "priority": 3
-    },
-    {
-      "title": "[PRF] Postdoctoral research fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27662",
-      "priority": 3
-    },
-    {
-      "title": "[RENYIPOSTDOC] Renyi Postdoctoral Fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27690",
-      "priority": 3
-    },
-    {
       "title": "Pipeline test: jobs-board is updating",
       "institution": "dhlee-math.github.io",
       "country": "",
@@ -1080,7 +434,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-16",
+      "date_posted": "2026-01-18",
       "tags": [
         "symplectic",
         "contact",
