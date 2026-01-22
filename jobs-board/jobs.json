@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-21T03:06:56+00:00",
+  "updated_at": "2026-01-22T03:15:01+00:00",
   "items": [
     {
       "title": "[ALGGEOM26] Research Assistant (Postdoc, m/f/d) in Algebraic Geometry",
@@ -224,6 +224,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27419",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOCTOPOLOGY] Postdoc-Topology (Postdoctoral)",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28002",
       "priority": 2
     },
     {
@@ -670,7 +685,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-01-21",
+      "date_posted": "2026-01-22",
       "tags": [
         "symplectic",
         "contact",
