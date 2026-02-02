@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-01T04:04:15+00:00",
+  "updated_at": "2026-02-02T03:48:14+00:00",
   "items": [
     {
       "title": "Public Notice/ Edital Periodic Flows on Sympletic Orbifolds (176) /IST-ID",
@@ -75,6 +75,21 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27353",
+      "priority": 2
+    },
+    {
+      "title": "[LDTPOSTDOC] Postdoctoral Fellowship in Low-dimensional Topology",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/01/31",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27686",
       "priority": 2
     },
     {
@@ -563,21 +578,6 @@
       "priority": 2
     },
     {
-      "title": "[LDTPOSTDOC] Postdoctoral Fellowship in Low-dimensional Topology (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27686",
-      "priority": 2
-    },
-    {
       "title": "[PD] Postdoc in noncommutative geometry (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -924,6 +924,36 @@
       "priority": 3
     },
     {
+      "title": "[PDFAI] Postdoctoral Fellowship - Mathematics for AI Safety",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/01/31",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27890",
+      "priority": 3
+    },
+    {
+      "title": "[PDF] Postdoctoral Fellowship in Applied Mathematics",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/01/31",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27832",
+      "priority": 3
+    },
+    {
       "title": "Call for postdoc candidates interested in applying for a MSCA Postdoctoral Fellowship in Logistics and/or Industrial Engineering",
       "institution": "",
       "country": "",
@@ -1011,36 +1041,6 @@
         "fellowship"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27974",
-      "priority": 3
-    },
-    {
-      "title": "[PDFAI] Postdoctoral Fellowship - Mathematics for AI Safety (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27890",
-      "priority": 3
-    },
-    {
-      "title": "[PDF] Postdoctoral Fellowship in Applied Mathematics (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27832",
       "priority": 3
     },
     {
@@ -1171,7 +1171,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-01",
+      "date_posted": "2026-02-02",
       "tags": [
         "symplectic",
         "contact",
