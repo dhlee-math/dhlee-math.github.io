@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-03T03:42:28+00:00",
+  "updated_at": "2026-02-04T03:39:32+00:00",
   "items": [
     {
       "title": "Public Notice/ Edital Periodic Flows on Sympletic Orbifolds (176) /IST-ID",
@@ -90,6 +90,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27686",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOCTOPOLOGY] Postdoc-Topology",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/02/02",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "topology"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28002",
       "priority": 2
     },
     {
@@ -638,21 +653,6 @@
       "priority": 2
     },
     {
-      "title": "[POSTDOCTOPOLOGY] Postdoc-Topology (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "topology"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/28002",
-      "priority": 2
-    },
-    {
       "title": "[RTGVAP2] NSF-RTG Postdoctoral Scholar (Geometry & Topology) (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -699,7 +699,7 @@
       "priority": 3
     },
     {
-      "title": "[MATHTPD] Caltech Prize Teaching Fellowships in Mathematics (making offers, deadline 2025/12/01 11:59PM, Postdoctoral)",
+      "title": "[MATHTPD] Caltech Prize Teaching Fellowships in Mathematics (offers accepted, deadline 2025/12/01 11:59PM, Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
       "region": "Other",
@@ -1171,7 +1171,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-03",
+      "date_posted": "2026-02-04",
       "tags": [
         "symplectic",
         "contact",
