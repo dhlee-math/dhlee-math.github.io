@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-04T03:39:32+00:00",
+  "updated_at": "2026-02-05T03:40:42+00:00",
   "items": [
     {
       "title": "Public Notice/ Edital Periodic Flows on Sympletic Orbifolds (176) /IST-ID",
@@ -16,6 +16,21 @@
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/405077",
       "priority": 1
+    },
+    {
+      "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2025/11/18",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27515",
+      "priority": 2
     },
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -90,6 +105,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27686",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOC] Postdoctoral position in microlocal analysis, dynamical systems and differential geometry",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/02/01",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27959",
       "priority": 2
     },
     {
@@ -256,6 +286,21 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/401582",
+      "priority": 2
+    },
+    {
+      "title": "Multiple postdoctoral positions in the Cluster of Excellence “Quantum Universe”",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/393016",
       "priority": 2
     },
     {
@@ -484,21 +529,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/405177",
-      "priority": 2
-    },
-    {
-      "title": "University Assistant (Doctorate/Ph.D.)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/399315",
       "priority": 2
     },
     {
@@ -1171,7 +1201,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-04",
+      "date_posted": "2026-02-05",
       "tags": [
         "symplectic",
         "contact",
