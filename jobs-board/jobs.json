@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-11T04:03:16+00:00",
+  "updated_at": "2026-02-12T03:50:43+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -119,6 +119,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/28002",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher at the Molecular Bionics Research Group",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/409454",
       "priority": 2
     },
     {
@@ -543,6 +558,21 @@
       "priority": 3
     },
     {
+      "title": "Université Claude Bernard Lyon 1- Hosting offer for a MSCA Post-doctoral fellowship candidate in Mediators of plant bacteria interaction",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/hosting/universite-claude-bernard-lyon-1-hosting-offer-msca-post-doctoral-fellowship-70",
+      "priority": 3
+    },
+    {
       "title": "[2026PDF] 2026 Postdoctoral Fellowship (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -745,7 +775,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-11",
+      "date_posted": "2026-02-12",
       "tags": [
         "symplectic",
         "contact",
