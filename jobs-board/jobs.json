@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-12T03:50:43+00:00",
+  "updated_at": "2026-02-13T03:49:09+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -122,7 +122,7 @@
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher at the Molecular Bionics Research Group",
+      "title": "Call for postdoc candidates interested in applying for a MSCA Postdoctoral Fellowship in Geometry and Physics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -133,7 +133,83 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/409454",
+      "url": "https://euraxess.ec.europa.eu/jobs/404064",
+      "priority": 2
+    },
+    {
+      "title": "Established Researcher in Open Science and Digital Cultural Heritage (FOCUS01)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401715",
+      "priority": 2
+    },
+    {
+      "title": "MSCA PF 2026 - Advancing AI-Native Solutions for the Digital Twins of the Ocean",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401582",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc (f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics - RICAM005PD226",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/403932",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Fellow in proton therapy research (Index-Nr. 1714-23359)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401915",
+      "priority": 2
+    },
+    {
+      "title": "W3 Professorship in Pure Mathematics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/402160",
       "priority": 2
     },
     {
@@ -558,21 +634,6 @@
       "priority": 3
     },
     {
-      "title": "Université Claude Bernard Lyon 1- Hosting offer for a MSCA Post-doctoral fellowship candidate in Mediators of plant bacteria interaction",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/hosting/universite-claude-bernard-lyon-1-hosting-offer-msca-post-doctoral-fellowship-70",
-      "priority": 3
-    },
-    {
       "title": "[2026PDF] 2026 Postdoctoral Fellowship (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -775,7 +836,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-12",
+      "date_posted": "2026-02-13",
       "tags": [
         "symplectic",
         "contact",
