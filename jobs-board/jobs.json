@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-13T03:49:09+00:00",
+  "updated_at": "2026-02-14T03:36:11+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -119,97 +119,6 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/28002",
-      "priority": 2
-    },
-    {
-      "title": "Call for postdoc candidates interested in applying for a MSCA Postdoctoral Fellowship in Geometry and Physics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/404064",
-      "priority": 2
-    },
-    {
-      "title": "Established Researcher in Open Science and Digital Cultural Heritage (FOCUS01)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401715",
-      "priority": 2
-    },
-    {
-      "title": "MSCA PF 2026 - Advancing AI-Native Solutions for the Digital Twins of the Ocean",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401582",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc (f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics - RICAM005PD226",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/403932",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Fellow in proton therapy research (Index-Nr. 1714-23359)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401915",
-      "priority": 2
-    },
-    {
-      "title": "W3 Professorship in Pure Mathematics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/402160",
       "priority": 2
     },
     {
@@ -836,7 +745,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-13",
+      "date_posted": "2026-02-14",
       "tags": [
         "symplectic",
         "contact",
