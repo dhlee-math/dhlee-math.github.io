@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-15T03:48:32+00:00",
+  "updated_at": "2026-02-16T03:48:47+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -318,6 +318,22 @@
       "priority": 2
     },
     {
+      "title": "Open call for a postdoc position in the NCN Opus grant \"Quantum GTA I: Groups, Topology and Algebras\" (PI A. Skalski)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401189",
+      "priority": 2
+    },
+    {
       "title": "POSITION: (H019001) ASSISTANT WITH A DOCTORATE (m/f)",
       "institution": "",
       "country": "",
@@ -420,21 +436,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/407860",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher in Mathematics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/404157",
       "priority": 2
     },
     {
@@ -953,6 +954,21 @@
       "priority": 3
     },
     {
+      "title": "[RENYIPOSTDOC] Renyi Postdoctoral Fellowship",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/02/15",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/27690",
+      "priority": 3
+    },
+    {
       "title": "Call for postdoc candidates interested in applying for a MSCA Postdoctoral Fellowship in Logistics and/or Industrial Engineering",
       "institution": "",
       "country": "",
@@ -1148,21 +1164,6 @@
       "priority": 3
     },
     {
-      "title": "[RENYIPOSTDOC] Renyi Postdoctoral Fellowship (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27690",
-      "priority": 3
-    },
-    {
       "title": "Pipeline test: jobs-board is updating",
       "institution": "dhlee-math.github.io",
       "country": "",
@@ -1170,7 +1171,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-15",
+      "date_posted": "2026-02-16",
       "tags": [
         "symplectic",
         "contact",
