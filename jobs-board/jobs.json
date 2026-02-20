@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-02-19T03:46:05+00:00",
+  "updated_at": "2026-02-20T03:40:20+00:00",
   "items": [
-    {
-      "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2025/11/18",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27515",
-      "priority": 2
-    },
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
@@ -77,21 +62,6 @@
       "priority": 2
     },
     {
-      "title": "[POSTDOC] Postdoctoral position in microlocal analysis, dynamical systems and differential geometry",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/02/01",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27959",
-      "priority": 2
-    },
-    {
       "title": "[POSTDOCTOPOLOGY] Postdoc-Topology",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -119,6 +89,21 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/407859",
+      "priority": 2
+    },
+    {
+      "title": "ASSISTANT WITH PhD (R2)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/410937",
       "priority": 2
     },
     {
@@ -152,52 +137,6 @@
       "priority": 2
     },
     {
-      "title": "Early Stage Researcher in Open Science and Digital Cultural Heritage (FOCUS03, FOCUS05, FOCUS07)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401729",
-      "priority": 2
-    },
-    {
-      "title": "Engineer in Molecular & Numerical Simulations",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/411306",
-      "priority": 2
-    },
-    {
-      "title": "Established Researcher in Open Science and Digital Cultural Heritage (FOCUS01)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401715",
-      "priority": 2
-    },
-    {
       "title": "FEP | Recruitment and selection process for 1 Assistant Professor (permanent contract) in the field of Economics (particularly in the areas of Labour Economics and Public Policy Evaluation) | Ref. DOC",
       "institution": "",
       "country": "",
@@ -225,6 +164,51 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/404689",
+      "priority": 2
+    },
+    {
+      "title": "Full Professorship (W3) for “Numerical Analysis for Partial Differential Equations”",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/409355",
+      "priority": 2
+    },
+    {
+      "title": "Open call for a postdoc position (1) in the NCN Sonata grant \"Variational problems from image processing and crystal models\" (PI M. Łasica)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/411285",
+      "priority": 2
+    },
+    {
+      "title": "Open call for a postdoc position (2) in the NCN Sonata grant \"Variational problems from image processing and crystal models\" (PI M. Łasica)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/411288",
       "priority": 2
     },
     {
@@ -258,6 +242,70 @@
       "priority": 2
     },
     {
+      "title": "Post doctoral researcher in fundamental mathematics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/411791",
+      "priority": 2
+    },
+    {
+      "title": "Post doctoral researcher in fundamental mathematics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/411785",
+      "priority": 2
+    },
+    {
+      "title": "Post-Doctoral Research Fellowships - (BL21/2026-IST-ID)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/408447",
+      "priority": 2
+    },
+    {
+      "title": "Post-doctorant dans le cadre du projet HisToGraM (H/F) / Post-doc position - HisToGraM project",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/409705",
+      "priority": 2
+    },
+    {
       "title": "Postdoc (f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics - RICAM005PD226",
       "institution": "",
       "country": "",
@@ -270,6 +318,66 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/403932",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc - Optimal color selection algorithms for multiplexed image inscription",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/410490",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc / Research Engineer position in Grenoble on Deep Learning for Computational Physics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/411226",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc(f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics (RICAM) -RICAM010PD126",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/410487",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc(f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics (RICAM) -RICAM019PD126",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/410930",
       "priority": 2
     },
     {
@@ -303,6 +411,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Researcher / Research Engineer (Arithmetic Geometry)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/407860",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Researcher(s) in ML and Quantum technologies",
       "institution": "",
       "country": "",
@@ -331,21 +454,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/407432",
-      "priority": 2
-    },
-    {
-      "title": "Recognised Researcher in Open Science and Digital Cultural Heritage",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401734",
       "priority": 2
     },
     {
@@ -514,6 +622,22 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27419",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOCTORALRESEARCHERINGEOMETRYANDDYNAM] Postdoctoral Researcher in Geometry and Dynamics (Postdoctoral)",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28138",
       "priority": 2
     },
     {
@@ -1005,7 +1129,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-19",
+      "date_posted": "2026-02-20",
       "tags": [
         "symplectic",
         "contact",
