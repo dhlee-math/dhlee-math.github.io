@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T03:50:28+00:00",
+  "updated_at": "2026-02-24T03:47:26+00:00",
   "items": [
     {
       "title": "ASSISTANT PROFESSOR (F/M) in the research staff member group, in project",
@@ -134,21 +134,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/405485",
-      "priority": 2
-    },
-    {
-      "title": "POSITION: (H019001) ASSISTANT WITH A DOCTORATE (m/f)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/401514",
       "priority": 2
     },
     {
@@ -351,6 +336,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Researcher in Artificial Intelligence for Materials Discovery",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/412445",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Researcher(s) in ML and Quantum technologies",
       "institution": "",
       "country": "",
@@ -437,7 +437,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-23",
+      "date_posted": "2026-02-24",
       "tags": [
         "symplectic",
         "contact",
