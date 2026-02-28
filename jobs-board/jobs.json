@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T03:37:21+00:00",
+  "updated_at": "2026-02-28T03:19:32+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -242,6 +242,21 @@
       "priority": 2
     },
     {
+      "title": "POSITION: (H019001) ASSISTANT WITH A DOCTORATE (m/f)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401514",
+      "priority": 2
+    },
+    {
       "title": "Post doc position in the implementation of neural network models using physical systems",
       "institution": "",
       "country": "",
@@ -453,21 +468,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/412445",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher(s) in ML and Quantum technologies",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/404812",
       "priority": 2
     },
     {
@@ -1112,7 +1112,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-02-27",
+      "date_posted": "2026-02-28",
       "tags": [
         "symplectic",
         "contact",
