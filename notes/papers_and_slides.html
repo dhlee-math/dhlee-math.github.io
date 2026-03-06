@@ -72,7 +72,7 @@
             {
                 type: 'slide',
                 title: "Bifurcation of Periodic Orbits in Hamiltonian Systems",
-                event: "G-Lamp Mathematics Seminar, Soongsil University",
+                event: "G-Lamp Mathematics Seminar, Soongsil University, Korea",
                 date: "2026-01",
                 link: "Slides/Bifurcation_SSU_DLee.pdf"
             },
@@ -86,14 +86,14 @@
 			{
 				type: 'slide',
 				title: "Bifurcations of Hamiltonian Periodic Orbits",
-				event: "Symplectic Learning Seminar, SNU",
+				event: "Symplectic Learning Seminar, SNU, Korea",
 				date: "2025-12",
 				link: "Slides/Bifurcation.pdf"
 			},
 			{
 				type: 'slide',
 				title: "Hamiltonian Dynamics and Three-body Problem",
-				event: "Rookie's Pitch, SNU",
+				event: "Rookie's Pitch, SNU, Korea",
 				date: "2025-10",
 				link: "Slides/Hamiltonian Dynamics and Three-body Problem - Dongho Lee.pdf"
 			},
@@ -121,79 +121,94 @@
 			{
 				type: 'slide',
 				title: "Spatial Kepler Problem",
-				event: "Thesis defense, SNU",
+				event: "Thesis defense, SNU, Korea",
 				date: "2024-12",
 				link: "Slides/Spatial Kepler Problem - Dongho Lee.pdf"
 			},
 			{
 				type: 'slide',
 				title: "Global Hypersurfaces of Section",
-				event: "Thesis defense, SNU",
+				event: "Thesis defense, SNU, Korea",
 				date: "2024-12",
 				link: "Slides/Global Hypersurfaces of Section - Dongho Lee.pdf"
 			}
 		];
 function renderAll() {
-            // --- [Publications 렌더링] ---
-            const pubItems = publications.map(pub => {
-                const authors = pub.coAuthors ? `with ${pub.coAuthors}, ` : "";
-                const venue = pub.journal ? `<em>${pub.journal}</em>` : `<em>${pub.status}</em>`;
-                const arxivLink = pub.arxiv ? `, <a href="https://arxiv.org/abs/${pub.arxiv}" class = "text-link" target="_blank">arXiv:${pub.arxiv}</a>` : "";
-                
-                // 버튼 생성 (링크가 있는 경우만 생성)
-                const buttons = `
-                    <span style="margin-left: 8px;">
-                        ${pub.doi ? `<a href="${pub.doi}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">DOI</a>` : ''}
-                        ${pub.link ? `<a href="${pub.link}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">PDF</a>` : ''}
-                    </span>
-                `;
+    // 공통 리스트 아이템 생성 함수 (논문용)
+    const createPubItem = (pub) => {
+        const authors = pub.coAuthors ? `with ${pub.coAuthors}, ` : "";
+        const venue = pub.journal ? `<em>${pub.journal}</em>` : `<em>${pub.status}</em>`;
+        const arxivLink = pub.arxiv ? `, <a href="https://arxiv.org/abs/${pub.arxiv}" class="text-link" target="_blank">arXiv:${pub.arxiv}</a>` : "";
+        
+        const buttons = `
+            <span style="margin-left: 8px;">
+                ${pub.doi ? `<a href="${pub.doi}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">DOI</a>` : ''}
+                ${pub.link ? `<a href="${pub.link}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">PDF</a>` : ''}
+            </span>
+        `;
 
-                return `
-                    <li style="margin-bottom: 20px; list-style: none;">
-                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
-                            <strong style="font-size: 1.05rem; color: #000;">${pub.title}</strong>
-                            ${buttons}
-                        </div>
-                        <div style="font-size: 0.95rem; color: #444; margin-top: 4px;">
-                            ${authors}${venue}, ${pub.date || 'TBA'}${arxivLink}
-                        </div>
-                    </li>
-                `;
-            }).join('');
+        return `
+            <li style="margin-bottom: 20px; list-style: none;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <strong style="font-size: 1.05rem; color: #000;">${pub.title}</strong>
+                    ${buttons}
+                </div>
+                <div style="font-size: 0.95rem; color: #444; margin-top: 4px;">
+                    ${authors}${venue}, ${pub.date || 'TBA'}${arxivLink}
+                </div>
+            </li>
+        `;
+    };
 
-            document.getElementById('publications-section').innerHTML = `
-                <h2>Publications</h2>
-                <div class="history-card"><ul style="padding: 0; margin: 0;">${pubItems}</ul></div>
-            `;
+    // --- [Publications 분류 및 정렬] ---
+    const publishedJournals = publications.filter(p => p.type === 'journal')
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
+    const thesis = publications.filter(p => p.type === 'thesis');
+    const drafts = publications.filter(p => p.type === 'draft');
 
-            // --- [Presentations 렌더링] ---
-            const createList = (items, label) => items
-                .sort((a, b) => (a.date === 'TBA' ? 1 : b.date === 'TBA' ? -1 : new Date(b.date) - new Date(a.date)))
-                .map(item => `
-                    <li style="margin-bottom: 15px; list-style: none;">
-                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
-                            <strong style="font-size: 1.05rem; color: #000;">${item.title}</strong>
-                            <a href="${item.link}" class="tag" target="_blank" style="margin-left: 8px; font-size: 0.75rem; padding: 2px 8px;">${label}</a>
-                        </div>
-                        <div style="font-size: 0.95rem; color: #444; margin-top: 2px;">
-                            ${item.event}, ${item.date}
-                        </div>
-                    </li>
-                `).join('');
+    // Published Papers 리스트 합치기 (학위 논문은 맨 밑으로)
+    const publishedPapersHTML = [...publishedJournals, ...thesis].map(createPubItem).join('');
+    const draftsHTML = drafts.map(createPubItem).join('');
 
-            const slides = presentations.filter(p => p.type === 'slide');
-            const posters = presentations.filter(p => p.type === 'poster');
+    document.getElementById('publications-section').innerHTML = `
+        <h2>Publications</h2>
+        <h3>Published Papers</h3>
+        <div class="history-card"><ul style="padding: 0; margin: 0;">${publishedPapersHTML}</ul></div>
+        
+        ${draftsHTML ? `
+            <h3>Drafts & Preprints</h3>
+            <div class="history-card"><ul style="padding: 0; margin: 0;">${draftsHTML}</ul></div>
+        ` : ''}
+    `;
 
-            document.getElementById('presentations-section').innerHTML = `
-                <h2>Presentations</h2>
-                <h3>Talks & Slides</h3>
-                <div class="history-card"><ul style="padding: 0; margin: 0;">${createList(slides, 'Slides')}</ul></div>
-                <h3>Posters</h3>
-                <div class="history-card"><ul style="padding: 0; margin: 0;">${createList(posters, 'Poster')}</ul></div>
-            `;
-        }
+    // --- [Presentations 렌더링 (기존 로직 유지)] ---
+    const createPresList = (items, label) => items
+        .sort((a, b) => (a.date === 'TBA' ? 1 : b.date === 'TBA' ? -1 : new Date(b.date) - new Date(a.date)))
+        .map(item => `
+            <li style="margin-bottom: 15px; list-style: none;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <strong style="font-size: 1.05rem; color: #000;">${item.title}</strong>
+                    <a href="${item.link}" class="tag" target="_blank" style="margin-left: 8px; font-size: 0.75rem; padding: 2px 8px;">${label}</a>
+                </div>
+                <div style="font-size: 0.95rem; color: #444; margin-top: 2px;">
+                    ${item.event}, ${item.date}
+                </div>
+            </li>
+        `).join('');
 
-        renderAll();
+    const slides = presentations.filter(p => p.type === 'slide');
+    const posters = presentations.filter(p => p.type === 'poster');
+
+    document.getElementById('presentations-section').innerHTML = `
+        <h2>Presentations</h2>
+        <h3>Talks & Slides</h3>
+        <div class="history-card"><ul style="padding: 0; margin: 0;">${createPresList(slides, 'Slides')}</ul></div>
+        <h3>Posters</h3>
+        <div class="history-card"><ul style="padding: 0; margin: 0;">${createPresList(posters, 'Poster')}</ul></div>
+    `;
+}
+
+	renderAll();
     </script>
 </body>
 </html>
