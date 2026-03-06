@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-duty | Dongho Lee</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Off-Duty</h1>
+        </header>
+
+	<p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+        Well, this is strictly off-the-record. Please don't mention this to my coworkers...
+    </p>
+
+        <section id="personal-list"></section>
+
+        <a href="../index.html" class="back-button">Back to the previous page</a>
+    </main>
+
+    <footer>&copy; 2026 Dongho Lee.</footer>
+
+    <script>
+        // --- [데이터 관리 영역] ---
+        const personalData = [
+            {
+                category: "MYSTERY SOLVING",
+                subItems: [
+                    {
+                        title: "Room Escape",
+                        description: "I've played a lot, more than you can expect, more than you can expect even though you read the previous sentence. I've also made some, and played abroad.",
+						tags : [],
+                        bestTitle: "Best Themes",
+                        bestList: ["단잠 (A Deep Sleep), Sherlock Holmes, Korea", "방탈출 능력 시험 (The Room Escape Proficiency Test), 한국 방탈출 교육원, Korea", "Italian Job, Amazed, Korea", "SGTSSH, Sherlock Holmes, Korea", "Thisman, Next Edition, Korea", "The Dome, Mama Bazooka, Netherlands", "アイテムだらけの部屋からの脱出 (The Room Full of Items), SCRAP, Japan"]
+                    },
+                    {
+                        title: "Nazotoki",
+                        description: "Nazotoki is Japanese puzzle kit. It's quite fun, but you need to know Japanese.",
+                        tags: [],
+                        bestTitle: "Best Puzzles",
+                        bestList: ["レコード (Record), Hydra", "Category, Nazogeki Blue", "Twenty-Six, Tumbleweed", "XI, Tumbleweed", "パズバコ 2 (Puzzle Box 2), SCRAP", "吹雪 (Snowstorm), NoEscape"]
+                    },
+					{
+						title: "Murder Mystery",
+						description: "Role-playing detective game. I like There are several in Korea, Japan and China.",
+						tags: [],
+						bestTitle: "Best Scenarios",
+						bestList: ["ウェンディ、大人になって (Grow up, Wendy)", "年輪 (Annual zone)", "0719 : 낙하를 향하는 두 개의 수 (0719 : Two numbers toward the fall)"]
+					}
+                ]
+            },
+            {
+                category: "GAMES",
+                subItems: [
+                    {
+                        title: "Steam Games",
+                        description: "Enjoying action, puzzle and adventure games.",
+                        tags: [{ name: "Steam Profile", link: "https://steamcommunity.com/profiles/76561199260265575/" }],
+                        bestTitle: "Best Games",
+                        bestList: ["Monster Hunter Series", "Elden Ring", "The Witness", "Outer Wilds", "Blue Prince"]
+                    },
+					{
+						title: "League of Legends",
+						description: "I like to play ARAM mode, and enjoy playing Sylas. I'm a big fan of the LCK team KT Rolster."
+					},
+                    {
+                        title: "Chess",
+                        description: "Usually play Italian game, with around 1200 ELO in rapid.",
+                        tags: [{ name: "Chess.com Profile", link: "https://www.chess.com/member/shairene_chess" }],
+                        bestTitle: "",
+                        bestList: []
+                    }
+                ]
+            },
+            {
+                category: "ART",
+                subItems: [
+                    {
+                        title: "Music",
+                        description: "I enjoy listening to music, participating concerts and going to karaoke. While my favorite genre shifts frequently, my musical roots remain firmly in band music and Korean hip-hop.",
+                        tags: [],
+                        bestTitle: "Favorite Artists",
+                        bestList: ["K-pop : Taeyeon, f(x), Red Velvet, aespa", "Rock : Oasis, Radiohead, Black Skirts", "Harder : Judas Priest, AC/DC, PIA", "Hip-Hop : Epik High, E-SENS, Verbal Jint",  "J-pop : Yonezu Kenshi, King Gnu, Ado", "Others : Daft Punk, Raon, Johann Electric Bach"]
+                    },
+                    {
+                        title: "Movies",
+                        description: "I spend my leisure time watching movies, preferring high-energy, expressive films that are overflowing with emotion. These days, I'm also interested in Japanese animations.",
+                        tags: [{ name: "Watchapedia", link: "https://pedia.watcha.com/ko-KR/users/3Bnvw0W6eO5PA" }],
+                        bestTitle: "Best 5",
+                        bestList: ["La La Land", "헤어질 결심 (Decision to Leave)", "Eternal Sunshine", "Babylon", "Chainsaw Man: Reze Arc", "Look Back"]
+                    }
+                ]
+            }
+        ];
+
+// --- [렌더링 로직 수정본] ---
+function renderPersonal() {
+    const container = document.getElementById('personal-list');
+    container.innerHTML = personalData.map(categoryBox => `
+        <div class="history-card">
+            <div class="card-meta">${categoryBox.category}</div>
+            
+            ${categoryBox.subItems.map((item, index) => `
+                <div style="${index > 0 ? 'border-top: 1px solid #eee; margin-top: 25px; padding-top: 20px;' : ''}">
+                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <strong style="font-size: 1.1rem; color: var(--primary-color);">${item.title}</strong>
+                        ${item.tags ? item.tags.map(tag => `
+                            <a href="${tag.link}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">${tag.name}</a>
+                        `).join('') : ''}
+                    </div>
+                    
+                    <p style="font-size: 0.95rem; color: #444; margin: 8px 0 12px 0; line-height: 1.5;">
+                        ${item.description}
+                    </p>
+
+                    ${item.bestList && item.bestList.length > 0 ? `
+                        <div style="background: #fcfcfc; padding: 12px; border-radius: 6px; border: 1px solid #f0f0f0;">
+                            <span style="font-size: 0.8rem; font-weight: 800; color: #888; letter-spacing: 0.5px;">
+                                ${item.bestTitle ? item.bestTitle.toUpperCase() : 'BEST LIST'}
+                            </span>
+                            <ul style="margin-top: 8px; font-size: 0.95rem; color: #444; list-style-type: none; padding: 0;">
+                                ${item.bestList.map(li => `
+                                    <li style="margin-bottom: 4px; padding-left: 15px; position: relative;">${li}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('')}
+        </div>
+    `).join('');
+}
+
+        renderPersonal();
+    </script>
+</body>
+</html>

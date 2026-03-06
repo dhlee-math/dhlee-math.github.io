@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	    <title>Where I've been</title>
+    <link rel="stylesheet" href="../styles.css"> 
+    </head>
+<body>
+
+<main>
+    <header>
+        <h1>Where I've been</h1>
+    </header>
+<section>
+<p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+        Maybe our paths have crossed at...
+    </p>
+<section>
+    <h2>Academic Appointments</h2>
+    <div class="history-card">
+        <div class="card-meta">PROFESSOINAL EXPERICENCES</div>
+        <strong style="font-size: 1.15rem; color: #000;">Postdoctoral Researcher</strong>
+        
+        <ul style="margin-top: 12px;">
+            <li style="margin-bottom: 8px;">
+                <a href="https://qsms.math.snu.ac.kr/" class="text-link" target="_blank">Center for Quantum Structures in Modules and Spaces (QSMS)</a>, 
+                SNU (2025 – Present)
+            </li>
+            <li>
+                <a href="https://rim.math.snu.ac.kr/" class="text-link" target="_blank">Research Institute of Mathematics (RIM)</a>, 
+                SNU (2025)
+            </li>
+        </ul>
+    </div>
+    
+    <div class="history-card">
+        <div class="card-meta">ACADEMIC FOUNDATION</div>
+        <strong style="font-size: 1.15rem; color: #000;">Seoul National University (SNU)</strong>
+            
+        <ul style="margin-top: 12px;">
+            <li style="margin-bottom: 20px;">
+                <strong>Doctor of Philosophy in Mathematics</strong>
+                <div style="font-size: 0.9rem; color: #555; margin-top: 5px;">
+                    Department of Mathematical Sciences (2018 – 2025)
+                </div>
+            </li>
+            
+            <li>
+                <strong>Bachelor of Science in Mathematics</strong>
+                <br>
+                <strong>Bachelor of Economics in Economics</strong><br>
+                <strong>Minor in Physics</strong>
+                <div style="font-size: 0.9rem; color: #555; margin-top: 5px;">
+                    College of Liberal Studies (2012 - 2018)
+                </div>
+            </li>
+        </ul>
+<strong>Daewon Foreign Language High School</strong>
+
+<ul>
+
+<li>French department (2009 – 2012)</li>
+
+</ul>
+
+</section>
+
+<section>
+    <h2>International Conferences</h2>
+        <p style="font-size: 0.85rem; color: #888; margin-top: 10px; padding-left: 5px;">
+        * For a complete list of conferences and workshops held in Korea, please refer to my <a href="../CV/CV.pdf" target="_blank" class="text-link">CV</a>.
+    </p>
+
+    <div id="international-activities">
+        </div>
+</section>
+
+    <section>
+        <h2>Virtually</h2>
+        <p>Here are my Facebook pages: <a href="https://www.facebook.com/estto.lee" class="text-link" target="_blank">Estto Lee</a> / <a href="https://www.facebook.com/JJMmath" class="text-link" target="_blank">JJM Math</a>.</p>
+    </section>
+
+	<a href="../index.html" class="back-button">Back to the previous page</a>
+
+    <footer>
+        &copy; 2026 Dongho Lee
+    </footer>
+</main>
+
+<script>
+        // [데이터] 학회 정보를 여기에 추가/수정하세요
+        const activities = [
+            {
+				year: 2025,
+				month: "07",
+				country: "Germany",
+				city: "Heidelberg",
+				conference: "Workshop: Billiards and Quantitative Symplectic Geometry",
+				role: "Invited Speaker",
+				link: "https://sites.google.com/view/hd-billiard-and-symplectic/"
+			},
+            {
+				year: 2025,
+				month: "11",
+				country: "Japan",
+				city: "Tokyo",
+				conference: "Celestial Mechanics & N-body Dynamics",
+				role: "Poster Presenter",
+				link: "https://sites.google.com/view/cmndyn/"
+			},
+            { year: 2025,
+				month: "09",
+				country: "Japan",
+				city: "Sapporo",
+				conference: "East Asian Symplectic Conference 2025",
+				role: "Participant",
+				link: "https://pseudoholomorphic.fpark.tmu.ac.jp/EASC2025/EASC2025.html"
+			},
+			{ year: 2019,
+				month: "02",
+				country: "Japan",
+				city: "Kotyo",
+				conference: "Fukaya 60 : Geometry and Everything",
+				role: "Participant",
+				link: "https://pseudoholomorphic.fpark.tmu.ac.jp/FUKAYA60.html"
+			},
+            {
+				year: 2024,
+				month: "06",
+				country: "France",
+				city: "Paris",
+				conference: "From Hamiltonian Dynamics to Symplectic Topology",
+				role: "Participant",
+				link: "https://viterbo2024.sciencesconf.org/"
+			},
+            {
+				year: 2022,
+				month: "06",
+				country: "Portugal",
+				city: "Lisboa",
+				conference: "Workshop on Symplectic Dynamics",
+				role: "Participant",
+				link: "https://sympdyn.math.tecnico.ulisboa.pt/"
+			}
+        ];
+
+function renderActivities() {
+    const container = document.getElementById('international-activities');
+    
+    // 1. 국가별로 묶기
+    const grouped = activities.reduce((acc, curr) => {
+        if (!acc[curr.country]) acc[curr.country] = [];
+        acc[curr.country].push(curr);
+        return acc;
+    }, {});
+
+    // 2. 국가 리스트를 '최신 활동일' 기준으로 정렬
+    const sortedCountries = Object.keys(grouped).sort((a, b) => {
+        const getLatestDate = (country) => {
+            return Math.max(...grouped[country].map(item => item.year * 100 + parseInt(item.month)));
+        };
+        return getLatestDate(b) - getLatestDate(a); 
+    });
+
+    // 3. 정렬된 국가 순서대로 HTML 생성
+    const html = sortedCountries.map(country => {
+        const listItems = grouped[country]
+            .sort((a, b) => b.year - a.year || b.month - a.month) 
+            .map(item => `
+                <li style="margin-bottom: 8px;">
+                    ${item.role} : 
+                    <strong>
+                        <a href="${item.link}" class="text-link" target="_blank">${item.conference}</a>
+                    </strong> 
+                    (${item.city}, ${item.year}.${item.month})
+                </li>
+            `).join('');
+
+        return `
+            <div class="history-card">
+                <div class="card-meta">${country.toUpperCase()}</div>
+                <ul style="padding-left: 0; list-style: none;">${listItems}</ul>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = html;
+}
+
+// 렌더링 실행
+renderActivities();
+    </script>
+</body>
+</html>

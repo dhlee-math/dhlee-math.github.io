@@ -1,138 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>DSLR</title>
-	<link rel="stylesheet" href="../styles.css">
-	<style>
-		.seminar-item {
-			margin-bottom: 1.5em;
-			padding: 0.8em;
-			border-left: 4px solid #333;
-			background: #f9f9f9;
-		}
-		.seminar-item h2 {
-			margin: 0 0 0.3em;
-			font-size: 1.2em;
-		}
-		.seminar-meta {
-			font-size: 0.9em;
-			color: #555;
-		}
-		.seminar-abstract {
-			margin-top: 0.5em;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSLR | Dynamical Systems : Limits and Recurrence</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
-  <h1>Dynamical Systems : Limits and Recurrence</h1>
+  <main class="container">
+<header>
+  <h1 style="line-height: 1.2;">
+    DSLR
+    <span style="display: block; font-size: 0.45em; font-weight: 400; color: #666; margin-top: 8px;">
+      Dynamical Systems : Limits and Recurrence
+    </span>
+  </h1>
+</header>
     <section class="seminar-intro">
-    <p>
-    DSLR is a reading seminar on dynamical systems.  
-    Its purpose is to approach Hamiltonian dynamics, as studied in symplectic geometry, 
-    from a more dynamical perspective, with a particular focus on understanding the 
-    bifurcation behavior of Hamiltonian orbits.<br>
-  If you want to join, feel free to contact 
-  <a href="mailto:tangled@snu.ac.kr">tangled@snu.ac.kr</a>.
-    </p>
-  </section>
+      <p>
+        DSLR is a reading seminar on dynamical systems. 
+        Its purpose is to approach Hamiltonian dynamics, as studied in symplectic geometry, 
+        from a more dynamical perspective, with a particular focus on understanding the 
+        bifurcation behavior of Hamiltonian orbits.
+      </p>
+      <ul class="contact-links">
+        <li><a href="mailto:tangled@snu.ac.kr">Contact Organizer</a></li>
+      </ul>
+    </section>
 
-  <!-- 참여자 목록 -->
-  <section class="seminar-participants">
-    <h2>Participants</h2>
-    <ul>
-      <li>Dongho Lee (SNU, QSMS)</li>
-      <li>Wonjun Lee (SNU)</li>
-      <li>Chankyu Joung (SNU, BK21)</li>
-      <li>Hoon Namgung (Yonsei University)</li>
-      <!-- 필요하면 계속 추가 -->
-    </ul>
+    <section>
+      <h2>Participants</h2>
+      <div id="participant-list"></div>
+    </section>
 
-	<h2>Textbooks and Papers</h2>
-    <ul>
-      <li>
-		<strong>S. Smale - Differentiable dynamical systems (1967)</strong><br>
-		A classical paper introducing fundamental concepts of dynamical systems.
-	</li>
-      <li>
-		<strong>R. Abraham, J. Marsden - Foundations of Mechanics (1978)</strong><br>
-	A foundational textbook that develops mechanics in the language of symplectic 
-    geometry, widely used in both mathematics and physics.</li>
-      <li>
-    <strong>K. Meyer, G. Hall, D. Offin - Intoduction to Hamiltonian Dynamical Systems and the N-body Problem (1992)</strong><br>
-  More N-body problems.</li>
+
+    <section>
+      <h2>Textbooks and Papers</h2>
+      <div id="book-list"></div>
+    </section>
+
+    <section>
+      <h2>Schedules</h2>
+      <div id="seminar-list"></div>
+    </section>
+
+		<a href="../index.html" class="back-button">Back to the Previous Page</a>
+
+    <footer>
+      &copy; 2026 Dongho Lee.
+    </footer>
+  </main>
+
+  <script>
+    // --- [데이터 관리 영역] ---
+
+    const participants = [
+      "Dongho Lee (SNU, QSMS)",
+      "Chankyu Joung (SNU, BK21)",
+      "Wonjun Lee (SNU)",
+      "Hoon Namgung (Yonsei University)",
+      "Jeonghyun Kim (Sogang University)"
+    ];
+
+    const books = [
+      { author: "S. Smale", title: "Differentiable dynamical systems", year: 1967, desc: "A classical paper introducing fundamental concepts." },
+      { author: "R. Abraham, J. Marsden", title: "Foundations of Mechanics", year: 1978, desc: "Also contains Hamiltonian systems." },
+      { author: "K. Meyer et al.", title: "Introduction to Hamiltonian Dynamical Systems", year: 1992, desc: "Focuses on N-body problems." },
+      { author: "S. Wiggins", title: "Applied Nonlinear Dynamical Systems and Chaos", year: 2003, desc: "Dealing with chaotic systems." }
+    ];
+
+    const seminars = [
+{
+title: "Smale Horseshoe at Homoclinic Points",
+date: "2026-03-06",
+speaker: "Dongho Lee (SNU, QSMS)",
+location: "SNU, 129-309, 10:00 ~ 12:00",
+abstract: "This talk explores the dynamics near transverse homoclinic points. I will demonstrate how the Smale horseshoe map arises on an invariant Cantor set, providing a rigorous framework for understanding the emergence of chaos in these systems.",
+noteLink: "../seminar/260306DonghoLee.pdf"
+},
+{
+title: "Bifurcation of Hamiltonian Orbits",
+date: "2025-12-02",
+speaker: "Dongho Lee (SNU, QSMS)",
+location: "SNU, 129-310, 13:00 ~ 15:00",
+abstract: "In this talk, we discuss the bifurcation of generic Hamiltonian systems. In the 1970s, Meyer demonstrated that these bifurcations fall into exactly eight generic types, five of which are specifically associated with periodic orbits. We will examine this complete classification in detail, focusing on the transitions between ellipticity and hyperbolicity and the corresponding evolution of Floquet multipliers.",
+noteLink: "../notes/Slides/Bifurcation.pdf"
+},
+{
+title: "Generic Properties of Dynamical Systems",
+date: "2025-11-12",
+speaker: "Wonjun Lee (SNU)",
+location: "SNU, 129-309, 15:00 ~ 17:00",
+noteLink: "../seminar/251112WonjunLee.pdf"
+},
+{
+title: "Return Map and stability of Hamiltonian orbits",
+date: "2025-09-19",
+speaker: "Chankyu Joung (SNU, BK21)",
+location: "SNU, 129-104, 15:00 ~ 17:00",
+noteLink: "../seminar/250919ChankyuJoung.pdf"
+},
+{
+title: "Invariant sets and stability",
+date: "2025-09-09",
+speaker: "Dongho Lee (SNU, QSMS)",
+location: "SNU, 129-104, 17:00 ~ 18:00",
+abstract: "In this talk, I will introduce the main topics and basic notions of dynamics. The notion of limit sets, minimal sets, non-wandering points and recurrent points will be covered. Also, I will introduce the notion of stable and unstable manifolds of the fixed points.",
+noteLink: "../seminar/250909DonghoLee.pdf"
+}
+    ];
+
+    // --- [렌더링 로직 영역] ---
+
+    function renderDSLR() {
+      // 1. 참여자 렌더링 (단일 카드)
+      document.getElementById('participant-list').innerHTML = `
+        <div class="history-card">
+          <div class="card-meta">MEMBERS</div>
+          <ul>${participants.map(p => `<li>${p}</li>`).join('')}</ul>
+        </div>
+      `;
+
+      // 2. 도서 렌더링 (최신순 정렬 후 카드 생성)
+// 도서 렌더링 (단일 카드 내 한 줄 리스트)
+const bookItems = books
+  .sort((a, b) => a.year - b.year) // 최신순 정렬
+  .map(b => `
     <li>
-        <strong>A. Celletti - Stability and Chaos in Celestial Mechanics (2010)</strong><br>
-	More celestial mechanics, including KAM theory.</li>
-      <!-- 필요하면 계속 추가 -->
-    </ul>
-	<h2>Schedules</h2>
-  </section>
-  <!-- 첫 번째 세미나 -->
-  <div class="seminar-item">
-    <h2>Invariant sets and stability</h2>
-    <div class="seminar-meta">
-      📅 2025-09-09 <br>
-      👤 Dongho Lee (SNU, QSMS) <br>
-      📍 SNU, 129-104, 17:00 ~ 18:00
-    </div>
-    <div class="seminar-abstract">
-      In this talk, I will introduce the main topics and basic notions of dynamics.
-      The notion of limit sets, minimal sets, non-wandering points and recurrent points will be covered.
-      Also, I will introduce the notion of stable and unstable manifolds of the fixed points.
-    </div>
-    <p>
-      📑 <a href="../seminar/250909DonghoLee.pdf">Note</a>
-    </p>
-  </div>
-    <div class="seminar-item">
-    <h2>Return Map and stability of Hamiltonian orbits</h2>
-    <div class="seminar-meta">
-      📅 2025-09-19 <br>
-      👤 Chankyu Joung (SNU, BK21) <br>
-      📍 SNU, 129-104, 15:00 ~ 17:00
-    </div>
-    <p>
-      📑 <a href="../seminar/250919ChankyuJoung.pdf">Note</a>
-    </p>
-    </div>
-    <div class="seminar-item">
-    <h2>Generic Properties of Dynamical Systems</h2>
-    <div class="seminar-meta">
-      📅 2025-11-12 <br>
-      👤 Wonjun Lee (SNU) <br>
-      📍 SNU, 129-309, 15:00 ~ 17:00
-    </div>
-    <p>
-      📑 <a href="../seminar/251112WonjunLee.pdf">Note</a>
-    </p>
-  </div>
+      ${b.author} : <strong>${b.title}</strong> (${b.year}) — ${b.desc}
+    </li>
+  `).join('');
 
+document.getElementById('book-list').innerHTML = `
+  <div class="history-card">
+    <div class="card-meta">READING LIST</div>
+    <ul>${bookItems}</ul>
   </div>
-    <div class="seminar-item">
-    <h2>Bifurcation of Hamiltonian Orbits</h2>
-    <div class="seminar-meta">
-      📅 2025-12-02 <br>
-      👤 Dongho Lee (QSMS, SNU) <br>
-      📍 SNU, 129-310, 13:00 ~ 15:00
-    </div>
-    <div class="seminar-abstract">
-      In the 1970s, Meyer and many other mathematicians studied the bifurcation of Hamiltonian orbits, obtaining a number of fundamental results. One of the most important is that, in the generic case, such bifurcations fall into eight well-known types. This classification includes the familiar Lyapunov, birth–death, and period-doubling bifurcations, among others. In this talk, I will review this classical classification of bifurcations, together with several classical theorems used in their analysis, and illustrate them with a few examples. I will also discuss how these classical results relate to the modern theory of symplectic homology. This talk is based primarily on Meyer’s 1970 paper and the book by Abraham and Marsden.
-    </div>
-    <p>
-      📑 <a href="../notes/Slides/Bifurcation.pdf">Note</a>
-    </p>
-  </div>
+`;
 
-  <p><a href="../index.html">Back to the previous page</a></p>
+      // 3. 세미나 일정 렌더링 (최신순 정렬)
+      document.getElementById('seminar-list').innerHTML = seminars
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map(s => `
+          <div class="history-card">
+            <div class="card-meta">${s.date}</div>
+            <strong>${s.title}</strong>
+            <ul>
+              <li>Speaker: ${s.speaker} | Location: ${s.location}</li>
+              ${s.abstract ? `<li style="white-space: normal; color: #666; font-style: italic; margin-top: 10px;">${s.abstract}</li>` : ''}
+              <li>📑 <a href="${s.noteLink}" target="_blank">View Note</a></li>
+            </ul>
+          </div>
+        `).join('');
+    }
 
-  <footer>
-    &copy; 2025 Dongho Lee
-  </footer>
+    renderDSLR();
+  </script>
 </body>
-
 </html>
