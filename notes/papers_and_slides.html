@@ -19,7 +19,7 @@
         <section>
             <h2>Notes</h2>
             <div class="history-card">
-                <p style="margin: 0;">Here are some <a href="Old_Notes/notes.html" target="_blank">old notes</a>.</p>
+                <p style="margin: 0;">Here are some <a href="Old_Notes/notes.html" class="text-link" target="_blank">old notes</a>.</p>
             </div>
         </section>
 
@@ -138,7 +138,7 @@ function renderAll() {
             const pubItems = publications.map(pub => {
                 const authors = pub.coAuthors ? `with ${pub.coAuthors}, ` : "";
                 const venue = pub.journal ? `<em>${pub.journal}</em>` : `<em>${pub.status}</em>`;
-                const arxivLink = pub.arxiv ? `, <a href="https://arxiv.org/abs/${pub.arxiv}" target="_blank">arXiv:${pub.arxiv}</a>` : "";
+                const arxivLink = pub.arxiv ? `, <a href="https://arxiv.org/abs/${pub.arxiv}" class = "text-link" target="_blank">arXiv:${pub.arxiv}</a>` : "";
                 
                 // 버튼 생성 (링크가 있는 경우만 생성)
                 const buttons = `
