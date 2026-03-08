@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07T03:24:23+00:00",
+  "updated_at": "2026-03-08T03:37:27+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -426,6 +426,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Fellow in proton therapy research (Index-Nr. 1714-23359)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/401915",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Fellows in Fully Homomorphic Encryption at Simula UiB",
       "institution": "",
       "country": "",
@@ -438,21 +453,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/404123",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher / Research Engineer (Arithmetic Geometry)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/407860",
       "priority": 2
     },
     {
@@ -1080,7 +1080,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-07",
+      "date_posted": "2026-03-08",
       "tags": [
         "symplectic",
         "contact",
