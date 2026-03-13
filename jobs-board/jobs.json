@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12T03:39:12+00:00",
+  "updated_at": "2026-03-13T03:35:55+00:00",
   "items": [
     {
       "title": "[MOCOSPOSTDOC] Postdoctoral position in arithmetic geometry, algebraic K-theory",
@@ -44,21 +44,6 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27321",
-      "priority": 2
-    },
-    {
-      "title": "[POSTDOCTORALGEOMETRY] Postdoctoral researcher in Geometry",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "2026/01/15",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/27845",
       "priority": 2
     },
     {
@@ -671,7 +656,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-12",
+      "date_posted": "2026-03-13",
       "tags": [
         "symplectic",
         "contact",
