@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T03:28:56+00:00",
+  "updated_at": "2026-03-22T03:45:32+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -74,6 +74,22 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/28082",
+      "priority": 2
+    },
+    {
+      "title": "Designing of materials and interfaces for batteries through atomistic simulations",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/421486",
       "priority": 2
     },
     {
@@ -581,7 +597,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-21",
+      "date_posted": "2026-03-22",
       "tags": [
         "symplectic",
         "contact",
