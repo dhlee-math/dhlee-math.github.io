@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T03:41:55+00:00",
+  "updated_at": "2026-03-25T03:45:27+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -354,6 +354,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoc(f/m/x) at the Johann Radon Institute for Computational and Applied Mathematics (RICAM) -RICAM010PD126",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/410487",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Fellowship in Mathematical Sciences",
       "institution": "",
       "country": "",
@@ -398,21 +413,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/417736",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher in Artificial Intelligence for Materials Discovery",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/412445",
       "priority": 2
     },
     {
@@ -1040,7 +1040,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-24",
+      "date_posted": "2026-03-25",
       "tags": [
         "symplectic",
         "contact",
