@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T04:05:11+00:00",
+  "updated_at": "2026-03-28T03:44:14+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -104,6 +104,21 @@
         "dynamics"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27934",
+      "priority": 2
+    },
+    {
+      "title": "[POSTDOCAPPMATH] Postdoc in Applied Mathematics – Theory and Applications of Adaptive Network Dynamics (Postdoctoral)",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28276",
       "priority": 2
     },
     {
@@ -551,7 +566,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-27",
+      "date_posted": "2026-03-28",
       "tags": [
         "symplectic",
         "contact",
