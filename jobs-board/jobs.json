@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T04:12:37+00:00",
+  "updated_at": "2026-03-30T04:16:10+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -409,6 +409,21 @@
       "priority": 3
     },
     {
+      "title": "[PDF_CRMLAVAL_2026] Mathematics, CRM-LAVAL Postdoctoral fellowship 2026-2027/Bourse postdoctorale CRM-LAVAL 2026-2027",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "2026/03/29",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28044",
+      "priority": 3
+    },
+    {
       "title": "[2026PDF] 2026 Postdoctoral Fellowship (Postdoctoral)",
       "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
       "country": "",
@@ -466,21 +481,6 @@
         "fellowship"
       ],
       "url": "https://www.mathjobs.org/jobs/list/28169",
-      "priority": 3
-    },
-    {
-      "title": "[PDF_CRMLAVAL_2026] Mathematics, CRM-LAVAL Postdoctoral fellowship 2026-2027/Bourse postdoctorale CRM-LAVAL 2026-2027 (Postdoctoral)",
-      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
-      "country": "",
-      "region": "Other",
-      "deadline": "",
-      "summary": "Imported from MathJobs postdoc listing.",
-      "source": "MathJobs",
-      "date_posted": "",
-      "tags": [
-        "fellowship"
-      ],
-      "url": "https://www.mathjobs.org/jobs/list/28044",
       "priority": 3
     },
     {
@@ -559,6 +559,21 @@
       "priority": 3
     },
     {
+      "title": "[SMF] SISSA Mathematical Fellowships (Postdoctoral)",
+      "institution": "Job Listings [BEGIN] if (self != top){//in a frame document.write(\" \"); if(!0) window.addEventListener('load',function(){var a=document.getElementsByTagName('a'); for (var i=0;i \"); } [select by types] [by country/state/city] » [sort alphabetically] [by postdate] [by enddate] [by deadline] [by startdate] [by distance] [by status] »",
+      "country": "",
+      "region": "Other",
+      "deadline": "",
+      "summary": "Imported from MathJobs postdoc listing.",
+      "source": "MathJobs",
+      "date_posted": "",
+      "tags": [
+        "fellowship"
+      ],
+      "url": "https://www.mathjobs.org/jobs/list/28279",
+      "priority": 3
+    },
+    {
       "title": "Pipeline test: jobs-board is updating",
       "institution": "dhlee-math.github.io",
       "country": "",
@@ -566,7 +581,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-28",
+      "date_posted": "2026-03-30",
       "tags": [
         "symplectic",
         "contact",
