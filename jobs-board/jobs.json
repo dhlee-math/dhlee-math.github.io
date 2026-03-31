@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T04:16:10+00:00",
+  "updated_at": "2026-03-31T04:06:40+00:00",
   "items": [
     {
       "title": "[PDAGRT] Postdoctoral Fellow in Arithmetic Geometry and Representation Theory",
@@ -59,6 +59,143 @@
         "geometry"
       ],
       "url": "https://www.mathjobs.org/jobs/list/28082",
+      "priority": 2
+    },
+    {
+      "title": "ASSISTANT PROFESSOR (mathematics) AT THE INSTITUTE OF COMPUTER SCIENCE",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/421889",
+      "priority": 2
+    },
+    {
+      "title": "Data analyst (PhD)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423357",
+      "priority": 2
+    },
+    {
+      "title": "Network Design and Logistics Optimization for Circular Food Supply Chains",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/422413",
+      "priority": 2
+    },
+    {
+      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Generic Large Cardinals and Determinacy\" (PI G. Sargsyan)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423801",
+      "priority": 2
+    },
+    {
+      "title": "Post doc position in combinatorics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/422800",
+      "priority": 2
+    },
+    {
+      "title": "Post-doc position in computational modelling of growing wood",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423218",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher in Digital Twins Using Physics-Informed AI for Oncology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423360",
+      "priority": 2
+    },
+    {
+      "title": "Research Fellow (m/f/d) in the field of Optimization",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/421922",
+      "priority": 2
+    },
+    {
+      "title": "Robust optimisation methods for sparse-sensor placement for fault detection in vibrating mechanical structures",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423647",
       "priority": 2
     },
     {
@@ -166,6 +303,21 @@
         "topology"
       ],
       "url": "https://www.mathjobs.org/jobs/list/27082",
+      "priority": 2
+    },
+    {
+      "title": "«Funciones maximales y multiplicadores de Fourier. CPI-26-170»",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/421549",
       "priority": 2
     },
     {
@@ -581,7 +733,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-03-30",
+      "date_posted": "2026-03-31",
       "tags": [
         "symplectic",
         "contact",
