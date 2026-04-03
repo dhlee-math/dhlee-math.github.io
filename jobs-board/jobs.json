@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T03:52:42+00:00",
+  "updated_at": "2026-04-03T04:01:06+00:00",
   "items": [
     {
       "title": "1 Post-Doctoral Fellowship in CY Cergy Paris University, ERC project FloWAS",
@@ -48,6 +48,51 @@
       "priority": 2
     },
     {
+      "title": "Assistant Professor (Adiunkt)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424927",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor (Adiunkt)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424923",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor (Adiunkt)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424891",
+      "priority": 2
+    },
+    {
       "title": "Associate to the associate category I position - senior assistant in natural science, the field of mathematics",
       "institution": "",
       "country": "",
@@ -76,36 +121,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/423357",
-      "priority": 2
-    },
-    {
-      "title": "ERCIM Alain Bensoussan Fellowship programme - call 2026 (1)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/411779",
-      "priority": 2
-    },
-    {
-      "title": "Fellowship Opportunities in Theoretical Biophysics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/414422",
       "priority": 2
     },
     {
@@ -383,21 +398,6 @@
       "priority": 2
     },
     {
-      "title": "Professor (W1) of Complex Algebraic Geometry",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/415489",
-      "priority": 2
-    },
-    {
       "title": "Research Fellow (m/f/d) in the field of Optimization",
       "institution": "",
       "country": "",
@@ -451,7 +451,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-04-02",
+      "date_posted": "2026-04-03",
       "tags": [
         "symplectic",
         "contact",
