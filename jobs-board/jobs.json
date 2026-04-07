@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-06T04:14:54+00:00",
+  "updated_at": "2026-04-07T04:05:01+00:00",
   "items": [
     {
-      "title": "PostDoc position in numerical simulation of biological interfaces",
+      "title": "Assistant Professor (Adiunkt)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,7 +13,145 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/425644",
+      "url": "https://euraxess.ec.europa.eu/jobs/424927",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor (Adiunkt)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424923",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor (Adiunkt)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424891",
+      "priority": 2
+    },
+    {
+      "title": "Data analyst (PhD)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423357",
+      "priority": 2
+    },
+    {
+      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Generic Large Cardinals and Determinacy\" (PI G. Sargsyan)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423801",
+      "priority": 2
+    },
+    {
+      "title": "Post-doctoral researcher in mathematics W/M",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424258",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Position in Cryptography for Machine Learning",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424279",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Research Fellow in Machine Learning",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/424147",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher in Digital Twins Using Physics-Informed AI for Oncology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423360",
+      "priority": 2
+    },
+    {
+      "title": "Robust optimisation methods for sparse-sensor placement for fault detection in vibrating mechanical structures",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/423647",
       "priority": 2
     },
     {
@@ -24,7 +162,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-04-06",
+      "date_posted": "2026-04-07",
       "tags": [
         "symplectic",
         "contact",
