@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-08T04:07:17+00:00",
+  "updated_at": "2026-04-09T04:03:21+00:00",
   "items": [
     {
       "title": "Assistant Professor (Adiunkt)",
@@ -47,22 +47,6 @@
       "priority": 2
     },
     {
-      "title": "Data analyst (PhD)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423357",
-      "priority": 2
-    },
-    {
       "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Generic Large Cardinals and Determinacy\" (PI G. Sargsyan)",
       "institution": "",
       "country": "",
@@ -91,6 +75,21 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/424258",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Position",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/425911",
       "priority": 2
     },
     {
@@ -155,6 +154,21 @@
       "priority": 2
     },
     {
+      "title": "Seeking for candidates – MSCA Postdoctoral Fellowships @CNB",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/hosting/seeking-candidates-msca-postdoctoral-fellowships-cnb",
+      "priority": 2
+    },
+    {
       "title": "Pipeline test: jobs-board is updating",
       "institution": "dhlee-math.github.io",
       "country": "",
@@ -162,7 +176,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-04-07",
+      "date_posted": "2026-04-09",
       "tags": [
         "symplectic",
         "contact",
