@@ -1,83 +1,8 @@
 {
-  "updated_at": "2026-04-23T04:20:06+00:00",
+  "updated_at": "2026-04-24T04:25:13+00:00",
   "items": [
     {
-      "title": "Assistant professor (adjunct) - research staff (adiunkt - grupa badawcza)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "hamiltonian"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424949",
-      "priority": 1
-    },
-    {
-      "title": "Assistant Professor",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428519",
-      "priority": 2
-    },
-    {
-      "title": "Assistant Professor (Adiunkt)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424927",
-      "priority": 2
-    },
-    {
-      "title": "Assistant Professor (Adiunkt)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424923",
-      "priority": 2
-    },
-    {
-      "title": "Assistant Professor (Adiunkt)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424891",
-      "priority": 2
-    },
-    {
-      "title": "Data analyst (PhD)",
+      "title": "12 Research Scholarships of Research Initiation for the scientific area of Communication sciences - IST/2026/BL95",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -89,56 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423357",
+      "url": "https://euraxess.ec.europa.eu/jobs/431118",
       "priority": 2
     },
     {
-      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Generic Large Cardinals and Determinacy\" (PI G. Sargsyan)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423801",
-      "priority": 2
-    },
-    {
-      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Modern geometrical aspects of linear operators: matrix representations, numerical ranges and related matters\" (PI Y. Tomilov)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428916",
-      "priority": 2
-    },
-    {
-      "title": "Position : Post-Doc - Subject : Field-Aligned Isogeometric Methods for Tokamak Simulations",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428081",
-      "priority": 2
-    },
-    {
-      "title": "Post-doctoral researcher in mathematics W/M",
+      "title": "Announcement for the opening of selection tender procedure for (1) technician (1 vacancy) Reference: 2026_039_TS_SAFE",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -150,131 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424258",
+      "url": "https://euraxess.ec.europa.eu/jobs/431108",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Position",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/425911",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Position in Cryptography for Machine Learning",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424279",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Research Fellow in Machine Learning",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/424147",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Research Fellow position within mathematical and computational geoscience",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428057",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Research Scientist: Generative AI for Photonic and Analog Electronic Design Automation",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/427185",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher / Senior Researcher in Applied Mathematics and / or Data Analysis",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428978",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher in Digital Twins Using Physics-Informed AI for Oncology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423360",
-      "priority": 2
-    },
-    {
-      "title": "Researcher with PhD 2026/CP/068",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428125",
-      "priority": 2
-    },
-    {
-      "title": "Robust optimisation methods for sparse-sensor placement for fault detection in vibrating mechanical structures",
+      "title": "EEG Signal Analysis and Its Relationship with Cognitive Parameters",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -286,26 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423647",
+      "url": "https://euraxess.ec.europa.eu/jobs/431116",
       "priority": 2
     },
     {
-      "title": "W2 Professorship (W3 tenure track position) in Quantum Information Theory",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428974",
-      "priority": 2
-    },
-    {
-      "title": "W3 Professorship in Electromagnetics in Quantum Technologies",
+      "title": "Research Grant (Ref. BI/CESAM/BioProtect/2026)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -317,7 +62,71 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/429019",
+      "url": "https://euraxess.ec.europa.eu/jobs/431114",
+      "priority": 2
+    },
+    {
+      "title": "Research Grant (Ref. BI/CESAM/REWRITE/2026)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/431111",
+      "priority": 2
+    },
+    {
+      "title": "Research Scholarship of Research Initiation for the scientific area of Relações internacionais - IST/2026/BL99",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/431119",
+      "priority": 2
+    },
+    {
+      "title": "Research Scholarship of Research Initiation for the scientific area of Sistemas de informação - IST/2026/BL81",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/431107",
+      "priority": 2
+    },
+    {
+      "title": "Research Scholarship of Research Initiation for the scientific area of Sistemas de informação - IST/2026/BL82",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/431112",
       "priority": 2
     },
     {
@@ -328,7 +137,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-04-17",
+      "date_posted": "2026-04-24",
       "tags": [
         "symplectic",
         "contact",
