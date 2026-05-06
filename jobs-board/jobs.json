@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-05T04:25:20+00:00",
+  "updated_at": "2026-05-06T04:41:07+00:00",
   "items": [
     {
-      "title": "CALL FOR A DOCTORATE RESEARCHER - Babymotion_1_05",
+      "title": "Postdoc position in Economics of Science",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/432510",
+      "url": "https://euraxess.ec.europa.eu/jobs/433630",
       "priority": 2
     },
     {
@@ -25,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-04-30",
+      "date_posted": "2026-05-06",
       "tags": [
         "symplectic",
         "contact",
