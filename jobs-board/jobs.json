@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-12T04:47:34+00:00",
+  "updated_at": "2026-05-13T04:58:11+00:00",
   "items": [
     {
-      "title": "Postdoc position in Economics of Science",
+      "title": "Call for Expressions of Interest: Marie Skłodowska-Curie Postdoctoral Fellowships, Department of Psychology, University of Cádiz, Spain",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "fellowship"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/433630",
-      "priority": 2
+      "url": "https://euraxess.ec.europa.eu/jobs/hosting/call-expressions-interest-marie-sklodowska-curie-postdoctoral-fellowships-21",
+      "priority": 3
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-06",
+      "date_posted": "2026-05-13",
       "tags": [
         "symplectic",
         "contact",
