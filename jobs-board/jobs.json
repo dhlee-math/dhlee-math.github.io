@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-13T04:58:11+00:00",
+  "updated_at": "2026-05-14T04:56:37+00:00",
   "items": [
     {
-      "title": "Call for Expressions of Interest: Marie Skłodowska-Curie Postdoctoral Fellowships, Department of Psychology, University of Cádiz, Spain",
+      "title": "Post-doctoral researcher in Applied Mathematics W/M",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "fellowship"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/hosting/call-expressions-interest-marie-sklodowska-curie-postdoctoral-fellowships-21",
-      "priority": 3
+      "url": "https://euraxess.ec.europa.eu/jobs/436150",
+      "priority": 2
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-13",
+      "date_posted": "2026-05-14",
       "tags": [
         "symplectic",
         "contact",
