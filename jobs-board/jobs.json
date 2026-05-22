@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-05-21T05:19:04+00:00",
+  "updated_at": "2026-05-22T05:12:51+00:00",
   "items": [
-    {
-      "title": "Complex and harmonic analysis approach to point configurations and operator theory (POST23506052026)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/434105",
-      "priority": 2
-    },
     {
       "title": "Contest point 1 – Postdoctoral Fellow",
       "institution": "",
@@ -44,21 +29,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/435626",
-      "priority": 2
-    },
-    {
-      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Generic Large Cardinals and Determinacy\" (PI G. Sargsyan)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/423801",
       "priority": 2
     },
     {
@@ -230,6 +200,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Position – Department of Economics and Business, Universitat Pompeu Fabra (Barcelona)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/436982",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Researcher",
       "institution": "",
       "country": "",
@@ -335,6 +320,21 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/435654",
+      "priority": 2
+    },
+    {
+      "title": "Researcher with PhD 2026/CP/099",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/438459",
       "priority": 2
     },
     {
@@ -465,7 +465,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-21",
+      "date_posted": "2026-05-22",
       "tags": [
         "symplectic",
         "contact",
