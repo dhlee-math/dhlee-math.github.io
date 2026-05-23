@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T05:12:51+00:00",
+  "updated_at": "2026-05-23T04:51:53+00:00",
   "items": [
     {
       "title": "Contest point 1 – Postdoctoral Fellow",
@@ -59,21 +59,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/433439",
-      "priority": 2
-    },
-    {
-      "title": "Phd Assistant Professor in Statistics and Operational Research",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/435286",
       "priority": 2
     },
     {
@@ -167,6 +152,22 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/436652",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc position – NCN Maestro: Beyond classical hydrodynamics (University of Warsaw)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/438842",
       "priority": 2
     },
     {
@@ -465,7 +466,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-22",
+      "date_posted": "2026-05-23",
       "tags": [
         "symplectic",
         "contact",
