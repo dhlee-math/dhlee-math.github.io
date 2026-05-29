@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-19T05:12:45+00:00",
+  "updated_at": "2026-05-29T05:21:34+00:00",
   "items": [
     {
-      "title": "Post-doctoral researcher in Applied Mathematics W/M",
+      "title": "Open call for a postdoc position in the NCN Maestro 15 grant \"Forcing axioms, inner models and determinacy\" (PI G. Sargsyan)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,7 +13,22 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/436150",
+      "url": "https://euraxess.ec.europa.eu/jobs/440693",
+      "priority": 2
+    },
+    {
+      "title": "Two-Year Postdoctoral scholarship in Seasonal Adaptation and Environmental Signaling",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/440698",
       "priority": 2
     },
     {
@@ -24,7 +39,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-14",
+      "date_posted": "2026-05-29",
       "tags": [
         "symplectic",
         "contact",
