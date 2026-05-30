@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-29T05:21:34+00:00",
+  "updated_at": "2026-05-30T04:59:47+00:00",
   "items": [
     {
-      "title": "Open call for a postdoc position in the NCN Maestro 15 grant \"Forcing axioms, inner models and determinacy\" (PI G. Sargsyan)",
+      "title": "MSCA Postdoctoral Fellowship 2026 Opportunity: Interdisciplinary Renewable Energy Systems, Water Nexus and Global Sustainability Data-driven Modelling",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,25 +11,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "fellowship"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/440693",
-      "priority": 2
-    },
-    {
-      "title": "Two-Year Postdoctoral scholarship in Seasonal Adaptation and Environmental Signaling",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/440698",
-      "priority": 2
+      "url": "https://euraxess.ec.europa.eu/jobs/hosting/msca-postdoctoral-fellowship-2026-opportunity-interdisciplinary-renewable-energy",
+      "priority": 3
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -39,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-29",
+      "date_posted": "2026-05-30",
       "tags": [
         "symplectic",
         "contact",
