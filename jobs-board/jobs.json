@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-29T05:21:34+00:00",
+  "updated_at": "2026-06-03T06:15:46+00:00",
   "items": [
     {
-      "title": "Open call for a postdoc position in the NCN Maestro 15 grant \"Forcing axioms, inner models and determinacy\" (PI G. Sargsyan)",
+      "title": "Doctoral Student in Medical Radiation Physics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,13 +11,14 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/440693",
+      "url": "https://euraxess.ec.europa.eu/jobs/441320",
       "priority": 2
     },
     {
-      "title": "Two-Year Postdoctoral scholarship in Seasonal Adaptation and Environmental Signaling",
+      "title": "ERC-funded postdoc positions in mathematical biology, biophysics, and theory-led developmental biology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -28,7 +29,163 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/440698",
+      "url": "https://euraxess.ec.europa.eu/jobs/439663",
+      "priority": 2
+    },
+    {
+      "title": "One or more Postdocs in Reliability Assessment and Optimization of Advanced Power Electronic Modules",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/441318",
+      "priority": 2
+    },
+    {
+      "title": "PhD in the field of theoretical condensed matter physics (M/F)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/441321",
+      "priority": 2
+    },
+    {
+      "title": "Post-doctoral position on climate extremes",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/440639",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc position on lake ecosystem modelling (m/f/x)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/436652",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc position – NCN Maestro: Beyond classical hydrodynamics (University of Warsaw)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/438842",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Position - UniGeoDyM",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "topology",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/439557",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Position – Department of Economics and Business, Universitat Pompeu Fabra (Barcelona)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/436982",
+      "priority": 2
+    },
+    {
+      "title": "Special Scientist (Research Fellow), IRIDA Research Centre for Communication Technologies, University of Cyprus",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/438125",
+      "priority": 2
+    },
+    {
+      "title": "VHIO International Postdoctoral Programme for Translational Research (VIDA)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/440962",
+      "priority": 2
+    },
+    {
+      "title": "We are looking for candidates (f/m/x) for a Postdoctoral position in the group of Prof. Michał Oszmaniec within “Quantum Excellence Centre for Quantum-Enhanced Applications” (QEC4QEA) (MO/18/2026)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/439319",
       "priority": 2
     },
     {
@@ -39,7 +196,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-05-29",
+      "date_posted": "2026-06-01",
       "tags": [
         "symplectic",
         "contact",
