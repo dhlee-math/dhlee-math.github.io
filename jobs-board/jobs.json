@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-07T05:51:47+00:00",
+  "updated_at": "2026-06-08T06:05:39+00:00",
   "items": [
     {
-      "title": "Post-doctoral Fellow in Drug Delivery, Nanomedicine & Advanced Therapeutics",
+      "title": "Postdoctoral Researcher (f_m_x) – HYDROCONNECT-HYDROPREDICT",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,7 +13,22 @@
       "tags": [
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/442872",
+      "url": "https://euraxess.ec.europa.eu/jobs/443001",
+      "priority": 2
+    },
+    {
+      "title": "Scientist in Marine Digital Innovation",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/443004",
       "priority": 2
     },
     {
@@ -24,7 +39,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-06-07",
+      "date_posted": "2026-06-08",
       "tags": [
         "symplectic",
         "contact",
