@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T05:46:23+00:00",
+  "updated_at": "2026-06-09T05:16:34+00:00",
   "items": [
     {
       "title": "Resonances and bifurcations in nonlinear dynamical systems",
@@ -93,36 +93,6 @@
       "priority": 2
     },
     {
-      "title": "Open call for a postdoc position in the NCN WEAVE-UNISONO grant \"Modern geometrical aspects of linear operators: matrix representations, numerical ranges and related matters\" (PI Y. Tomilov)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428916",
-      "priority": 2
-    },
-    {
-      "title": "POST-DOC in Statistics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/433439",
-      "priority": 2
-    },
-    {
       "title": "Post-Doctoral Research Visit F/M Multiscale numerical methods for nonlinear problems in geosciences",
       "institution": "",
       "country": "",
@@ -135,6 +105,22 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/433746",
+      "priority": 2
+    },
+    {
+      "title": "Post-Doctoral researcher",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/442520",
       "priority": 2
     },
     {
@@ -181,6 +167,21 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/434763",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc in Control theory for PDEs",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/442797",
       "priority": 2
     },
     {
@@ -247,6 +248,51 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Fellow in statistical modeling for genomic data",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/443122",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Fellowship in Number Theory or Postdoctoral Fellowship in Risk Theory",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/442392",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Fellowship in Partial Differential Equations or in Statistics and its interfaces",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/442505",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Position - UniGeoDyM",
       "institution": "",
       "country": "",
@@ -309,38 +355,6 @@
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher / Senior Researcher in Applied Mathematics and / or Data Analysis",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/428978",
-      "priority": 2
-    },
-    {
-      "title": "Quantum-inspired approaches for the simulation of turbulent flows",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/432929",
-      "priority": 2
-    },
-    {
       "title": "Senior Scientist with doctorate/PhD (all genders welcome)",
       "institution": "",
       "country": "",
@@ -384,21 +398,6 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/440146",
-      "priority": 2
-    },
-    {
-      "title": "Two Post-doc positions in coupled Fluid-Solid interaction systems",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/430272",
       "priority": 2
     },
     {
@@ -454,7 +453,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-06-04",
+      "date_posted": "2026-06-09",
       "tags": [
         "symplectic",
         "contact",
