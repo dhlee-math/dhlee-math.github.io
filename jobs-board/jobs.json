@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-18T06:11:10+00:00",
+  "updated_at": "2026-06-19T06:34:19+00:00",
   "items": [
     {
-      "title": "Assistant Professor/Professor Auxiliar Edital/Notice nº 695/2026/IST",
+      "title": "Contest point 3 – Postdoctoral Fellow",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,144 +13,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/444891",
-      "priority": 2
-    },
-    {
-      "title": "Post doctoral position in Numerical Analysis and Scientific Computing – ERC NEMESIS",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/444477",
-      "priority": 2
-    },
-    {
-      "title": "Post-Doctoral researcher",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/442520",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc in Control theory for PDEs",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/442797",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Fellow in statistical modeling for genomic data",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/443122",
-      "priority": 2
-    },
-    {
-      "title": "Research Scholarship of Post-Doctoral Research for the scientific area of Mathematics - IST/2026/BL135",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/444900",
-      "priority": 2
-    },
-    {
-      "title": "Researcher in Fundamental Mathematics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/444467",
-      "priority": 2
-    },
-    {
-      "title": "Two post-doctoral position in malaria modelling",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/444598",
-      "priority": 2
-    },
-    {
-      "title": "University Assistant (Doctorate/Ph.D.)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/443702",
-      "priority": 2
-    },
-    {
-      "title": "Young Doctor (Research Assistant Professor) at the Center of Trustworthy AI for Life Sciences - International Research Agendas Programme, University of Warsaw",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/445006",
+      "url": "https://euraxess.ec.europa.eu/jobs/446392",
       "priority": 2
     },
     {
@@ -161,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-06-16",
+      "date_posted": "2026-06-19",
       "tags": [
         "symplectic",
         "contact",
