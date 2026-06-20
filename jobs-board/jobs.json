@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-19T06:34:19+00:00",
+  "updated_at": "2026-06-20T05:42:13+00:00",
   "items": [
     {
-      "title": "Contest point 3 – Postdoctoral Fellow",
+      "title": "Assistant Professor (postdoctoral)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,7 +13,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/446392",
+      "url": "https://euraxess.ec.europa.eu/jobs/446566",
       "priority": 2
     },
     {
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-06-19",
+      "date_posted": "2026-06-20",
       "tags": [
         "symplectic",
         "contact",
