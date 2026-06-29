@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T05:43:16+00:00",
+  "updated_at": "2026-06-29T06:05:04+00:00",
   "items": [
     {
       "title": "Resonances and bifurcations in nonlinear dynamical systems",
@@ -75,21 +75,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/447206",
-      "priority": 2
-    },
-    {
-      "title": "ERC-funded postdoc positions in mathematical biology, biophysics, and theory-led developmental biology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/439663",
       "priority": 2
     },
     {
@@ -278,6 +263,21 @@
       "priority": 2
     },
     {
+      "title": "Postdoctoral Position – Department of Economics and Business, Universitat Pompeu Fabra (Barcelona)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/436982",
+      "priority": 2
+    },
+    {
       "title": "Postdoctoral Research Fellow in Machine Learning and Artificial Intelligence in Epidemiology (ref 303695)",
       "institution": "",
       "country": "",
@@ -452,7 +452,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-06-26",
+      "date_posted": "2026-06-29",
       "tags": [
         "symplectic",
         "contact",
