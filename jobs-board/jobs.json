@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-03T04:54:08+00:00",
+  "updated_at": "2026-07-04T04:47:49+00:00",
   "items": [
     {
-      "title": "Call: «CPI-26-379»",
+      "title": "First Level Doctorate Researcher in the scientific area of Biomedical Sciences (or related areas)(CDL-CTTRI-112-SGRH/202x) at University of Aveiro – Nº of the Project 14915, in its FEDER/FNR",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,145 +13,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/447206",
-      "priority": 2
-    },
-    {
-      "title": "First Stage Researcher Member - 212023",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/447241",
-      "priority": 2
-    },
-    {
-      "title": "Fully funded postdoc positions in computational/theoretical neuroscience",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/446776",
-      "priority": 2
-    },
-    {
-      "title": "Open call for a postdoc position in the NCN OPUS 30 grant \"Geometry of infinite Young tableaux\" (PI P. Śniady)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/447205",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Fellow in Computational Systems Biology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/449062",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Fellow in Mathematics Education",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/448096",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Research Fellow in Machine Learning and Artificial Intelligence in Epidemiology (ref 303695)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/448119",
-      "priority": 2
-    },
-    {
-      "title": "Recruit a project researcher for a fixed term and on a part-time basis",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/447505",
-      "priority": 2
-    },
-    {
-      "title": "Researcher in mathematics - Postdoctoral position",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "topology"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/446575",
-      "priority": 2
-    },
-    {
-      "title": "University Assistant (Doctorate/Ph.D.)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/448737",
+      "url": "https://euraxess.ec.europa.eu/jobs/450244",
       "priority": 2
     },
     {
@@ -162,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-07-01",
+      "date_posted": "2026-07-04",
       "tags": [
         "symplectic",
         "contact",
