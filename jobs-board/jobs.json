@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-16T04:22:21+00:00",
+  "updated_at": "2026-07-17T04:20:19+00:00",
   "items": [
     {
-      "title": "Senior Scientist Post-Doc (2026/0169)",
+      "title": "Postdoctoral researcher in EDP and quantum computation",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "hamiltonian"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/453251",
-      "priority": 2
+      "url": "https://euraxess.ec.europa.eu/jobs/453549",
+      "priority": 1
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-07-16",
+      "date_posted": "2026-07-17",
       "tags": [
         "symplectic",
         "contact",
