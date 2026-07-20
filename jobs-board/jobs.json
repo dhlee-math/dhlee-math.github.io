@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T04:32:09+00:00",
+  "updated_at": "2026-07-20T04:48:54+00:00",
   "items": [
     {
       "title": "Resonances and bifurcations in nonlinear dynamical systems",
@@ -156,7 +156,7 @@
       "priority": 2
     },
     {
-      "title": "Postdoc Positions: AI for Large-Scale Computing in the Einstein Telescope",
+      "title": "Postdoc - Optimal color selection algorithms for multiplexed image inscription",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -167,7 +167,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/449471",
+      "url": "https://euraxess.ec.europa.eu/jobs/410490",
       "priority": 2
     },
     {
@@ -337,7 +337,7 @@
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher in complex systems and criticality in financial markets",
+      "title": "Postdoctoral Researcher(s) in ML and Quantum technologies",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -348,7 +348,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/450179",
+      "url": "https://euraxess.ec.europa.eu/jobs/404812",
       "priority": 2
     },
     {
@@ -436,7 +436,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-07-19",
+      "date_posted": "2026-07-20",
       "tags": [
         "symplectic",
         "contact",
