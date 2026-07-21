@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T04:48:54+00:00",
+  "updated_at": "2026-07-21T04:28:03+00:00",
   "items": [
     {
       "title": "Resonances and bifurcations in nonlinear dynamical systems",
@@ -46,6 +46,21 @@
         "dynamics"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/440231",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/454161",
       "priority": 2
     },
     {
@@ -337,21 +352,6 @@
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher(s) in ML and Quantum technologies",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/404812",
-      "priority": 2
-    },
-    {
       "title": "Research Scholarship of Post-Doctoral Research for the scientific area of Mathematics - IST/2026/BL169",
       "institution": "",
       "country": "",
@@ -436,7 +436,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-07-20",
+      "date_posted": "2026-07-21",
       "tags": [
         "symplectic",
         "contact",
