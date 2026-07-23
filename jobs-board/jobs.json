@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T04:30:32+00:00",
+  "updated_at": "2026-07-23T04:29:05+00:00",
   "items": [
     {
       "title": "Resonances and bifurcations in nonlinear dynamical systems",
@@ -137,21 +137,6 @@
         "geometry"
       ],
       "url": "https://euraxess.ec.europa.eu/jobs/447205",
-      "priority": 2
-    },
-    {
-      "title": "POSTDOCTORAL RESEARCHER STATISTICS/EPIDEMIOLOGY - Health Impact of air pollution",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/449900",
       "priority": 2
     },
     {
@@ -383,6 +368,21 @@
       "priority": 2
     },
     {
+      "title": "Senior Lecturer (Doctorate/Ph.D.)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/454792",
+      "priority": 2
+    },
+    {
       "title": "Thermodynamic Upscaling of Interfacial Transport: From Diffuse to Sharp Descriptions",
       "institution": "",
       "country": "",
@@ -436,7 +436,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-07-22",
+      "date_posted": "2026-07-23",
       "tags": [
         "symplectic",
         "contact",
