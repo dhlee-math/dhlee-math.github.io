@@ -32,6 +32,15 @@
         // 1. 데이터 관리 (여기에 새로운 논문/발표를 추가하세요)
         const publications = [
             {
+                type: 'preprint',
+                title: "Mutations of Local Floer Chain Complexes across Hamiltonian Bifurcations",
+                date: "2026-07",
+                coAuthors: "Hong-kwon Jo",
+                status: "arXiv preprint",
+                arxiv: "2607.22178",
+                summary: "Computation of the change of local Floer chain complex along generic types of Hamiltonian bifurcations." 
+            },
+            {
                 type: 'journal',
                 title: "Conley-Zehnder Indices of Spatial Rotating Kepler Problem",
                 journal: "Journal of Topology and Analysis",
@@ -144,77 +153,204 @@
 			}
 		];
 function renderAll() {
-    // 공통 리스트 아이템 생성 함수 (논문용)
+    // 날짜 내림차순 정렬 함수
+    // TBA나 날짜가 없는 항목은 아래쪽에 배치
+    const sortByDateDescending = (a, b) => {
+        const dateA = a.date || 'TBA';
+        const dateB = b.date || 'TBA';
+
+        if (dateA === 'TBA' && dateB === 'TBA') return 0;
+        if (dateA === 'TBA') return 1;
+        if (dateB === 'TBA') return -1;
+
+        return new Date(dateB) - new Date(dateA);
+    };
+
+    // 논문 리스트 아이템 생성 함수
     const createPubItem = (pub) => {
-        const authors = pub.coAuthors ? `with ${pub.coAuthors}, ` : "";
-        const venue = pub.journal ? `<em>${pub.journal}</em>` : `<em>${pub.status}</em>`;
-        const arxivLink = pub.arxiv ? `, <a href="https://arxiv.org/abs/${pub.arxiv}" class="text-link" target="_blank">arXiv:${pub.arxiv}</a>` : "";
-        
+        const authors = pub.coAuthors
+            ? `with ${pub.coAuthors}, `
+            : "";
+
+        const venueText = pub.journal || pub.status || "";
+        const venue = venueText
+            ? `<em>${venueText}</em>`
+            : "";
+
+        const dateText = pub.date || "TBA";
+
+        const arxivLink = pub.arxiv
+            ? `<a href="https://arxiv.org/abs/${pub.arxiv}"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                   arXiv:${pub.arxiv}
+               </a>`
+            : "";
+
+        const metadataParts = [
+            `${authors}${venue}`,
+            dateText,
+            arxivLink
+        ].filter(part => part);
+
         const buttons = `
             <span style="margin-left: 8px;">
-                ${pub.doi ? `<a href="${pub.doi}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">DOI</a>` : ''}
-                ${pub.link ? `<a href="${pub.link}" class="tag" target="_blank" style="font-size: 0.75rem; padding: 2px 8px;">PDF</a>` : ''}
+                ${pub.doi
+                    ? `<a href="${pub.doi}"
+                          class="tag"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style="font-size: 0.75rem; padding: 2px 8px;">
+                           DOI
+                       </a>`
+                    : ""
+                }
+
+                ${pub.link
+                    ? `<a href="${pub.link}"
+                          class="tag"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style="font-size: 0.75rem; padding: 2px 8px;">
+                           PDF
+                       </a>`
+                    : ""
+                }
             </span>
         `;
 
         return `
             <li style="margin-bottom: 20px; list-style: none;">
                 <div style="display: flex; align-items: center; flex-wrap: wrap;">
-                    <strong style="font-size: 1.05rem; color: #000;">${pub.title}</strong>
+                    <strong style="font-size: 1.05rem; color: #000;">
+                        ${pub.title}
+                    </strong>
                     ${buttons}
                 </div>
+
                 <div style="font-size: 0.95rem; color: #444; margin-top: 4px;">
-                    ${authors}${venue}, ${pub.date || 'TBA'}${arxivLink}
+                    ${metadataParts.join(", ")}
                 </div>
             </li>
         `;
     };
 
-    // --- [Publications 분류 및 정렬] ---
-    const publishedJournals = publications.filter(p => p.type === 'journal')
-        .sort((a, b) => new Date(b.date) - new Date(a.date));
-    const thesis = publications.filter(p => p.type === 'thesis');
-    const drafts = publications.filter(p => p.type === 'draft');
+    // 빈 목록은 출력하지 않는 publication section 생성 함수
+    const createPublicationSection = (title, items) => {
+        if (items.length === 0) return "";
 
-    // Published Papers 리스트 합치기 (학위 논문은 맨 밑으로)
-    const publishedPapersHTML = [...publishedJournals, ...thesis].map(createPubItem).join('');
-    const draftsHTML = drafts.map(createPubItem).join('');
+        const itemsHTML = items
+            .map(createPubItem)
+            .join("");
 
-    document.getElementById('publications-section').innerHTML = `
+        return `
+            <h3>${title}</h3>
+            <div class="history-card">
+                <ul style="padding: 0; margin: 0;">
+                    ${itemsHTML}
+                </ul>
+            </div>
+        `;
+    };
+
+    // Publications 분류 및 정렬
+    const publishedJournals = publications
+        .filter(pub => pub.type === "journal")
+        .sort(sortByDateDescending);
+
+    const theses = publications
+        .filter(pub => pub.type === "thesis")
+        .sort(sortByDateDescending);
+
+    const preprints = publications
+        .filter(pub => pub.type === "preprint")
+        .sort(sortByDateDescending);
+
+    const drafts = publications
+        .filter(pub => pub.type === "draft")
+        .sort(sortByDateDescending);
+
+    // 학위논문은 Published Papers의 마지막에 배치
+    const publishedPapers = [
+        ...publishedJournals,
+        ...theses
+    ];
+
+    document.getElementById("publications-section").innerHTML = `
         <h2>Publications</h2>
-        <h3>Published Papers</h3>
-        <div class="history-card"><ul style="padding: 0; margin: 0;">${publishedPapersHTML}</ul></div>
-        
-        ${draftsHTML ? `
-            <h3>Drafts & Preprints</h3>
-            <div class="history-card"><ul style="padding: 0; margin: 0;">${draftsHTML}</ul></div>
-        ` : ''}
+
+        ${createPublicationSection(
+            "Published Papers",
+            publishedPapers
+        )}
+
+        ${createPublicationSection(
+            "Preprints",
+            preprints
+        )}
+
+        ${createPublicationSection(
+            "Drafts",
+            drafts
+        )}
     `;
 
-    // --- [Presentations 렌더링 (기존 로직 유지)] ---
-    const createPresList = (items, label) => items
-        .sort((a, b) => (a.date === 'TBA' ? 1 : b.date === 'TBA' ? -1 : new Date(b.date) - new Date(a.date)))
-        .map(item => `
-            <li style="margin-bottom: 15px; list-style: none;">
-                <div style="display: flex; align-items: center; flex-wrap: wrap;">
-                    <strong style="font-size: 1.05rem; color: #000;">${item.title}</strong>
-                    <a href="${item.link}" class="tag" target="_blank" style="margin-left: 8px; font-size: 0.75rem; padding: 2px 8px;">${label}</a>
-                </div>
-                <div style="font-size: 0.95rem; color: #444; margin-top: 2px;">
-                    ${item.event}, ${item.date}
-                </div>
-            </li>
-        `).join('');
+    // 발표 자료 리스트 생성 함수
+    const createPresList = (items, label) => {
+        return [...items]
+            .sort(sortByDateDescending)
+            .map(item => `
+                <li style="margin-bottom: 15px; list-style: none;">
+                    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                        <strong style="font-size: 1.05rem; color: #000;">
+                            ${item.title}
+                        </strong>
 
-    const slides = presentations.filter(p => p.type === 'slide');
-    const posters = presentations.filter(p => p.type === 'poster');
+                        ${item.link
+                            ? `<a href="${item.link}"
+                                  class="tag"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style="margin-left: 8px; font-size: 0.75rem; padding: 2px 8px;">
+                                   ${label}
+                               </a>`
+                            : ""
+                        }
+                    </div>
 
-    document.getElementById('presentations-section').innerHTML = `
+                    <div style="font-size: 0.95rem; color: #444; margin-top: 2px;">
+                        ${item.event}, ${item.date || "TBA"}
+                    </div>
+                </li>
+            `)
+            .join("");
+    };
+
+    const slides = presentations.filter(
+        presentation => presentation.type === "slide"
+    );
+
+    const posters = presentations.filter(
+        presentation => presentation.type === "poster"
+    );
+
+    document.getElementById("presentations-section").innerHTML = `
         <h2>Presentations</h2>
+
         <h3>Talks & Slides</h3>
-        <div class="history-card"><ul style="padding: 0; margin: 0;">${createPresList(slides, 'Slides')}</ul></div>
+        <div class="history-card">
+            <ul style="padding: 0; margin: 0;">
+                ${createPresList(slides, "Slides")}
+            </ul>
+        </div>
+
         <h3>Posters</h3>
-        <div class="history-card"><ul style="padding: 0; margin: 0;">${createPresList(posters, 'Poster')}</ul></div>
+        <div class="history-card">
+            <ul style="padding: 0; margin: 0;">
+                ${createPresList(posters, "Poster")}
+            </ul>
+        </div>
     `;
 }
 
