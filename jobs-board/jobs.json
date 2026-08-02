@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-01T04:32:08+00:00",
+  "updated_at": "2026-08-02T04:34:13+00:00",
   "items": [
     {
-      "title": "2026_R2_SCATPU_01: Senior Qualified Technician (A1) / R2-Recognised Researcher",
+      "title": "PROFESSEUR DES UNIVERSITES - Physiologie",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457871",
+      "url": "https://euraxess.ec.europa.eu/jobs/457918",
       "priority": 2
     },
     {
-      "title": "ANNOUNCEMENT FOR THE AWARD OF A RESEARCH FELLOWSHIP/ IPC/ASTREA/AGC/19/2026",
+      "title": "Postdoc Molecular Dynamics and Process Simulation of High Temperature Thermal Storage Systems",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,119 +30,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457873",
-      "priority": 2
-    },
-    {
-      "title": "Assistant in the group of teaching staff (ZSIiPS_I)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457877",
-      "priority": 2
-    },
-    {
-      "title": "Assistant in the group of teaching staff (ZSIiPS_II)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457879",
-      "priority": 2
-    },
-    {
-      "title": "Doctoral scholarships in NICE - FRANCE",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457869",
-      "priority": 2
-    },
-    {
-      "title": "International Selection Procedure for the Recruitment of One (1) Doctoral Researcher (PhD Holder) - 2026_056_IJ_SEACHANGE",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457872",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher (3 positions) in Infrasound and Seismic Instrumentation for Gravitational Wave Detectors (Astro_17_MAB_2026)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457875",
-      "priority": 2
-    },
-    {
-      "title": "RESEARCH GRANT FOR A MSC ENROLLED IN A NON-DEGREE COURSE (REF.ª BI-MESTRE-ICNCG-COASTNET-4)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457878",
-      "priority": 2
-    },
-    {
-      "title": "Research Grant | project Elpis, CENTRO2030-FEDER-02616100 of CICECO - Aveiro Institute of Materials (Ref BI_Élpis_iBiMED)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457874",
+      "url": "https://euraxess.ec.europa.eu/jobs/457924",
       "priority": 2
     },
     {
@@ -153,7 +41,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-01",
+      "date_posted": "2026-08-02",
       "tags": [
         "symplectic",
         "contact",
