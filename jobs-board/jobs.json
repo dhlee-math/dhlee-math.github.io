@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-03T04:43:40+00:00",
+  "updated_at": "2026-08-04T04:27:22+00:00",
   "items": [
     {
-      "title": "PROFESSEUR DES UNIVERSITES - Physiologie",
+      "title": "Postdoctoral Fellow in Social Reinforcement Learning and Human‑AI Hybrid Systems",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,26 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457918",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc Molecular Dynamics and Process Simulation of High Temperature Thermal Storage Systems",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/457924",
+      "url": "https://euraxess.ec.europa.eu/jobs/458229",
       "priority": 2
     },
     {
@@ -41,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-02",
+      "date_posted": "2026-08-04",
       "tags": [
         "symplectic",
         "contact",
