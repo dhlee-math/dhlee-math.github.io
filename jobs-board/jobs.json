@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-07T04:02:46+00:00",
+  "updated_at": "2026-08-08T02:59:28+00:00",
   "items": [
     {
-      "title": "Junior Researcher_THRIVE - Junior Researcher 1",
+      "title": "Additive Manufacturing Specialist / Senior Researcher III (R2) – 1 positionunder the contract: \"NATIONAL PLATFORM FOR SEMICONDUCTOR TECHNOLOGIES (PNTS)\" SMIS 2021+ Code: 351364",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459131",
+      "url": "https://euraxess.ec.europa.eu/jobs/459279",
       "priority": 2
     },
     {
-      "title": "PhD Research Fellow in Molecular Immunology (ref 305939)",
+      "title": "Postdoctoral Researcher (f/m/d)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459125",
+      "url": "https://euraxess.ec.europa.eu/jobs/459291",
       "priority": 2
     },
     {
-      "title": "PhD student",
+      "title": "Postdoctoral researcher in bioprocess engineering (M/F)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,11 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459126",
+      "url": "https://euraxess.ec.europa.eu/jobs/459280",
       "priority": 2
     },
     {
-      "title": "Principal Researcher_THRIVE – Investigador Principal",
+      "title": "RESEARCH GRANT FOR A MSC ENROLLED IN A NON-DEGREE COURSE (REF.ª BI-MESTRE-ICNCG-COASTNET-4)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -62,7 +62,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459128",
+      "url": "https://euraxess.ec.europa.eu/jobs/459293",
       "priority": 2
     },
     {
@@ -73,7 +73,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-07",
+      "date_posted": "2026-08-08",
       "tags": [
         "symplectic",
         "contact",
