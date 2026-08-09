@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-04T04:27:22+00:00",
+  "updated_at": "2026-08-09T03:06:37+00:00",
   "items": [
     {
-      "title": "Postdoctoral Fellow in Social Reinforcement Learning and Human‑AI Hybrid Systems",
+      "title": "Additive Manufacturing Specialist / Senior Researcher III (R2) – 1 positionunder the contract: \"NATIONAL PLATFORM FOR SEMICONDUCTOR TECHNOLOGIES (PNTS)\" SMIS 2021+ Code: 351364",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,58 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/458229",
+      "url": "https://euraxess.ec.europa.eu/jobs/459279",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher (f/m/d)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/459291",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral researcher in bioprocess engineering (M/F)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/459280",
+      "priority": 2
+    },
+    {
+      "title": "RESEARCH GRANT FOR A MSC ENROLLED IN A NON-DEGREE COURSE (REF.ª BI-MESTRE-ICNCG-COASTNET-4)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/459293",
       "priority": 2
     },
     {
@@ -24,7 +73,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-04",
+      "date_posted": "2026-08-08",
       "tags": [
         "symplectic",
         "contact",
