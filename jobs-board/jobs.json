@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-17T02:32:58+00:00",
+  "updated_at": "2026-08-18T02:19:52+00:00",
   "items": [
     {
-      "title": "25 MSCA-COFUND 2-year postdoctoral fellowships in all research fields in Brittany (France)",
+      "title": "Assistant Professor in the group of research and teaching staff at the Department of Biology, at the Laboratory for Sustainable Biodevelopment.",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,26 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/460285",
+      "url": "https://euraxess.ec.europa.eu/jobs/460581",
+      "priority": 2
+    },
+    {
+      "title": "CT/AI/001/2026 - Opening of an international selection procedure for the recruitment of 1 (one) Research Assistant for research HEREDITARY - HetERogeneous sEmantic Data integratIon for the guT-brAin",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460570",
       "priority": 2
     },
     {
@@ -24,7 +41,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-14",
+      "date_posted": "2026-08-18",
       "tags": [
         "symplectic",
         "contact",
