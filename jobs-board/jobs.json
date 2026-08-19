@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-18T02:19:52+00:00",
+  "updated_at": "2026-08-19T02:22:33+00:00",
   "items": [
     {
-      "title": "Assistant Professor in the group of research and teaching staff at the Department of Biology, at the Laboratory for Sustainable Biodevelopment.",
+      "title": "AJUNCT in the group of research and teaching staff on a full-time basis in the Laboratory of Pharmacoepidemiology and Pharmacoeconomics in the Department of Social Pharmacy at the Faculty of Pharmacy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/460581",
+      "url": "https://euraxess.ec.europa.eu/jobs/460734",
       "priority": 2
     },
     {
-      "title": "CT/AI/001/2026 - Opening of an international selection procedure for the recruitment of 1 (one) Research Assistant for research HEREDITARY - HetERogeneous sEmantic Data integratIon for the guT-brAin",
+      "title": "Doctoral Candidate (PhD student position) at University Hospital Regensburg, Germany / DC3 - SHIELD Doctoral Network",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,7 +30,119 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/460570",
+      "url": "https://euraxess.ec.europa.eu/jobs/460733",
+      "priority": 2
+    },
+    {
+      "title": "Medical Doctor in Specialized Training / Anaesthesiology and Intensive Care Medicine",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460738",
+      "priority": 2
+    },
+    {
+      "title": "Medical Doctor in Specialized Training / Paediatric and Adolescent Surgery",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460735",
+      "priority": 2
+    },
+    {
+      "title": "Medical Specialist / Gynaecology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460736",
+      "priority": 2
+    },
+    {
+      "title": "Medical Specialist / Obstetrics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460737",
+      "priority": 2
+    },
+    {
+      "title": "Research Grant | project CardioChip, COMPETE2030-FEDER-00836800, from CICECO-Aveiro Institute of Materials (Ref. BI_CARDIOCHIP)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460741",
+      "priority": 2
+    },
+    {
+      "title": "University Assistant PostDoc / Cell Biology, Histology and Embryology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460740",
+      "priority": 2
+    },
+    {
+      "title": "University Assistant PostDoc / Medical Chemistry",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/460739",
       "priority": 2
     },
     {
@@ -41,7 +153,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-18",
+      "date_posted": "2026-08-19",
       "tags": [
         "symplectic",
         "contact",
