@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-22T02:19:32+00:00",
+  "updated_at": "2026-08-23T02:36:00+00:00",
   "items": [
     {
-      "title": "Two Assistant Professorships (W1) for Mathematics – Algorithmic Graph Theory and Logic",
+      "title": "Assistant Professor in Physics specialising in Quantum Information Theory",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,58 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461228",
+      "url": "https://euraxess.ec.europa.eu/jobs/461246",
+      "priority": 2
+    },
+    {
+      "title": "Assistant/Associate Professor in Power Electronics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/461248",
+      "priority": 2
+    },
+    {
+      "title": "PhD position Neuroscience",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/461251",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc Integrated Sensor and Readout ICs for Robotics Smart Skin",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/461250",
       "priority": 2
     },
     {
@@ -24,7 +73,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-22",
+      "date_posted": "2026-08-23",
       "tags": [
         "symplectic",
         "contact",
