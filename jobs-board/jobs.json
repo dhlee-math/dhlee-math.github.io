@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-24T02:35:54+00:00",
+  "updated_at": "2026-08-25T02:22:13+00:00",
   "items": [
     {
-      "title": "Assistant Professor in Physics specialising in Quantum Information Theory",
+      "title": "First Level Doctorate Researcher in the scientific area of Biochemistry or related (CDL-CTTRI-129-SGRH/2026) at University of Aveiro – Project ENABLE",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,14 +11,13 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461246",
+      "url": "https://euraxess.ec.europa.eu/jobs/461372",
       "priority": 2
     },
     {
-      "title": "Assistant/Associate Professor in Power Electronics",
+      "title": "Research Scholarship (“Bolsa de Investigação”) - BI/ Nº2026/00079",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,39 +29,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461248",
-      "priority": 2
-    },
-    {
-      "title": "PhD position Neuroscience",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461251",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc Integrated Sensor and Readout ICs for Robotics Smart Skin",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461250",
+      "url": "https://euraxess.ec.europa.eu/jobs/461375",
       "priority": 2
     },
     {
@@ -73,7 +40,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-24",
+      "date_posted": "2026-08-25",
       "tags": [
         "symplectic",
         "contact",
