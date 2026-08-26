@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-25T02:22:13+00:00",
+  "updated_at": "2026-08-26T02:37:54+00:00",
   "items": [
     {
-      "title": "First Level Doctorate Researcher in the scientific area of Biochemistry or related (CDL-CTTRI-129-SGRH/2026) at University of Aveiro – Project ENABLE",
+      "title": "2 PhD and 2 Postdoctoral Positions in Deep Learning and World Models",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,11 +13,11 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461372",
+      "url": "https://euraxess.ec.europa.eu/jobs/461583",
       "priority": 2
     },
     {
-      "title": "Research Scholarship (“Bolsa de Investigação”) - BI/ Nº2026/00079",
+      "title": "Postdoc in Cancer Cell Biology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -29,7 +29,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461375",
+      "url": "https://euraxess.ec.europa.eu/jobs/461591",
       "priority": 2
     },
     {
@@ -40,7 +40,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-25",
+      "date_posted": "2026-08-26",
       "tags": [
         "symplectic",
         "contact",
