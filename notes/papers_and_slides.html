@@ -65,14 +65,6 @@
                 journal: "Ph.D. Thesis, Seoul National University",
                 date: "2025-02",
                 link: "Papers/phD Thesis - Dongho Lee.pdf"
-            },
-            {
-                type: 'draft',
-                title: "Fiberwise Convexity of Restricted Three-body Problem",
-                status: "In progress",
-                coAuthors: "Sunghae Cho and Beomjun Sohn",
-				date: "TBA",
-                summary: "Investigating fiberwise convexity in the restricted three-body problem, relating it to spatial periodic orbits."
             }
         ];
         const presentations = [
@@ -100,6 +92,13 @@
                 event: "G-Lamp Mathematics Seminar, Soongsil University, Seoul, Korea",
                 date: "2026-01",
                 link: "Slides/Bifurcation_SSU_DLee.pdf"
+            },
+                        {
+                type: 'poster',
+                title: "Local Floer Chain Complex across Hamiltonian Bifurcation (Unused)",
+                event: "Geometry Space Surrey, University of Surrey, Guildford, UK",
+                date: "2026-06",
+                link: "Slides/Surrey_poster_donghoLee.pdf"
             },
             {
                 type: 'poster',
@@ -347,14 +346,14 @@ function renderAll() {
         <h3>Talks & Slides</h3>
         <div class="history-card">
             <ul style="padding: 0; margin: 0;">
-                ${createPresList(slides, "Slides")}
+                ${createPresList(slides, "PDF")}
             </ul>
         </div>
 
         <h3>Posters</h3>
         <div class="history-card">
             <ul style="padding: 0; margin: 0;">
-                ${createPresList(posters, "Poster")}
+                ${createPresList(posters, "PDF")}
             </ul>
         </div>
     `;
