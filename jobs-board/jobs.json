@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-10T03:17:16+00:00",
+  "updated_at": "2026-08-27T11:10:15+00:00",
   "items": [
     {
-      "title": "Additive Manufacturing Specialist / Senior Researcher III (R2) – 1 positionunder the contract: \"NATIONAL PLATFORM FOR SEMICONDUCTOR TECHNOLOGIES (PNTS)\" SMIS 2021+ Code: 351364",
+      "title": "2 PhD and 2 Postdoctoral Positions in Deep Learning and World Models",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,14 +11,13 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459279",
+      "url": "https://euraxess.ec.europa.eu/jobs/461583",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher (f/m/d)",
+      "title": "Postdoc in Cancer Cell Biology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,39 +29,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459291",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral researcher in bioprocess engineering (M/F)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459280",
-      "priority": 2
-    },
-    {
-      "title": "RESEARCH GRANT FOR A MSC ENROLLED IN A NON-DEGREE COURSE (REF.ª BI-MESTRE-ICNCG-COASTNET-4)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/459293",
+      "url": "https://euraxess.ec.europa.eu/jobs/461591",
       "priority": 2
     },
     {
@@ -73,7 +40,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-08",
+      "date_posted": "2026-08-26",
       "tags": [
         "symplectic",
         "contact",
