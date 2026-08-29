@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-28T12:43:49+00:00",
+  "updated_at": "2026-08-29T07:50:27+00:00",
   "items": [
     {
-      "title": "2 PhD and 2 Postdoctoral Positions in Deep Learning and World Models",
+      "title": "Postdoc in economics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -13,23 +13,7 @@
       "tags": [
         "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461583",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc in Cancer Cell Biology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461591",
+      "url": "https://euraxess.ec.europa.eu/jobs/462367",
       "priority": 2
     },
     {
@@ -40,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-26",
+      "date_posted": "2026-08-29",
       "tags": [
         "symplectic",
         "contact",
