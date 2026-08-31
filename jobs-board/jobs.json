@@ -1,23 +1,8 @@
 {
-  "updated_at": "2026-08-27T11:10:15+00:00",
+  "updated_at": "2026-08-31T07:00:31+00:00",
   "items": [
     {
-      "title": "2 PhD and 2 Postdoctoral Positions in Deep Learning and World Models",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461583",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc in Cancer Cell Biology",
+      "title": "Doctoral student in Health Care Sciences - Person-centred integrated health and social care",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -29,7 +14,54 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/461591",
+      "url": "https://euraxess.ec.europa.eu/jobs/462608",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc ‘Breeding for resilient crops'",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/462609",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher (m/f/d)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/462611",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral scholarship (1 year) in Discrete Mathematics",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/462602",
       "priority": 2
     },
     {
@@ -40,7 +72,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-26",
+      "date_posted": "2026-08-31",
       "tags": [
         "symplectic",
         "contact",
