@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-03T05:44:38+00:00",
+  "updated_at": "2026-09-04T05:50:15+00:00",
   "items": [
     {
-      "title": "Doctoral student in Health Care Sciences - Person-centred integrated health and social care",
+      "title": "2 MSCA-DN PhD's in advanced MRI biomarkers in leukodystrophies (Paris, FR)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/462608",
+      "url": "https://euraxess.ec.europa.eu/jobs/463569",
       "priority": 2
     },
     {
-      "title": "Postdoc ‘Breeding for resilient crops'",
+      "title": "Doctoral (Phd) position in Real Time simulation for electrified flexible industry",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/462609",
+      "url": "https://euraxess.ec.europa.eu/jobs/463566",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher (m/f/d)",
+      "title": "Postdoc in electrocatalysis for sustainable energy and chemical conversion",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,22 +46,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/462611",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral scholarship (1 year) in Discrete Mathematics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/462602",
+      "url": "https://euraxess.ec.europa.eu/jobs/463563",
       "priority": 2
     },
     {
@@ -72,7 +57,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-08-31",
+      "date_posted": "2026-09-04",
       "tags": [
         "symplectic",
         "contact",
