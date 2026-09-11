@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-10T05:56:11+00:00",
+  "updated_at": "2026-09-11T05:55:36+00:00",
   "items": [
     {
-      "title": "2 MSCA-DN PhD's in advanced MRI biomarkers in leukodystrophies (Paris, FR)",
+      "title": "Abertura de concurso documental, de âmbito internacional, para recrutamento de um pro¬fessor associado, na área disciplinar de Medicina, da subunidade orgânica Área Científico Pedagógica de Ciências C",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/463569",
+      "url": "https://euraxess.ec.europa.eu/jobs/465132",
       "priority": 2
     },
     {
-      "title": "Doctoral (Phd) position in Real Time simulation for electrified flexible industry",
+      "title": "MSCA Postdoctoral Fellowship 2027 – AI and Data-Driven Methods for Safe, Sustainable and Equitable Urban Mobility",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -27,27 +27,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "fellowship"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/463566",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc in electrocatalysis for sustainable energy and chemical conversion",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/463563",
-      "priority": 2
+      "url": "https://euraxess.ec.europa.eu/jobs/hosting/msca-postdoctoral-fellowship-2027-ai-and-data-driven-methods-safe-sustainable-and",
+      "priority": 3
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -57,7 +40,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-09-04",
+      "date_posted": "2026-09-11",
       "tags": [
         "symplectic",
         "contact",
