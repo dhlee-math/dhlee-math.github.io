@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-16T05:58:11+00:00",
+  "updated_at": "2026-09-17T06:06:50+00:00",
   "items": [
     {
-      "title": "Assistant Researcher to the unit Urology Bladder Research Group",
+      "title": "PhD Research Fellow in Music",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,103 +14,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465590",
-      "priority": 2
-    },
-    {
-      "title": "Laboratory Management – central support for life scientists",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465589",
-      "priority": 2
-    },
-    {
-      "title": "PhD in Contrast Ultrasound Imaging of Nanobubbles for Cancer Diagnostics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465587",
-      "priority": 2
-    },
-    {
-      "title": "Post-doctoral fellow in structural biology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465591",
-      "priority": 2
-    },
-    {
-      "title": "PostDoc position on Quantum Readout PUFs",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465586",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc In Atomic-Scale Processing for Future Chips and Energy",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465588",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Researcher in Type Theory for Dynamic Languages M/F",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/465592",
+      "url": "https://euraxess.ec.europa.eu/jobs/466328",
       "priority": 2
     },
     {
@@ -121,7 +25,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-09-14",
+      "date_posted": "2026-09-17",
       "tags": [
         "symplectic",
         "contact",
