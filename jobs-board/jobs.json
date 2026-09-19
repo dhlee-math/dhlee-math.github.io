@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-18T05:52:55+00:00",
+  "updated_at": "2026-09-19T05:49:32+00:00",
   "items": [
     {
-      "title": "Clinical Researcher (Diabetes and Metabolism Research Group)",
+      "title": "Tenure Track Position „Optimization“",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/466600",
+      "url": "https://euraxess.ec.europa.eu/jobs/466745",
       "priority": 2
     },
     {
@@ -25,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-09-18",
+      "date_posted": "2026-09-19",
       "tags": [
         "symplectic",
         "contact",
