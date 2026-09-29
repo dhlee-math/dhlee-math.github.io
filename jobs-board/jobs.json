@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-28T06:47:52+00:00",
+  "updated_at": "2026-09-29T06:51:10+00:00",
   "items": [
     {
-      "title": "Biostatistique, intelligence artificielle et santé de précision : méthodes avancées pour l’analyse de données biomédicales complexes",
+      "title": "Postdoc EMT Modelling of High-Voltage Components and Protection (UTOPYS)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,14 +11,13 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468745",
+      "url": "https://euraxess.ec.europa.eu/jobs/468912",
       "priority": 2
     },
     {
-      "title": "Contrato predoctoral para el desarrollo de nuevas terapias dirigidas contra DSTYK en cáncer de pulmón",
+      "title": "Postdoc EMT Transmission Backbone and Model Integration (UTOPYS)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -27,138 +26,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468739",
-      "priority": 2
-    },
-    {
-      "title": "Engineered AAV Vectors for Polycystic Kidney Disease Gene Therapy: Adapting to Disease Progression. (AAV-PKD)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468740",
-      "priority": 2
-    },
-    {
-      "title": "Instructor at the Institute of Physical Education and Health",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468748",
-      "priority": 2
-    },
-    {
-      "title": "Lecturer - Education",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468746",
-      "priority": 2
-    },
-    {
-      "title": "Opening Call for Awarding Doctoral Research Scholarships | 5th Edition | CECVB",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468742",
-      "priority": 2
-    },
-    {
-      "title": "PhD Position: Generating Human Organs from Stem Cells for Transplantation",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468737",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Position: Generating Human Organs from Stem Cells for Transplantation",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468738",
-      "priority": 2
-    },
-    {
-      "title": "Predoctoral Researcher: The Hepatology: Metabolism, Epigenetics and Carcinogenesis Research: FPI",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468736",
-      "priority": 2
-    },
-    {
-      "title": "• PhD Position in Myeloid Neoplasm Immunology within the Hematology-Oncology Program at CIMA Universidad de Navarra",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468741",
+      "url": "https://euraxess.ec.europa.eu/jobs/468909",
       "priority": 2
     },
     {
@@ -169,7 +39,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-09-28",
+      "date_posted": "2026-09-29",
       "tags": [
         "symplectic",
         "contact",
