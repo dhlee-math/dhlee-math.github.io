@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-04T06:49:46+00:00",
+  "updated_at": "2026-10-05T06:58:03+00:00",
   "items": [
     {
-      "title": "Postdoc EMT Modelling of High-Voltage Components and Protection (UTOPYS)",
+      "title": "Assistant Professor (F/M) - research-teaching staff [13a/2026/NA/WH/INoK]",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,13 +11,14 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
+        "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468912",
+      "url": "https://euraxess.ec.europa.eu/jobs/470371",
       "priority": 2
     },
     {
-      "title": "Postdoc EMT Transmission Backbone and Model Integration (UTOPYS)",
+      "title": "Deputy Dean (Research)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -26,9 +27,42 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
+        "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/468909",
+      "url": "https://euraxess.ec.europa.eu/jobs/470381",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Research Fellow / Research Fellow - Management/Organisational Psychology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/470380",
+      "priority": 2
+    },
+    {
+      "title": "Senior Lecturer / Associate Professor in Rural Health",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/470379",
       "priority": 2
     },
     {
@@ -39,7 +73,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-09-29",
+      "date_posted": "2026-10-05",
       "tags": [
         "symplectic",
         "contact",
