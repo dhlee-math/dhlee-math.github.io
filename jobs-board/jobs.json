@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-08T07:18:38+00:00",
+  "updated_at": "2026-10-09T07:20:56+00:00",
   "items": [
     {
-      "title": "Assistant Professor (F/M) - research-teaching staff [13a/2026/NA/WH/INoK]",
+      "title": "Associate Professor in Computer Science specialising in Cybersecurity",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/470371",
+      "url": "https://euraxess.ec.europa.eu/jobs/471632",
       "priority": 2
     },
     {
-      "title": "Deputy Dean (Research)",
+      "title": "Post-Doctoral Research Visit F/M Post-Doctoral Research Visit F/M - LLM, autotuning, SIMD - Joint IFPEN-Inria laboratory",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/470381",
+      "url": "https://euraxess.ec.europa.eu/jobs/471633",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Research Fellow / Research Fellow - Management/Organisational Psychology",
+      "title": "Postdoctor in Political Science: Transitional Justice, Victimhood, and Survey Experiments (BIG PEACE)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,11 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/470380",
+      "url": "https://euraxess.ec.europa.eu/jobs/471625",
       "priority": 2
     },
     {
-      "title": "Senior Lecturer / Associate Professor in Rural Health",
+      "title": "Postdoctoral Fellow in Political Science",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -62,7 +62,55 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/470379",
+      "url": "https://euraxess.ec.europa.eu/jobs/471628",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Fellow in Political Science",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/471629",
+      "priority": 2
+    },
+    {
+      "title": "Postdoctoral Researcher in Management Information Systems",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/471634",
+      "priority": 2
+    },
+    {
+      "title": "Research Associate, digital fieldwork, THINGSTIGATE",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/471627",
       "priority": 2
     },
     {
@@ -73,7 +121,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-05",
+      "date_posted": "2026-10-09",
       "tags": [
         "symplectic",
         "contact",
