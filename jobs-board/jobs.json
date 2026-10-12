@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-11T07:07:57+00:00",
+  "updated_at": "2026-10-12T07:18:22+00:00",
   "items": [
     {
-      "title": "Associate Professor in Computer Science specialising in Cybersecurity",
+      "title": "027/TI/PA/2026 - Associate Professor",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471632",
+      "url": "https://euraxess.ec.europa.eu/jobs/472078",
       "priority": 2
     },
     {
-      "title": "Post-Doctoral Research Visit F/M Post-Doctoral Research Visit F/M - LLM, autotuning, SIMD - Joint IFPEN-Inria laboratory",
+      "title": "2 PhD candidates within Peace and Conflict Research (DIViNE)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471633",
+      "url": "https://euraxess.ec.europa.eu/jobs/472083",
       "priority": 2
     },
     {
-      "title": "Postdoctor in Political Science: Transitional Justice, Victimhood, and Survey Experiments (BIG PEACE)",
+      "title": "Assistant Professor in Computer Science specialising in Cybersecurity",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,11 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471625",
+      "url": "https://euraxess.ec.europa.eu/jobs/472082",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Fellow in Political Science",
+      "title": "Assistant professor (F/M)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -62,11 +62,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471628",
+      "url": "https://euraxess.ec.europa.eu/jobs/472089",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Fellow in Political Science",
+      "title": "Doctoral student in Technology and Society on regulatory learning and supervisory competence",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -78,11 +78,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471629",
+      "url": "https://euraxess.ec.europa.eu/jobs/472088",
       "priority": 2
     },
     {
-      "title": "Postdoctoral Researcher in Management Information Systems",
+      "title": "Graduate Teaching Assistant (Diploma/Master)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -94,11 +94,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471634",
+      "url": "https://euraxess.ec.europa.eu/jobs/472090",
       "priority": 2
     },
     {
-      "title": "Research Associate, digital fieldwork, THINGSTIGATE",
+      "title": "PhD Position in Formal Methods for Concurrent Cryptographic Protocols",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -110,7 +110,55 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/471627",
+      "url": "https://euraxess.ec.europa.eu/jobs/472084",
+      "priority": 2
+    },
+    {
+      "title": "PhD in Advanced Epitaxial Growth for InP-Based Photonic Integrated Circuits",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/472085",
+      "priority": 2
+    },
+    {
+      "title": "Postdoc in Digital Education and Empowerment for Patients with Atrial Fibrillation and Comorbidities",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/472087",
+      "priority": 2
+    },
+    {
+      "title": "Senior Lecturer of Toxicology",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/472086",
       "priority": 2
     },
     {
@@ -121,7 +169,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-09",
+      "date_posted": "2026-10-12",
       "tags": [
         "symplectic",
         "contact",
