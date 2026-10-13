@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-12T07:18:22+00:00",
+  "updated_at": "2026-10-13T07:40:02+00:00",
   "items": [
     {
-      "title": "027/TI/PA/2026 - Associate Professor",
+      "title": "ASSISTANT in the group of research staff on a full-time basis in the Department of Pharmaceutical Chemistry at the Faculty of Pharmacy at the Jagiellonian University Medical College",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472078",
+      "url": "https://euraxess.ec.europa.eu/jobs/472301",
       "priority": 2
     },
     {
-      "title": "2 PhD candidates within Peace and Conflict Research (DIViNE)",
+      "title": "Associate Professor (F/M) within the group of: research and teaching staff in the Department of Physics and Medical Engineering at the Faculty Mathematics and Applied Physics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472083",
+      "url": "https://euraxess.ec.europa.eu/jobs/472340",
       "priority": 2
     },
     {
-      "title": "Assistant Professor in Computer Science specialising in Cybersecurity",
+      "title": "Data Governance Manager - ICT Level 7",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,11 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472082",
+      "url": "https://euraxess.ec.europa.eu/jobs/472207",
       "priority": 2
     },
     {
-      "title": "Assistant professor (F/M)",
+      "title": "PhD Student Position in Fabrication and Characterization of Plasmonic Crystals for Solar Energy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -62,11 +62,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472089",
+      "url": "https://euraxess.ec.europa.eu/jobs/472211",
       "priority": 2
     },
     {
-      "title": "Doctoral student in Technology and Society on regulatory learning and supervisory competence",
+      "title": "PhD Student Position in Numerical Modeling and Design of Plasmonic Crystals for Solar Energy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -78,11 +78,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472088",
+      "url": "https://euraxess.ec.europa.eu/jobs/472212",
       "priority": 2
     },
     {
-      "title": "Graduate Teaching Assistant (Diploma/Master)",
+      "title": "PhD candidate – Merit Project",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -94,11 +94,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472090",
+      "url": "https://euraxess.ec.europa.eu/jobs/472213",
       "priority": 2
     },
     {
-      "title": "PhD Position in Formal Methods for Concurrent Cryptographic Protocols",
+      "title": "PhD student in agricultural bioeconomy systems",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -110,11 +110,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472084",
+      "url": "https://euraxess.ec.europa.eu/jobs/472209",
       "priority": 2
     },
     {
-      "title": "PhD in Advanced Epitaxial Growth for InP-Based Photonic Integrated Circuits",
+      "title": "Postdoctoral Position in Plasmonic Crystals for Solar Energy",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -126,11 +126,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472085",
+      "url": "https://euraxess.ec.europa.eu/jobs/472210",
       "priority": 2
     },
     {
-      "title": "Postdoc in Digital Education and Empowerment for Patients with Atrial Fibrillation and Comorbidities",
+      "title": "Postdoctoral Researcher in Organic and Supramolecular Chemistry",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -142,11 +142,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472087",
+      "url": "https://euraxess.ec.europa.eu/jobs/472208",
       "priority": 2
     },
     {
-      "title": "Senior Lecturer of Toxicology",
+      "title": "Pre-doctoral Researcher in Telecommunications",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -158,7 +158,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472086",
+      "url": "https://euraxess.ec.europa.eu/jobs/472341",
       "priority": 2
     },
     {
@@ -169,7 +169,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-12",
+      "date_posted": "2026-10-13",
       "tags": [
         "symplectic",
         "contact",
