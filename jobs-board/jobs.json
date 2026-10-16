@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-15T05:51:49+00:00",
+  "updated_at": "2026-10-16T05:48:01+00:00",
   "items": [
     {
-      "title": "Lecturer Hotel Business Management",
+      "title": "Postdoctoral Fellow in Machine Learning and Multimodal AI — Brigham and Women’s Hospital / Harvard Medical School",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,154 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472871",
-      "priority": 2
-    },
-    {
-      "title": "Ph.D. Student in Informatics with a focus on AI-driven simulation and optimization in manufacturing",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472865",
-      "priority": 2
-    },
-    {
-      "title": "PhD in Acoustic Performance of Timber Structure Connections",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472874",
-      "priority": 2
-    },
-    {
-      "title": "PhD in Entanglement Routing in Quantum Optical Fiber Networks",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472868",
-      "priority": 2
-    },
-    {
-      "title": "PhD student in biomass resources from sustainable cropping systems",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472866",
-      "priority": 2
-    },
-    {
-      "title": "PhD: Impact evaluation of climate policies in agricultural and forest landscapes",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472873",
-      "priority": 2
-    },
-    {
-      "title": "Post-doc position on Multi-omics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472870",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc Healthy Joints Multiscale Modeling of in Vivo Knee Loading",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472869",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc Optomechanical IR Sensing",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472867",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral researcher in Neurobiology Multiple Sclerosis",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/472872",
+      "url": "https://euraxess.ec.europa.eu/jobs/473106",
       "priority": 2
     },
     {
@@ -169,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-15",
+      "date_posted": "2026-10-16",
       "tags": [
         "symplectic",
         "contact",
