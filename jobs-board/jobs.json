@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17T05:33:00+00:00",
+  "updated_at": "2026-10-18T05:50:28+00:00",
   "items": [
     {
-      "title": "Postdoctoral Fellow in Machine Learning and Multimodal AI — Brigham and Women’s Hospital / Harvard Medical School",
+      "title": "Assistant Professor Position in Geology and Mineralogy, Division of Earth and Planetary Sciences, Graduate School of Science",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,154 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "geometry",
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473106",
+      "url": "https://euraxess.ec.europa.eu/jobs/473544",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor（Division of Mechanical and Aerospace Engineering）",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473547",
+      "priority": 2
+    },
+    {
+      "title": "Associate professor, or assistant professor (non-tenure-track) in the Faculty of Science and Engineering English Degree Program",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473543",
+      "priority": 2
+    },
+    {
+      "title": "Division of Marine Bioresource and Environmental Science, Laboratory of Humans and the Ocean Assistant Professor",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473545",
+      "priority": 2
+    },
+    {
+      "title": "Lecturer / Associate Professor in Japanese Language Teaching/Education",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473538",
+      "priority": 2
+    },
+    {
+      "title": "Open Position for Lecturer, Associate Professor, or Professor (Physics, Natural Science Education Center)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473546",
+      "priority": 2
+    },
+    {
+      "title": "Professor (tenured), Associate Professor (tenured), or Lecturer (five-year fixed-term contract)【Civil Law（Law of Obligation, Contract Law, Tort Law）】",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473542",
+      "priority": 2
+    },
+    {
+      "title": "Professor (tenured), Associate Professor (tenured), or Lecturer (five-year fixed-term contract)【Commercial Law, Corporate Law】",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473540",
+      "priority": 2
+    },
+    {
+      "title": "Professor, Faculty Open Position(Systems and Control Engineering, Graduate School of Advanced Science and Engineering)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473539",
+      "priority": 2
+    },
+    {
+      "title": "Researcher or Researcher (II) (BKS26-002), Biogeochemistry Research Center (BGC), Institute for Earth and Material Sciences (EMS)",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/473541",
       "priority": 2
     },
     {
@@ -24,7 +169,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-16",
+      "date_posted": "2026-10-18",
       "tags": [
         "symplectic",
         "contact",
