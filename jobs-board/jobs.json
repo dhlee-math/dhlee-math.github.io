@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-19T06:07:35+00:00",
+  "updated_at": "2026-10-20T05:58:48+00:00",
   "items": [
     {
-      "title": "Ingénieur·e de recherche en sciences des matériaux / caractérisation",
+      "title": "Researcher",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,14 +11,13 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473775",
+      "url": "https://euraxess.ec.europa.eu/jobs/473996",
       "priority": 2
     },
     {
-      "title": "PhD (4 years) on experimental characterization of snap fit joints (Belgium)",
+      "title": "Senior Scientific Officer - Research Grants",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,135 +29,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473779",
-      "priority": 2
-    },
-    {
-      "title": "PhD (4 years) on numerical simulation of composite hydrogen tanks (Belgium)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473777",
-      "priority": 2
-    },
-    {
-      "title": "PhD in In-Operando Diagnostics of Li-ion and Post-Li-ion Batteries Using Acoustic Technology",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473780",
-      "priority": 2
-    },
-    {
-      "title": "Postdoc (3 years) on simulation of composite hydrogen tanks (Belgium)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473778",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral Research Associate, Department of Physics",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473807",
-      "priority": 2
-    },
-    {
-      "title": "Postdoctoral studies in microbiome and bacterial infections(scholarship)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473774",
-      "priority": 2
-    },
-    {
-      "title": "Research Technician for RFSoC-Based Passive Drone Detection",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473805",
-      "priority": 2
-    },
-    {
-      "title": "Staff Scientist for the X-ray Laboratory, with a focus on diffraction analysis of advanced materials",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473773",
-      "priority": 2
-    },
-    {
-      "title": "University Assistant (postdoc)",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "geometry",
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473806",
+      "url": "https://euraxess.ec.europa.eu/jobs/473994",
       "priority": 2
     },
     {
@@ -169,7 +40,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-19",
+      "date_posted": "2026-10-20",
       "tags": [
         "symplectic",
         "contact",
