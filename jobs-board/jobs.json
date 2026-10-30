@@ -1,23 +1,8 @@
 {
-  "updated_at": "2026-10-29T07:00:09+00:00",
+  "updated_at": "2026-10-30T07:02:35+00:00",
   "items": [
     {
-      "title": "Researcher",
-      "institution": "",
-      "country": "",
-      "region": "Europe",
-      "deadline": "",
-      "summary": "Imported from Euraxess search.",
-      "source": "Euraxess(search)",
-      "date_posted": "",
-      "tags": [
-        "dynamics"
-      ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473996",
-      "priority": 2
-    },
-    {
-      "title": "Senior Scientific Officer - Research Grants",
+      "title": "A tenure-track associate professor",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -29,7 +14,151 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/473994",
+      "url": "https://euraxess.ec.europa.eu/jobs/476297",
+      "priority": 2
+    },
+    {
+      "title": "ATER-Mathématiques",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476289",
+      "priority": 2
+    },
+    {
+      "title": "Assistant Professor（Laboratory of Groundwater and Mass Transport, Division of Sustainable Resources Engineering）",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476298",
+      "priority": 2
+    },
+    {
+      "title": "Associate Professor Position in the Institute of Laser Engineering, The University of Osaka",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476295",
+      "priority": 2
+    },
+    {
+      "title": "Associate Professor（Division of Architecture）",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476296",
+      "priority": 2
+    },
+    {
+      "title": "Call for Applications for Associate Professor or Lecturer Position in Division of Liberal Arts and Basic Sciences（Field of Information Science (tentative)）, Center for General Education, Nippon Veterinary and Life Science University.",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476294",
+      "priority": 2
+    },
+    {
+      "title": "Employment as Doctoral student in Computer Science",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476292",
+      "priority": 2
+    },
+    {
+      "title": "Employment as a doctoral student in Computer Science",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476291",
+      "priority": 2
+    },
+    {
+      "title": "PhD position in Precision Casimir-Polder and cavity QED experiments",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476290",
+      "priority": 2
+    },
+    {
+      "title": "Research Assistant/Associate in Sustainable Carbon-Based Electrodes for Flow Batteries",
+      "institution": "",
+      "country": "",
+      "region": "Europe",
+      "deadline": "",
+      "summary": "Imported from Euraxess search.",
+      "source": "Euraxess(search)",
+      "date_posted": "",
+      "tags": [
+        "geometry",
+        "dynamics"
+      ],
+      "url": "https://euraxess.ec.europa.eu/jobs/476293",
       "priority": 2
     },
     {
@@ -40,7 +169,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-20",
+      "date_posted": "2026-10-30",
       "tags": [
         "symplectic",
         "contact",
