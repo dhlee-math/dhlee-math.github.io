@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-30T07:02:35+00:00",
+  "updated_at": "2026-10-31T06:56:42+00:00",
   "items": [
     {
-      "title": "A tenure-track associate professor",
+      "title": "Assistant Professor in Biochemistry with specialisation in Experimental Protein Biochemistry (SciLifeLab Fellow)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -14,11 +14,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476297",
+      "url": "https://euraxess.ec.europa.eu/jobs/476688",
       "priority": 2
     },
     {
-      "title": "ATER-Mathématiques",
+      "title": "PhD Position: Turning Faecal Sludge into Clean Energy in Kenya and Ethiopa",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -30,11 +30,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476289",
+      "url": "https://euraxess.ec.europa.eu/jobs/476692",
       "priority": 2
     },
     {
-      "title": "Assistant Professor（Laboratory of Groundwater and Mass Transport, Division of Sustainable Resources Engineering）",
+      "title": "PhD position in biology, specialisation in aquatic ecology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -46,11 +46,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476298",
+      "url": "https://euraxess.ec.europa.eu/jobs/476687",
       "priority": 2
     },
     {
-      "title": "Associate Professor Position in the Institute of Laser Engineering, The University of Osaka",
+      "title": "Postdoc Fellowships European Synthetic Cell Initiative (SynCell-nExUs programme)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -62,11 +62,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476295",
+      "url": "https://euraxess.ec.europa.eu/jobs/476691",
       "priority": 2
     },
     {
-      "title": "Associate Professor（Division of Architecture）",
+      "title": "Postdoc In Optimization-Driven Verification and Validation of Precision Machines",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -78,11 +78,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476296",
+      "url": "https://euraxess.ec.europa.eu/jobs/476694",
       "priority": 2
     },
     {
-      "title": "Call for Applications for Associate Professor or Lecturer Position in Division of Liberal Arts and Basic Sciences（Field of Information Science (tentative)）, Center for General Education, Nippon Veterinary and Life Science University.",
+      "title": "Postdoc in Multi-user Multi-access Optical Satellite Communications: Theory and Architectures (MOSC)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -94,11 +94,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476294",
+      "url": "https://euraxess.ec.europa.eu/jobs/476693",
       "priority": 2
     },
     {
-      "title": "Employment as Doctoral student in Computer Science",
+      "title": "Postdoctoral Researcher in Pharmacometrics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -110,11 +110,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476292",
+      "url": "https://euraxess.ec.europa.eu/jobs/476695",
       "priority": 2
     },
     {
-      "title": "Employment as a doctoral student in Computer Science",
+      "title": "Postdoctoral position in computational modeling and simulation of spreading processes in population-scale multilayer social networks",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -126,11 +126,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476291",
+      "url": "https://euraxess.ec.europa.eu/jobs/476689",
       "priority": 2
     },
     {
-      "title": "PhD position in Precision Casimir-Polder and cavity QED experiments",
+      "title": "Research Assistant in Psychoneuroimmunology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -142,11 +142,11 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476290",
+      "url": "https://euraxess.ec.europa.eu/jobs/476696",
       "priority": 2
     },
     {
-      "title": "Research Assistant/Associate in Sustainable Carbon-Based Electrodes for Flow Batteries",
+      "title": "Researcher Entomology Fruit",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -158,7 +158,7 @@
         "geometry",
         "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/476293",
+      "url": "https://euraxess.ec.europa.eu/jobs/476690",
       "priority": 2
     },
     {
@@ -169,7 +169,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-10-30",
+      "date_posted": "2026-10-31",
       "tags": [
         "symplectic",
         "contact",
