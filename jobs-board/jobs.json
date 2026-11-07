@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-06T07:52:57+00:00",
+  "updated_at": "2026-11-07T07:03:01+00:00",
   "items": [
     {
-      "title": "Employment of a Visiting Professor or Lecturer, Term Limited",
+      "title": "Researcher to work in real and non-orientable enumerative geometry. (Ref. 30277490001)",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry",
-        "dynamics"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/477018",
+      "url": "https://euraxess.ec.europa.eu/jobs/478574",
       "priority": 2
     },
     {
@@ -25,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-11-03",
+      "date_posted": "2026-11-07",
       "tags": [
         "symplectic",
         "contact",
