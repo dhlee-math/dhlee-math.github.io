@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-09T07:53:44+00:00",
+  "updated_at": "2026-11-10T08:22:19+00:00",
   "items": [
     {
-      "title": "Postdoctoral scholarship (2 years) within Discrete Mathematics",
+      "title": "Postdoc (M/F) in topology",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "topology"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/478779",
+      "url": "https://euraxess.ec.europa.eu/jobs/479127",
       "priority": 2
     },
     {
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-10",
       "tags": [
         "symplectic",
         "contact",
