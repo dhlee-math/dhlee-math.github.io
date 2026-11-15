@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-14T07:34:05+00:00",
+  "updated_at": "2026-11-15T07:47:57+00:00",
   "items": [
     {
-      "title": "Post-Doctoral Fellowship in Matrix-Variate Distributions",
+      "title": "Arithmetic geometry and arithmetic statistics",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,10 +11,10 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "fellowship"
+        "geometry"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/479411",
-      "priority": 3
+      "url": "https://euraxess.ec.europa.eu/jobs/480460",
+      "priority": 2
     },
     {
       "title": "Pipeline test: jobs-board is updating",
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-11-11",
+      "date_posted": "2026-11-15",
       "tags": [
         "symplectic",
         "contact",
