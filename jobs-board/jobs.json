@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-16T07:55:41+00:00",
+  "updated_at": "2026-11-17T09:09:30+00:00",
   "items": [
     {
-      "title": "Arithmetic geometry and arithmetic statistics",
+      "title": "Postdoc in computational modelling of infectious diseases",
       "institution": "",
       "country": "",
       "region": "Europe",
@@ -11,9 +11,9 @@
       "source": "Euraxess(search)",
       "date_posted": "",
       "tags": [
-        "geometry"
+        "dynamics"
       ],
-      "url": "https://euraxess.ec.europa.eu/jobs/480460",
+      "url": "https://euraxess.ec.europa.eu/jobs/480775",
       "priority": 2
     },
     {
@@ -24,7 +24,7 @@
       "deadline": "",
       "summary": "If you see this item, GitHub Actions updated jobs.json successfully.",
       "source": "local",
-      "date_posted": "2026-11-15",
+      "date_posted": "2026-11-17",
       "tags": [
         "symplectic",
         "contact",
